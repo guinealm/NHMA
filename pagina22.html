@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>2.2 Incendios forestales — Superficie quemada, GIF y FWI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/base.css?v=1">
+  <style>
+    .section { margin: 2rem auto; max-width: 1200px; padding: 0 1rem; }
+    .grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 900px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--card-bg, #111); border: 1px solid #333; border-radius: 16px; padding: 1rem; }
+    .card h2 { margin: 0.25rem 0 0.75rem; }
+    iframe, object { width: 100%; border: 0; border-radius: 12px; background: #000; }
+    .note { font-size: .95rem; opacity: .9; }
+    .badge { font-size: .85rem; padding: .15rem .5rem; border: 1px solid #444; border-radius: 999px; }
+    .source-list { font-size: .95rem; line-height: 1.5; }
+    .open { display:inline-block; margin-top:.5rem; font-size:.9rem; }
+    details { margin-top: .5rem; }
+  </style>
+</head>
+<body>
+
+<main>
+  <section class="section">
+    <h1>2.2 Incendios forestales</h1>
+    <p class="note">Indicadores clave: <span class="badge">Superficie quemada</span> <span class="badge">Grandes Incendios (GIF &gt; 500 ha)</span> <span class="badge">Riesgo meteorológico FWI</span></p>
+  </section>
+
+  <!-- 1) Superficie quemada -->
+  <section class="section card">
+    <h2>1) Superficie quemada (mundo / regiones)</h2>
+    <p class="note">Datos actualizados con GWIS (satélites MODIS/VIIRS). Usa el selector del gráfico para elegir Europa o países.</p>
+
+    <iframe
+      loading="lazy"
+      height="520"
+      src="https://ourworldindata.org/grapher/annual-area-burnt-by-wildfires-gwis?tab=chart&stackMode=absolute&region=World">
+    </iframe>
+
+    <iframe
+      loading="lazy"
+      height="520"
+      src="https://ourworldindata.org/grapher/cumulative-area-burnt-by-wildfires-by-week?tab=chart&stackMode=absolute&region=World">
+    </iframe>
+
+    <details>
+      <summary>Notas metodológicas</summary>
+      <p class="note">El producto satelital subestima la superficie en términos absolutos, pero es consistente para tendencias y comparaciones temporales.</p>
+    </details>
+  </section>
+
+  <!-- 2) Grandes Incendios (España, GIF > 500 ha) -->
+  <section class="section card">
+    <h2>2) Grandes Incendios (España, GIF &gt; 500 ha)</h2>
+    <p class="note">En España, GIF &gt; 500 ha (250 ha en islas). Serie y parte provisional en los “Avances informativos” del MITECO.</p>
+
+    <!-- Opción A: PDF alojado en TU dominio -->
+    <object data="assets/pdf/avance_2025-08-17.pdf#view=FitH" type="application/pdf" width="100%" height="700">
+      <div style="text-align:center;padding:1rem;">
+        <p>Este navegador no puede mostrar el PDF incrustado.</p>
+        <a class="open" target="_blank" rel="noopener"
+           href="assets/pdf/avance_2025-08-17.pdf">Abrir el PDF del MITECO ↗</a>
+      </div>
+    </object>
+
+    <a class="open" target="_blank" rel="noopener"
+       href="https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-avances.html">
+       Ver todos los “Avances informativos” (MITECO) ↗</a>
+  </section>
+
+  <!-- 3) Riesgo meteorológico: FWI -->
+  <section class="section card">
+    <h2>3) Riesgo meteorológico (FWI) — Hoy</h2>
+    <p class="note">Los visores oficiales bloquean la incrustación por seguridad. Usa los botones para abrirlos a pantalla completa.</p>
+
+    <div class="grid grid-2">
+      <div class="card" style="background:transparent;border:1px dashed #444;">
+        <h3 style="margin:.5rem 0;">Europa — EFFIS (Copernicus)</h3>
+        <p class="note">En el visor, activa la capa <em>FWI</em> y el rango de días.</p>
+        <a class="open" target="_blank" rel="noopener"
+           href="https://forest-fire.emergency.copernicus.eu/apps/effis_current_situation/">
+           Abrir visor EFFIS ↗</a>
+      </div>
+
+      <div class="card" style="background:transparent;border:1px dashed #444;">
+        <h3 style="margin:.5rem 0;">Global — GWIS (JRC)</h3>
+        <p class="note">Incluye peligro FWI global y focos activos.</p>
+        <a class="open" target="_blank" rel="noopener"
+           href="https://gwis.jrc.ec.europa.eu/apps/gwis_current_situation/index.html">
+           Abrir visor GWIS ↗</a>
+      </div>
+    </div>
+
+    <details>
+      <summary>¿Por qué no se ve dentro de la página?</summary>
+      <p class="note">Estos sitios establecen cabeceras de seguridad (<code>X-Frame-Options</code> / <code>Content-Security-Policy</code>)
+      que impiden ser cargados dentro de iframes externos. Por eso abrimos en pestaña nueva.</p>
+    </details>
+  </section>
+
+  <!-- Fuentes -->
+  <section class="section">
+    <h2>Fuentes</h2>
+    <ul class="source-list">
+      <li>Our World in Data — <em>Wildfires</em> (series “area burnt”, “cumulative by week”).</li>
+      <li>Copernicus EMS — EFFIS: visor de situación actual y estadísticas por país.</li>
+      <li>GWIS (JRC): visor global de FWI y fuegos.</li>
+      <li>MITECO — EGIF: Avances informativos y estadística histórica.</li>
+    </ul>
+  </section>
+</main>
+
+</body>
+</html>

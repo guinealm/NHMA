@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>1.2 Temperatura del mar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      padding: 1rem;
+      max-width: 900px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      color: #333;
+    }
+    p.small {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 1rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    figure {
+      margin: 0;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      border: 0;
+      display: block;
+    }
+    figcaption {
+      font-size: .9rem;
+      color: #666;
+      margin-top: .4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>1.2. Temperatura y Nivel del mar</h1>
+  <div class="meta">jueves, 17 de julio de 2025 – 11:34</div>
+
+  <h2>World Meteorological Organization</h2>
+  <p><strong>Ocean heat content 0–2000m (1960–2024)</strong></p>
+
+  <!-- Imagen estática clicable -->
+  <a href="https://wmo.int/resources/dashboards/ocean-heat-content-0-2000m-1960-2024"
+     target="_blank" rel="noopener">
+    <figure>
+      <img src="assets/img/ohc-0-2000m-1960-2024.png"
+           alt="Gráfico WMO: Ocean heat content 0–2000 m, 1960–2024 (diferencia vs 2005–2020)" />
+      <figcaption>
+        Fuente: WMO – Ocean heat content 0–2000 m (clic para ver interactivo en wmo.int)
+      </figcaption>
+    </figure>
+  </a>
+
+  <!-- Enlace de refuerzo -->
+  <p class="small">
+    Ver en WMO: 
+    <a href="https://wmo.int/resources/dashboards/ocean-heat-content-0-2000m-1960-2024"
+       target="_blank" rel="noopener">wmo.int/resources/dashboards/ocean-heat-content-0-2000m-1960-2024</a>
+  </p>
+
+  <h2>Our World in Data</h2>
+  <p><strong>Anomalías anuales de la temperatura de la superficie del mar (periodo preindustrial)</strong></p>
+  <p class="small">Fuente: 
+    <a href="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly" target="_blank">
+    OWID – Sea Surface Temperature Anomaly</a>
+  </p>
+  <iframe src="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly" loading="lazy"></iframe>
+
+  <p><strong>Monthly average surface temperatures by year</strong></p>
+  <p class="small">Fuente: 
+    <a href="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year" target="_blank">
+    OWID – Monthly Surface Temperatures</a>
+  </p>
+  <iframe src="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year" loading="lazy"></iframe>
+
+</body>
+</html>

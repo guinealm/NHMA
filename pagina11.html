@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1.1 Temperatura Global – Cambio Climático</title>
+  <meta name="description" content="Indicadores y gráficos oficiales de temperatura global. Anomalías anuales, patrón mensual, fuentes WMO, NASA/NOAA y Our World in Data." />
+  <style>
+    :root{
+      --bg:#000000; --text:#222; --muted:#666; --brand:#004466; --card:#fff; --line:#ddd; --accent:#cc0000;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#111417; --text:#e8e8e8; --muted:#b8b8b8; --brand:#2aa3ff; --card:#171a1f; --line:#2a2f36; --accent:#ff5b5b; }
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif; background:var(--bg); color:var(--text); line-height:1.6}
+    header{background:var(--brand); color:#fff}
+    .wrap{max-width:960px; margin:0 auto; padding:1.25rem}
+    .site-title{margin:.25rem 0 .5rem; font-size:1.4rem; font-weight:700}
+    nav a{color:#fff; text-decoration:none; margin-right:1rem; font-size:.95rem; opacity:.95}
+    nav a:hover, nav a[aria-current="page"]{text-decoration:underline; opacity:1}
+    main{background:var(--card); margin:1rem auto 2rem; border:1px solid var(--line); border-radius:12px; padding:2rem}
+    h1{font-size:2rem; margin:0 0 .75rem; border-bottom:2px solid var(--line); padding-bottom:.5rem}
+    h2{font-size:1.2rem; margin:2rem 0 .5rem}
+    p.lead{font-size:1.05rem; color:var(--text)}
+    .breadcrumbs{font-size:.9rem; color:#cfeaff; margin:.25rem 0 .5rem}
+    .breadcrumbs a{color:#e6f4ff; text-decoration:underline}
+    figure{margin:1rem 0; padding:1rem; border:1px solid var(--line); border-radius:10px; background:transparent}
+    iframe{width:100%; height:520px; border:0}
+    figcaption{font-size:.95rem; color:var(--muted); margin-top:.5rem}
+    .alert{background:rgba(255,91,91,.08); border-left:5px solid var(--accent); padding:1rem; border-radius:8px; margin:2rem 0}
+    .meta{font-size:.9rem; color:var(--muted)}
+    footer{color:var(--muted); text-align:center; padding:1.5rem 1rem}
+    .toplink{position:fixed; right:14px; bottom:14px; background:var(--brand); color:#fff; padding:.6rem .8rem; border-radius:999px; text-decoration:none; font-weight:600}
+    .toplink:hover{opacity:.9}
+    /* Enlaces externos visuales (opcional) */
+    a[target="_blank"]::after{content:"↗"; margin-left:.25em; font-size:.85em; opacity:.75}
+  </style>
+</head>
+<body>
+
+
+
+<main id="contenido">
+  <div class="meta breadcrumbs">
+    <a href="index.html">Inicio</a> › <a href="pagina1.html">1. ¿Está cambiando?</a> › <span aria-current="page">1.1 Temperatura Global</span>
+  </div>
+
+  <h1>Temperatura Global</h1>
+  <p class="lead">
+    La temperatura media de la Tierra ha aumentado de forma clara desde la era preindustrial (1850–1900). Este indicador resume el calentamiento del sistema climático y se elabora con datos de agencias como
+    NASA, NOAA y la OMM (WMO).
+  </p>
+
+  <!-- Gráfico 1: Anomalías anuales (OWID) -->
+  <h2>Anomalías anuales de temperatura global</h2>
+  <figure>
+    <iframe
+      src="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart"
+      loading="lazy"
+      title="Our World in Data – Anomalías anuales de temperatura global">
+    </iframe>
+    <figcaption>
+      Anomalías anuales respecto a la línea base preindustrial. Fuente:
+      <a href="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart" target="_blank" rel="noopener">Our World in Data</a>
+      (datos de NASA/NOAA).
+      · <a href="https://ourworldindata.org/grapher/temperature-anomaly.csv" target="_blank" rel="noopener">Descargar datos (CSV)</a>
+    </figcaption>
+    <noscript>
+      Para ver el gráfico necesitas tener JavaScript activado. Puedes abrirlo aquí:
+      <a href="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart" target="_blank" rel="noopener">OWID – temperature-anomaly</a>.
+    </noscript>
+  </figure>
+
+  <!-- Gráfico 2: Patrón mensual por año (OWID) -->
+  <h2>Temperatura media mensual por año</h2>
+  <figure>
+    <iframe
+      src="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year?tab=chart"
+      loading="lazy"
+      title="Our World in Data – Temperatura media mensual por año (global)">
+    </iframe>
+    <figcaption>
+      Evolución mensual (todos los años) para visualizar el patrón estacional y los años recientes.
+      Fuente:
+      <a href="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year?tab=chart" target="_blank" rel="noopener">Our World in Data</a>
+      · <a href="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year.csv" target="_blank" rel="noopener">Descargar datos (CSV)</a>
+    </figcaption>
+  </figure>
+
+  <!-- Recurso 3: Serie oficial OMM (enlace externo) -->
+  <h2>Serie oficial 1850–presente (OMM/WMO)</h2>
+  <p>
+    Consulta la visualización oficial de la Organización Meteorológica Mundial:
+    <a href="https://wmo.int/resources/dashboards/global-mean-temperature-1850-2024" target="_blank" rel="noopener">
+      WMO – Global mean temperature 1850–2024
+    </a>.
+    (Los paneles de la OMM pueden actualizarse con nuevos años en cuanto están disponibles.)
+  </p>
+
+  <!-- Aviso/urgencia serena -->
+  <div class="alert" role="note" aria-label="Advertencia 1.5 °C">
+    <strong>Advertencia:</strong> superar de forma sostenida el umbral de <strong>+1,5 °C</strong> frente a 1850–1900 incrementa los riesgos
+    para ecosistemas, salud y seguridad alimentaria. Sigue las fuentes oficiales para el estado más reciente.
+  </div>
+
+  <p class="meta">
+    Estas visualizaciones se cargan directamente desde sus fuentes (OWID/WMO). Si alguna no aparece, abre los enlaces “Ver gráfico” y “CSV”.
+  </p>
+  
+  <p class="meta">
+    OTRAS FUENTES
+  </p>  
+  
+    <p class="meta">
+    Average monthly surface temperature, Sep 15, 2025 ourworldindata https://ourworldindata.org/grapher/average-monthly-surface-temperature
+  
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Fuentes: NASA GISTEMP · NOAA · WMO · Copernicus C3S · Our World in Data.</div>
+    <div>© Tu Sitio. Esta página es estática; los iframes se actualizan desde la fuente original.</div>
+  </div>
+</footer>
+
+<a class="toplink" href="#contenido" aria-label="Volver arriba">↑</a>
+
+</body>
+</html>

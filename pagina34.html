@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3.4 · Procesos industriales</title>
+  <meta name="description" content="Estructura base para la página 3.4 Procesos industriales: secciones, anclas y placeholders para datos y gráficos." />
+  <style>
+    :root{
+      --bg:#0b0e11; --card:#131820; --muted:#8aa0b3; --text:#e8f0f7;
+      --accent:#62b0ff; --accent-2:#93e5ab; --warn:#ffc857; --danger:#ff6b6b;
+      --max:1100px; --radius:16px;
+    }
+    html{scroll-behavior:smooth;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+         background:var(--bg);color:var(--text);line-height:1.55;}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--max);margin-inline:auto;padding:24px}
+    header{background:linear-gradient(180deg,#0b0e11 0%, #0b0e11cc 60%, transparent 100%), url('assets/img/placeholder-industria.jpg') center/cover no-repeat;}
+    .hero{padding:64px 0 28px}
+    .hero h1{font-size:clamp(28px,3.2vw,40px);margin:0 0 8px}
+    .hero p{margin:4px 0 0;color:var(--muted)}
+    .breadcrumbs{font-size:14px;color:var(--muted);margin-bottom:12px}
+    .breadcrumbs a{color:var(--muted)}
+    .chipbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .chip{border:1px solid #223044;background:#0f141b;color:var(--text);padding:8px 12px;border-radius:999px;font-size:13px}
+
+    /* Layout con TOC pegajoso */
+    .layout{display:grid;grid-template-columns:280px 1fr;gap:24px}
+    @media (max-width: 980px){.layout{grid-template-columns:1fr}}
+    aside.toc{position:sticky;top:12px;align-self:start;background:var(--card);border-radius:var(--radius);padding:16px}
+    .toc h3{margin:0 0 8px;font-size:16px}
+    .toc nav a{display:block;padding:8px 10px;border-radius:8px;color:var(--muted)}
+    .toc nav a:hover{background:#1a2230;color:var(--text)}
+    .toc .group{margin:10px 0 0}
+    .toc small{color:var(--muted)}
+
+    section{background:var(--card);border-radius:var(--radius);padding:20px;margin-bottom:18px}
+    section h2{margin:0 0 10px;font-size:22px}
+    section h3{margin:14px 0 8px;font-size:18px}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    @media (max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+    .kpi{background:#0f141b;border:1px solid #223044;border-radius:12px;padding:14px}
+    .kpi .label{color:var(--muted);font-size:12px}
+    .kpi .value{font-size:22px;margin-top:6px}
+    .note{background:#10212b;border-left:3px solid var(--accent);padding:10px;border-radius:8px;color:#cfe9ff}
+    .warn{background:#2a210f;border-left:3px solid var(--warn);color:#ffe8b3}
+
+    /* Gráficos/figuras placeholder */
+    figure{background:#0f141b;border:1px dashed #2e3b4a;border-radius:12px;padding:14px;margin:12px 0}
+    figure .chart{height:260px;background:repeating-linear-gradient(
+        -45deg,#111a22,#111a22 12px,#0d141a 12px,#0d141a 24px);
+        border-radius:8px;display:flex;align-items:center;justify-content:center;color:#5c7a94}
+    figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+
+    /* Grid de palancas */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    @media (max-width:900px){.grid-3{grid-template-columns:1fr}}
+
+    /* Sectores: patrón repetible */
+    .sector{border:1px solid #223044}
+    .badge{display:inline-block;background:#0f141b;border:1px solid #223044;border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted)}
+    .sector-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:14px}
+    @media (max-width:980px){.sector-grid{grid-template-columns:1fr}}
+    .list{padding-left:18px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .btn{display:inline-block;background:#162232;color:#d9edff;border:1px solid #2d4663;border-radius:10px;padding:8px 12px;font-size:14px}
+    .btn:hover{filter:brightness(1.1)}
+    .footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
+
+    .toplink{position:fixed;right:14px;bottom:14px;background:#162232;border:1px solid #2d4663;color:#d9edff;
+             padding:10px 12px;border-radius:12px;font-size:13px;box-shadow:0 6px 18px #0006}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container hero">
+      <nav class="breadcrumbs">
+        <!-- Ajusta rutas según tu árbol -->
+        <a href="index.html">Menú</a> › <a href="pagina3.html">3 · ¿Por qué está cambiando?</a> › <a href="pagina32.html">3.2 · Sectores</a> › <strong>3.4 · Procesos industriales</strong>
+      </nav>
+      <h1>3.4 · Procesos industriales</h1>
+      <p>El calor es el corazón de las emisiones: combustión para calor de proceso y emisiones intrínsecas (p. ej., clínker en cemento).</p>
+      <div class="chipbar">
+        <span class="chip">Plantilla · v1 (estructura)</span>
+        <a class="chip" href="#data-fuentes">Data / Fuentes</a>
+        <a class="chip" href="#acciones">Medidas</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container layout">
+
+    <!-- TOC pegajoso -->
+    <aside class="toc">
+      <h3>Contenido</h3>
+      <nav>
+        <a href="#tldr">TL;DR</a>
+        <a href="#kpis">KPIs</a>
+        <a href="#marco-energia">Qué energía usa la industria</a>
+        <a href="#palancas">Palancas de descarbonización</a>
+        <div class="group">
+          <small>Sectores</small>
+          <a href="#acero">Acero</a>
+          <a href="#aluminio">Aluminio</a>
+          <a href="#quimicos">Químicos</a>
+          <a href="#cemento">Cemento</a>
+          <a href="#papel">Papel</a>
+          <a href="#mineria">Minería</a>
+          <a href="#industria-ligera">Industria ligera</a>
+          <a href="#data-centers">Data centers</a>
+        </div>
+        <a href="#casos">Casos prácticos</a>
+        <a href="#riesgos">Riesgos y límites</a>
+        <a href="#acciones">¿Qué hacer?</a>
+        <a href="#data-fuentes">Data · Fuentes · Descargas</a>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+      <!-- TL;DR -->
+      <section id="tldr" aria-labelledby="tldr-title">
+        <h2 id="tldr-title">TL;DR</h2>
+        <ul class="list">
+          <li><strong>Dónde se emite:</strong> combustión para calor (baja/med/alta T) y emisiones intrínsecas de proceso (cemento/químicos).</li>
+          <li><strong>Palancas:</strong> eficiencia, electrificación del calor, H₂, calor renovable, biomasa sostenible, CCUS, circularidad.</li>
+          <li><strong>Dependencia del sistema eléctrico:</strong> redes, almacenamiento y despacho renovable (ver 3.2.3).</li>
+          <li><strong>Métricas que importan:</strong> % calor electrificado, factor clínker, % chatarra en acero, intensidad energética y de carbono.</li>
+        </ul>
+        <p class="note">Coloca aquí un resumen de 4 viñetas máximo. Mantenerlo simple, accionable y con cifras redondas cuando estén listas.</p>
+      </section>
+
+      <!-- KPIs -->
+      <section id="kpis" aria-labelledby="kpis-title">
+        <h2 id="kpis-title">Panel de KPIs</h2>
+        <div class="kpis">
+          <div class="kpi"><div class="label">% emisiones globales (Industria, Scope 1/2)</div><div class="value">—</div></div>
+          <div class="kpi"><div class="label">Mix energético industrial (Electricidad / Combustibles / Biomasa)</div><div class="value">—</div></div>
+          <div class="kpi"><div class="label">Peso de subsectores (emisiones/energía)</div><div class="value">—</div></div>
+          <div class="kpi"><div class="label">Intensidad energética / de carbono</div><div class="value">—</div></div>
+        </div>
+        <figure aria-label="Gráfico: reparto energético por sector">
+          <div class="chart">[Placeholder gráfico · barras 100% por sector]</div>
+          <figcaption>Reparto electricidad/combustibles/biomasa por sector. <!-- Inserta iframe/OWID u otro embed cuando esté decidido. --></figcaption>
+        </figure>
+      </section>
+
+      <!-- Marco energía -->
+      <section id="marco-energia" aria-labelledby="marco-title">
+        <h2 id="marco-title">Qué energía usa la industria</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>Componentes</h3>
+            <ul class="list">
+              <li>Electricidad (motores, bombas, hornos eléctricos, etc.).</li>
+              <li>Calor de proceso (baja/med/alta T) — definir rangos.</li>
+              <li>Biomasa/residuos: usos y límites.</li>
+              <li>Emisiones “de proceso” (p. ej., clínker, cal, químicos).</li>
+            </ul>
+            <p class="note">Añade aquí una nota metodológica breve: Scope 1/2/3 y criterios de conteo.</p>
+          </div>
+          <div>
+            <figure>
+              <div class="chart">[Placeholder · diagrama tipos de calor]</div>
+              <figcaption>Mapa de usos energéticos por rango de temperatura.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Palancas -->
+      <section id="palancas" aria-labelledby="palancas-title">
+        <h2 id="palancas-title">Palancas de descarbonización</h2>
+        <div class="grid-3">
+          <div>
+            <h3>Eficiencia</h3>
+            <ul class="list">
+              <li>Motores de alta eficiencia, variadores, control digital.</li>
+              <li>Recuperación de calor, aislamiento, procesos continuos.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Electrificación del calor</h3>
+            <ul class="list">
+              <li>Resistivo/inducción, hornos eléctricos, bombas de calor industriales.</li>
+              <li>Integración con redes renovables y almacenamiento térmico.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Hidrógeno</h3>
+            <ul class="list">
+              <li>Reducción directa de hierro (DRI), alta T donde es difícil electrificar.</li>
+              <li>Requisitos de H₂ bajo en carbono y suministro.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Calor renovable</h3>
+            <ul class="list">
+              <li>Solar térmica, geotermia, redes de calor/frío.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Biomasa y residuos</h3>
+            <ul class="list">
+              <li>Criterios de sostenibilidad y competencia de usos.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>CCUS y circularidad</h3>
+            <ul class="list">
+              <li>Captura en procesos inevitables (cemento).</li>
+              <li>Menos material virgen, reciclaje de alta calidad, diseño para reciclar.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Sectores (patrón repetible) ===== -->
+      <!-- Copia/pega este bloque y ajusta IDs para cada sector -->
+      <section id="acero" class="sector" aria-labelledby="acero-title">
+        <div class="actions">
+          <span class="badge">Sector</span>
+          <a class="btn" href="#palancas">Ver palancas</a>
+          <a class="btn" href="#data-fuentes">Fuentes</a>
+        </div>
+        <h2 id="acero-title">Acero</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3>
+            <p><!-- Texto breve: procesos principales (alto horno, BOF; horno de arco EAF con chatarra) --></p>
+            <h3>(B) Dónde emite</h3>
+            <ul class="list">
+              <li>Combustión (coque/hornos).</li>
+              <li>Proceso (reducción del mineral).</li>
+            </ul>
+            <h3>(C) Palancas</h3>
+            <ul class="list">
+              <li>DRI + H₂, EAF con mayor % chatarra.</li>
+              <li>Eficiencia, electrificación, captura donde aplique.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores / Gráficos</h3>
+            <figure>
+              <div class="chart">[Placeholder · % electricidad/combustibles/biomasa]</div>
+              <figcaption>Mix energético del acero.</figcaption>
+            </figure>
+            <figure>
+              <div class="chart">[Placeholder · % chatarra / producción EAF vs BOF]</div>
+              <figcaption>Indicadores de circularidad y ruta tecnológica.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="aluminio" class="sector" aria-labelledby="aluminio-title">
+        <div class="actions">
+          <span class="badge">Sector</span>
+          <a class="btn" href="#palancas">Ver palancas</a>
+          <a class="btn" href="#data-fuentes">Fuentes</a>
+        </div>
+        <h2 id="aluminio-title">Aluminio</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3>
+            <p><!-- Electrólisis primaria, gran intensidad eléctrica. Reciclaje con menor huella. --></p>
+            <h3>(B) Dónde emite</h3>
+            <ul class="list"><li>Electricidad (intensiva), combustión en procesos térmicos auxiliares.</li></ul>
+            <h3>(C) Palancas</h3>
+            <ul class="list"><li>PPA 24/7 renovable, mejoras de celdas, reciclaje.</li></ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores / Gráficos</h3>
+            <figure><div class="chart">[Placeholder · kWh/t · % reciclaje]</div><figcaption>Intensidad e importancia del reciclaje.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="quimicos" class="sector" aria-labelledby="quimicos-title">
+        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
+        <h2 id="quimicos-title">Químicos</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3><p><!-- Amoniaco, etileno, metanol, etc. --></p>
+            <h3>(B) Dónde emite</h3><ul class="list"><li>Combustión y materias primas fósiles (feedstock).</li></ul>
+            <h3>(C) Palancas</h3><ul class="list"><li>Electrificación, H₂ bajo en C, captura en reformado, rutas eléctricas (e-crackers).</li></ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores</h3>
+            <figure><div class="chart">[Placeholder · emisiones por producto clave]</div><figcaption>Distribución de emisiones por productos.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="cemento" class="sector" aria-labelledby="cemento-title">
+        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
+        <h2 id="cemento-title">Cemento</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3><p><!-- Producción de clínker, molienda, hornos rotatorios. --></p>
+            <h3>(B) Dónde emite</h3><ul class="list"><li>Proceso (descarbonatación) y combustión.</li></ul>
+            <h3>(C) Palancas</h3>
+            <ul class="list">
+              <li>Reducir factor clínker (LC3, adiciones), eficiencia, combustibles bajos en C.</li>
+              <li>CCUS donde el proceso es intrínsecamente emisor.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores</h3>
+            <figure><div class="chart">[Placeholder · factor clínker · tCO₂/t cemento]</div><figcaption>Indicadores clave en cemento.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="papel" class="sector" aria-labelledby="papel-title">
+        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
+        <h2 id="papel-title">Papel</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3><p><!-- Pulp & paper, uso de biomasa (licor negro). --></p>
+            <h3>(B) Dónde emite</h3><ul class="list"><li>Calor de proceso y electricidad.</li></ul>
+            <h3>(C) Palancas</h3><ul class="list"><li>Mejoras de calderas, CHP renovable, eficiencia, reciclaje de fibra.</li></ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores</h3>
+            <figure><div class="chart">[Placeholder · % biomasa · intensidad]</div><figcaption>Rol de biomasa y eficiencia.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="mineria" class="sector" aria-labelledby="mineria-title">
+        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
+        <h2 id="mineria-title">Minería</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3><p><!-- Extracción, trituración, transporte (diésel). --></p>
+            <h3>(B) Dónde emite</h3><ul class="list"><li>Equipos móviles (diésel) y electricidad para molienda/bombeo.</li></ul>
+            <h3>(C) Palancas</h3><ul class="list"><li>Electrificación flota, trolley-assist, renovables in situ, eficiencia.</li></ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores</h3>
+            <figure><div class="chart">[Placeholder · % flota electrificada]</div><figcaption>Transición energética en equipos móviles.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="industria-ligera" class="sector" aria-labelledby="industria-ligera-title">
+        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
+        <h2 id="industria-ligera-title">Industria ligera</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3><p><!-- Alimentos y bebidas, textil, etc. --></p>
+            <h3>(B) Dónde emite</h3><ul class="list"><li>Calor baja/med T, hornos, vapor.</li></ul>
+            <h3>(C) Palancas</h3><ul class="list"><li>Bombas de calor, hornos eléctricos, gestión de vapor, recuperación de calor.</li></ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores</h3>
+            <figure><div class="chart">[Placeholder · % calor electrificado]</div><figcaption>Progreso en electrificación del calor.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-centers" class="sector" aria-labelledby="data-centers-title">
+        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
+        <h2 id="data-centers-title">Data centers</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>(A) Hoy</h3><p><!-- Electricidad casi 100%; gestión térmica. --></p>
+            <h3>(B) Dónde emite</h3><ul class="list"><li>Electricidad (mix de red) y refrigeración.</li></ul>
+            <h3>(C) Palancas</h3><ul class="list"><li>Eficiencia (PUE), PPAs 24/7, recuperación de calor a redes.</li></ul>
+          </div>
+          <div>
+            <h3>(D) Indicadores</h3>
+            <figure><div class="chart">[Placeholder · PUE · % 24/7]</div><figcaption>Indicadores de eficiencia y contratación energética.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Fin de sectores ===== -->
+
+      <!-- Casos prácticos -->
+      <section id="casos" aria-labelledby="casos-title">
+        <h2 id="casos-title">Casos prácticos</h2>
+        <div class="grid-3">
+          <div>
+            <h3>Acero DRI + H₂</h3>
+            <p><!-- Resumen del caso, cifras clave, estado del proyecto. --></p>
+          </div>
+          <div>
+            <h3>Cemento con menor factor clínker + CCUS</h3>
+            <p><!-- Resumen del caso, cifras clave, estado del proyecto. --></p>
+          </div>
+          <div>
+            <h3>Data center 24/7 + recuperación de calor</h3>
+            <p><!-- Resumen del caso, cifras clave, estado del proyecto. --></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Riesgos -->
+      <section id="riesgos" aria-labelledby="riesgos-title">
+        <h2 id="riesgos-title">Riesgos, límites y trampas</h2>
+        <ul class="list">
+          <li>Offshoring y fuga de carbono vs. reducción real.</li>
+          <li>Biomasa limitada / sostenibilidad y competencia de usos.</li>
+          <li>Fugas de metano en gas y feedstocks.</li>
+          <li>“Capturar todo” vs. evitar emisiones en origen.</li>
+          <li>Dependencia de redes/almacenamiento (ver 3.2.3).</li>
+        </ul>
+        <p class="warn">Añade aquí advertencias y notas de calidad de datos cuando estén definidas.</p>
+      </section>
+
+      <!-- Acciones -->
+      <section id="acciones" aria-labelledby="acciones-title">
+        <h2 id="acciones-title">¿Qué tiene que hacerse?</h2>
+        <div class="sector-grid">
+          <div>
+            <h3>Políticas</h3>
+            <ul class="list">
+              <li>Estándares de producto, compras públicas verdes.</li>
+              <li>Precio al carbono / ajuste en frontera.</li>
+              <li>Apoyo a I+D y demostradores.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Empresas y personas</h3>
+            <ul class="list">
+              <li>Auditoría energética, plan de electrificación, PPAs renovables.</li>
+              <li>Pilotos H₂/CCUS donde aplique, circularidad, reporting Scope 1–2–3.</li>
+              <li>Consumidores: priorizar productos de baja huella, reparar, reutilizar.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data / Fuentes -->
+      <section id="data-fuentes" aria-labelledby="fuentes-title">
+        <h2 id="fuentes-title">Data · Fuentes · Descargas</h2>
+        <ul class="list">
+          <li><!-- IEA, REN21, EIA, OWID… Añadir enlaces y notas metodológicas. --></li>
+          <li><!-- Explicar año base, cobertura, definición de sectores y de “proceso”. --></li>
+        </ul>
+        <figure>
+          <div class="chart">[Placeholder · tabla-resumen descargable]</div>
+          <figcaption>Botones de descarga (CSV/PNG/JSON) cuando estén listos.</figcaption>
+        </figure>
+        <div class="actions">
+          <a class="btn" href="#">Descargar CSV</a>
+          <a class="btn" href="#">Descargar PNG</a>
+        </div>
+      </section>
+
+      <!-- Navegación cruzada -->
+      <section aria-labelledby="nav-title">
+        <h2 id="nav-title">Navegación</h2>
+        <div class="actions">
+          <a class="btn" href="pagina32.html">← Volver a 3.2 · Sectores</a>
+          <a class="btn" href="pagina323.html">3.2.3 · Generación de energía</a>
+          <a class="btn" href="pagina321.html">3.2.1 · Transporte</a>
+          <a class="btn" href="pagina322.html">3.2.2 · Edificios</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <a class="toplink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Arriba</a>
+
+  <footer class="footer">
+    <div class="container">
+      v1 (estructura). Rellena textos, añade iframes/embeds y conecta descargas cuando estén listos.
+    </div>
+  </footer>
+
+</body>
+</html>

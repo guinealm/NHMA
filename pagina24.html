@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2.4 · Impacto Económico — Cambio climático</title>
+  <meta name="description" content="Costes y pérdidas económicas asociadas a eventos meteorológicos y climáticos extremos. Gráficos interactivos de EEA, Eurostat y Our World in Data." />
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card: #111520;
+      --text: #e6e6e6;
+      --muted: #9aa4b2;
+      --accent: #4cc9f0;
+      --ok: #2ecc71; --warn: #f39c12; --bad: #e74c3c;
+    }
+    html,body {margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--text); background: var(--bg);} 
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #1c2233; background: linear-gradient(180deg, rgba(76,201,240,0.08), transparent 60%); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 1.25rem 1rem; }
+    h1 { font-size: clamp(1.6rem, 2.4vw, 2.2rem); margin: 0.25rem 0 0.5rem; }
+    h2 { font-size: clamp(1.2rem, 1.8vw, 1.6rem); margin: 1.5rem 0 0.5rem; }
+    p { color: var(--text); line-height: 1.55; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--card); border: 1px solid #1b2030; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.25); }
+    .card > header { padding: .8rem 1rem; border-bottom: 1px solid #1c2233; background: #0e1320; }
+    .card h3 { margin: 0; font-size: 1rem; }
+    .card .body { padding: .8rem 1rem 1rem; }
+    iframe { width: 100%; height: 520px; border: 0; background: #0a0f1a; }
+    .note { font-size: .92rem; margin-top: .5rem; }
+    .pill { display: inline-block; padding: .18rem .5rem; border-radius: 999px; font-size: .78rem; letter-spacing: .02em; background: #1a2131; color: var(--muted); border: 1px solid #242b3d; }
+    .nav { display:flex; gap:.75rem; flex-wrap: wrap; align-items:center; }
+    .nav a { padding: .35rem .6rem; border:1px solid #1f2740; border-radius: 999px; background:#0f1422; }
+    .sources { font-size: .95rem; }
+    .sources li { margin:.25rem 0; }
+    .small { font-size: .9rem; }
+    footer { border-top: 1px solid #1c2233; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a href="index.html" title="Inicio">← Inicio</a>
+        <a href="pagina2.html" title="Sección 2: ¿Hace daño?">Sección 2: ¿Hace daño?</a>
+        <span class="pill">2.4 · Impacto Económico</span>
+      </div>
+      <h1>2.4 · Impacto Económico</h1>
+      <p class="muted small">Costes y pérdidas económicas asociados a extremos meteorológicos y climáticos. Página con gráficos interactivos (EEA, OWID). <span class="pill">Actualizado: 15·09·2025</span></p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <header><h3>Pérdidas económicas en Europa (EEA)</h3></header>
+      <div class="body">
+        <p>Panel oficial de la Agencia Europea de Medio Ambiente (EEA) sobre pérdidas económicas por eventos meteorológicos y climáticos extremos en Europa (1980–2023). Si no se carga, usa el enlace directo.</p>
+        <!-- EEA – Economic losses (Tableau) -->
+        <iframe 
+          src="https://tableau-public.discomap.eea.europa.eu/views/Economic_losses_StandAlone_2025Q2/Economic_Losses?:showVizHome=no&:embed=true"
+          loading="lazy" allowfullscreen title="EEA · Economic losses from climate-related extremes in Europe"></iframe>
+        <p class="note muted">
+          Enlace alternativo (abre en pestaña nueva):
+          <a href="https://tableau-public.discomap.eea.europa.eu/views/Economic_losses_StandAlone_2025Q2/Economic_Losses" target="_blank" rel="noopener">EEA · Economic losses dashboard</a> ·
+          <a href="https://www.eea.europa.eu/en/datahub/datahubitem-view/77389680-ecd2-4f56-926f-8106061a5570" target="_blank" rel="noopener">Ficha y descarga de datos (1980–2023)</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="grid" style="margin-top:1rem;">
+      <section class="card">
+        <header><h3>Daños económicos por tipo de desastre (mundo)</h3></header>
+        <div class="body">
+          <p>Desglose global por tipo de evento (inundaciones, tormentas, sequías, etc.). Fuente: Our World in Data (EM‑DAT).</p>
+          <!-- OWID – Economic damage by natural disaster type (stacked) -->
+          <iframe 
+            src="https://ourworldindata.org/grapher/economic-damage-from-natural-disasters?tab=chart&stackMode=relative"
+            loading="lazy" title="OWID · Economic damage by natural disaster type"></iframe>
+          <p class="note muted">Puedes pasar el cursor por la leyenda para activar/desactivar categorías, o descargar los datos desde el icono de la esquina superior derecha.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <header><h3>Daños como % del PIB (países seleccionados)</h3></header>
+        <div class="body">
+          <p>Comparación temporal de los daños reportados como porcentaje del PIB. Cambia países con el selector del gráfico.</p>
+          <!-- OWID – Damages as % of GDP (countries) -->
+          <iframe 
+            src="https://ourworldindata.org/grapher/economic-damages-from-natural-disasters-as-a-share-of-gdp?tab=chart&country=Spain~France~Germany~Italy"
+            loading="lazy" title="OWID · Economic damages from disasters as share of GDP"></iframe>
+          <p class="note muted">Este indicador se ve afectado por sub‑registro en algunos países y años. Úsalo como aproximación comparativa.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:1rem;">
+      <header><h3>Cómo leer estos gráficos</h3></header>
+      <div class="body">
+        <ul class="small">
+          <li><strong>Variabilidad anual alta:</strong> un año con eventos extremos puede dominar la serie. Prioriza medias móviles o tramos largos.</li>
+          <li><strong>Brecha de aseguramiento:</strong> gran parte de las pérdidas no está asegurada, por lo que el coste privado y público no coincide con las pérdidas totales.</li>
+          <li><strong>Sub‑registro:</strong> las bases EM‑DAT y otras pueden infraestimar daños, especialmente en países con menor capacidad estadística.</li>
+          <li><strong>Inflación y crecimiento:</strong> compara en % del PIB o usa series ajustadas para evitar sesgos por mayor riqueza nominal.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card sources" style="margin-top:1rem;">
+      <header><h3>Fuentes y enlaces (para ampliar)</h3></header>
+      <div class="body">
+        <ul>
+          <li>EEA · <a href="https://www.eea.europa.eu/en/analysis/indicators/economic-losses-from-climate-related" target="_blank" rel="noopener">Indicador y análisis: pérdidas económicas por extremos climáticos en Europa</a></li>
+          <li>EEA Datahub · <a href="https://www.eea.europa.eu/en/datahub/datahubitem-view/77389680-ecd2-4f56-926f-8106061a5570" target="_blank" rel="noopener">Economic losses from climate-related extremes in Europe (dataset 1980–2023)</a></li>
+          <li>Eurostat · <a href="https://ec.europa.eu/eurostat/databrowser/view/sdg_13_40/default/table" target="_blank" rel="noopener">SDG 13.40 Climate-related economic losses</a></li>
+          <li>OWID · <a href="https://ourworldindata.org/natural-disasters" target="_blank" rel="noopener">Natural Disasters — metodología y datasets</a></li>
+        </ul>
+        <p class="muted small">Esta página prioriza datos oficiales europeos (EEA/Eurostat) y series globales (OWID/EM‑DAT) para dar contexto. Si algún <em>iframe</em> no carga por restricciones del navegador, usa los enlaces alternativos.</p>
+      </div>
+    </section>
+
+    <nav class="wrap" aria-label="Paginación sección 2" style="padding: 1rem 0 0;">
+      <div class="nav">
+        <a href="pagina23.html">← 2.3 · Salud</a>
+        <a href="pagina25.html">2.5 · Ecosistemas →</a>
+      </div>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="wrap small muted">
+      © 2025 · Datos y gráficos: EEA, Eurostat, Our World in Data · Licencias de datos según cada fuente.
+    </div>
+  </footer>
+</body>
+</html>

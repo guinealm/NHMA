@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1.5. Concentración de CO₂</title>
+  <meta name="description" content="Evolución de la concentración de CO₂ atmosférico: series paleoclimáticas y registro instrumental moderno.">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5;margin:0;color:#111}
+    header,section{max-width:1100px;margin:0 auto;padding:1.25rem}
+    h1{font-size:clamp(1.6rem,2.2vw,2.2rem);margin:0.2rem 0 0.8rem}
+    h2{font-size:clamp(1.2rem,1.8vw,1.6rem);margin:1.6rem 0 0.6rem}
+    p{margin:0.2rem 0 0.8rem}
+    .card{background:#fafafa;border:1px solid #eee;border-radius:14px;padding:1rem;margin:0.8rem 0}
+    .iframe-wrap{position:relative;width:100%;height:0;padding-bottom:62%; /* 16:10 aprox */ border-radius:10px;overflow:hidden;border:1px solid #e9e9e9;background:#fff}
+    .iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .btns{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.4rem}
+    .btn{display:inline-block;padding:.55rem .8rem;border-radius:10px;border:1px solid #e5e5e5;background:#fff;text-decoration:none;color:#111;font-weight:600}
+    .small{font-size:.92rem;color:#444}
+    footer{max-width:1100px;margin:0 auto;padding:0 1.25rem 2rem;color:#555}
+    .note{font-size:.9rem;color:#555}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>1.4. Concentración de CO₂</h1>
+  <p class="small">
+    La concentración de dióxido de carbono (CO₂) en la atmósfera es un “vital sign” del sistema climático.
+    El registro moderno muestra valores superiores a <strong>420&nbsp;ppm</strong> en los últimos años (Mauna Loa, NOAA).
+  </p>
+</header>
+
+<section>
+  <h2>Serie larga (paleoclima → presente)</h2>
+  <div class="card">
+    <p class="note">Reconstrucciones a partir de testigos de hielo y mediciones modernas. Explora con el ratón o toca para ver valores.</p>
+    <div class="iframe-wrap">
+      <iframe 
+        src="https://ourworldindata.org/grapher/co2-long-term-concentration?tab=chart&stackMode=absolute&region=~OWID_WRL"
+        loading="lazy" 
+        allow="web-share; clipboard-write">
+      </iframe>
+    </div>
+    <div class="btns">
+      <a class="btn" href="https://ourworldindata.org/co2-and-greenhouse-gas-emissions" target="_blank" rel="noopener">Ficha OWID</a>
+      <a class="btn" href="https://ourworldindata.org/grapher/co2-long-term-concentration" target="_blank" rel="noopener">Abrir gráfico</a>
+    </div>
+    <p class="small">Fuente: Our World in Data (compilación de reconstrucciones paleoclimáticas y estaciones modernas).</p>
+  </div>
+</section>
+
+<section>
+  <h2>Registro instrumental reciente (global)</h2>
+  <div class="card">
+    <p class="note">Concentración atmosférica global (ppm). Útil para ver la tendencia reciente y la estacionalidad moderna.</p>
+    <div class="iframe-wrap">
+      <iframe 
+        src="https://ourworldindata.org/grapher/global-co2-concentration?tab=chart&stackMode=absolute&region=~OWID_WRL"
+        loading="lazy" 
+        allow="web-share; clipboard-write">
+      </iframe>
+    </div>
+    <div class="btns">
+      <a class="btn" href="https://ourworldindata.org/co2-and-greenhouse-gas-emissions" target="_blank" rel="noopener">Metadatos OWID</a>
+      <a class="btn" href="https://ourworldindata.org/grapher/global-co2-concentration" target="_blank" rel="noopener">Abrir gráfico</a>
+    </div>
+    <p class="small">Fuente: Our World in Data (series globales a partir de redes de observación).</p>
+  </div>
+</section>
+
+<section>
+  <h2>Observación directa (Mauna Loa)</h2>
+  <div class="card">
+    <p class="note">
+      La <em>Keeling Curve</em> (Mauna Loa, Hawái) es el registro continuo más largo de CO₂ desde 1958. Consulta el gráfico interactivo y los últimos datos diarios/mensuales:
+    </p>
+    <div class="btns">
+      <a class="btn" href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener">NOAA GML · Tendencias CO₂</a>
+      <a class="btn" href="https://gml.noaa.gov/ccgg/trends/monthly.html" target="_blank" rel="noopener">Datos mensuales / diarios</a>
+      <a class="btn" href="https://keelingcurve.ucsd.edu/" target="_blank" rel="noopener">Scripps · Keeling Curve</a>
+    </div>
+    <p class="small">Referencias: NOAA Global Monitoring Laboratory y Scripps CO₂ Program.</p>
+  </div>
+</section>
+
+<section>
+  <h2>NASA · Contexto visual</h2>
+  <div class="card">
+    <p class="note">Panel “vital signs” de NASA con CO₂ y otros indicadores climáticos (serie instrumental y paleoclima reciente):</p>
+    <div class="btns">
+      <a class="btn" href="https://climate.nasa.gov/vital-signs/carbon-dioxide/" target="_blank" rel="noopener">NASA Climate Dashboard: CO₂</a>
+    </div>
+    <p class="small">Fuente: NASA Climate Change.</p>
+  </div>
+</section>
+
+<footer>
+  <p class="note">
+    Nota: Si algún iframe no carga por políticas de terceros, puedes abrir el gráfico con el botón “Abrir gráfico”. 
+  </p>
+</footer>
+
+</body>
+</html>

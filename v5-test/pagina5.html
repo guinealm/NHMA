@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>5. ¿Qué puedo hacer yo? | Cambio Climático</title>
+  <meta name="description" content="Guía práctica y emocional para pasar de la preocupación a la acción: tus 3 acciones 80/20, cuidados en olas de calor e incendios, y plan personal descargable." />
+  <style>
+    :root{
+      --bg:#0b1020;           /* fondo oscuro, cómodo para noche */
+      --card:#121939;         /* tarjetas */
+      --muted:#9db3ff;        /* textos secundarios */
+      --text:#f5f7ff;         /* texto principal */
+      --accent:#4ade80;       /* verde acción */
+      --accent-2:#22d3ee;     /* cian suave */
+      --warning:#f59e0b;      /* calor/incendios */
+      --danger:#ef4444;       /* peligro */
+      --ok:#10b981;           /* ok */
+      --link:#93c5fd;         /* enlaces */
+      --shadow:0 8px 30px rgba(0,0,0,.35)
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(1200px 800px at 10% -10%,#1a2249 0%,#0b1020 55%), var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial}
+    a{color:var(--link)}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,16,32,.7);backdrop-filter:blur(6px);border-bottom:1px solid #23306d;z-index:50}
+    nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    nav .brand{display:flex;gap:10px;align-items:center}
+    .brand .logo{width:36px;height:36px;border-radius:50%;background:conic-gradient(from 220deg,#4ade80,#22d3ee,#93c5fd,#4ade80);box-shadow:0 0 0 3px #0b1020,0 0 20px rgba(147,197,253,.3)}
+    nav a{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--text)}
+    nav a:hover{background:#1a244f}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center;padding:30px 0}
+    .hero-card{background:linear-gradient(180deg,#121939,rgba(18,25,57,.6));border:1px solid #24306d;border-radius:16px;padding:26px;box-shadow:var(--shadow)}
+    .kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem}
+    h1{font-weight:800;line-height:1.15;margin:.2rem 0 1rem;font-size:clamp(28px,3.2vw,42px)}
+    .lead{font-size:1.1rem;color:#e9ecff}
+    .motivos{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .chip{display:inline-flex;gap:8px;align-items:center;padding:10px 12px;border:1px solid #2a387a;background:#0f1736;border-radius:999px;cursor:pointer;user-select:none}
+    .chip[aria-pressed="true"]{outline:2px solid var(--accent);background:#0d1a2e}
+    .metric{font-variant-numeric:tabular-nums}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{background:linear-gradient(180deg,#0f1736,#0c132b);border:1px solid #24306d;border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:6px 0 8px}
+    .tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:.78rem;border:1px solid #3350b7;color:#cfe0ff;background:#0b1538}
+    .tag.high{border-color:#1f8a4c;color:#b8f5d3}
+    .tag.med{border-color:#b3861f;color:#ffe2b3}
+    .tag.low{border-color:#5b5b5b;color:#d6d6d6}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:12px;border:1px solid #2a387a;background:#0f1736;color:var(--text);cursor:pointer;text-decoration:none}
+    .btn:hover{background:#162155}
+    .btn.primary{background:linear-gradient(180deg,#1b6f44,#165938);border-color:#1f8a4c}
+    .btn.warn{background:linear-gradient(180deg,#8a5a1f,#744b1a);border-color:#b3861f}
+
+    details{border:1px dashed #2a387a;border-radius:12px;padding:10px;margin-top:10px}
+    details[open]{background:#0f1736}
+
+    section{scroll-margin-top:68px;padding:28px 0}
+    .section-title{display:flex;align-items:baseline;gap:12px;margin:0 0 12px 0}
+    .section-title h2{margin:0;font-size:clamp(22px,2.2vw,30px)}
+    .muted{color:var(--muted)}
+
+    .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .checklist li{margin:8px 0}
+    .ok{color:var(--ok)}
+    .warn{color:var(--warning)}
+    .danger{color:var(--danger)}
+
+    .plan{position:sticky;top:78px}
+    .plan-box{background:linear-gradient(180deg,#0c142b,#0a1126);border:1px solid #24306d;border-radius:16px;padding:16px}
+    .plan-box h3{margin:8px 0}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:#0f1736;border:1px solid #2a387a;border-radius:999px;padding:8px 12px;margin:6px 6px 0 0}
+
+    .stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .story{background:linear-gradient(180deg,#10183a,#0b132d);border:1px solid #24306d;border-radius:16px;padding:16px}
+    blockquote{margin:8px 0;padding:0 12px;border-left:3px solid #3350b7;color:#e6ebff}
+
+    footer{margin-top:24px;border-top:1px solid #1d2753;padding:18px 0;color:#b7c6ff}
+
+    @media (max-width:860px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><div class="logo" aria-hidden="true"></div><strong>Cambio Climático</strong></div>
+      <div>
+        <a href="index.html">El clima</a>
+        <a href="pagina1.html">¿Está cambiando?</a>
+        <a href="pagina2.html">¿Hace daño?</a>
+        <a href="pagina3.html">¿Por qué?</a>
+        <a href="pagina4.html">¿Qué debe hacer el mundo?</a>
+        <a href="#" aria-current="page" class="btn" style="padding:8px 12px">¿Qué puedo hacer yo?</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="t-hero">
+    <div class="hero-card">
+      <p class="kicker">De la preocupación a la acción</p>
+      <h1 id="t-hero">Tu poder importa: elige 3 acciones y empieza hoy</h1>
+      <p class="lead">No necesitas hacerlo todo. Necesitas empezar. Esta página te ayuda a escoger <strong>las 3 acciones con mayor impacto (80/20)</strong>, cuidarte en olas de calor e incendios, y crear tu <strong>plan personal</strong> en dos minutos.</p>
+      <div class="motivos" role="group" aria-label="Elige tu motivo principal">
+        <button class="chip" data-motivo="familia" aria-pressed="false">👪 Familia</button>
+        <button class="chip" data-motivo="salud" aria-pressed="false">💚 Salud</button>
+        <button class="chip" data-motivo="ahorro" aria-pressed="false">💶 Ahorro</button>
+        <button class="chip" data-motivo="naturaleza" aria-pressed="false">🌿 Naturaleza</button>
+        <button class="chip" data-motivo="futuro" aria-pressed="false">🕰️ Futuro</button>
+      </div>
+      <p id="motivo-msg" class="muted" style="margin-top:8px">(Opcional) Toca un motivo: lo usaremos para personalizar tu plan.</p>
+    </div>
+    <div class="hero-card">
+      <h3 style="margin-top:0">Impacto estimado de tu plan</h3>
+      <p class="muted">Selecciona acciones y verás una estimación cualitativa.</p>
+      <div style="display:flex;gap:10px;align-items:center;margin-top:10px">
+        <div>
+          <div class="tag high">Puntos impacto: <span id="puntos" class="metric">0</span></div>
+        </div>
+        <div id="nivel" class="tag">Nivel: —</div>
+      </div>
+      <details>
+        <summary>¿Cómo lo calculamos?</summary>
+        <p>Cada acción tiene un <em>peso orientativo</em> (alto/medio/bajo). Sumamos para darte una guía rápida. Es una brújula, no un contrato: tu contexto manda.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ACCIONES 80/20 -->
+  <section aria-labelledby="t-acciones">
+    <div class="section-title">
+      <h2 id="t-acciones">Acciones 80/20: empieza por aquí</h2>
+      <span class="muted">Prioriza las que más cuentan para clima, salud y bolsillo.</span>
+    </div>
+    <div class="cards" id="acciones">
+      <!-- Transporte -->
+      <article class="card" data-id="transporte" data-peso="3">
+        <div class="tag high">Impacto alto</div>
+        <h3>Transporte cotidiano y viajes ✈️🚆</h3>
+        <p>
+          <label><input type="checkbox" class="ck"/> Me comprometo a <strong>reducir vuelos</strong> y preferir tren.
+          </label><br/>
+          <label><input type="checkbox" class="ck"/> Cambiar 2 trayectos/semana en coche por <strong>caminar, bici o bus</strong>.
+          </label><br/>
+          <label><input type="checkbox" class="ck"/> <strong>Compartir coche</strong> cuando no haya alternativa.
+          </label>
+        </p>
+        <details>
+          <summary>Guía rápida</summary>
+          <ul class="checklist">
+            <li>Planifica viajes largos con antelación para encontrar <em>trenes</em>.</li>
+            <li>Para el coche: <em>conduce suave</em>, revisa presión de neumáticos y agrupa recados.</li>
+            <li>En la ciudad: valora <strong>abono transporte</strong> o bici eléctrica compartida.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Hogar y energía -->
+      <article class="card" data-id="hogar" data-peso="3">
+        <div class="tag high">Impacto alto</div>
+        <h3>Hogar y energía 🔌🏠</h3>
+        <p>
+          <label><input type="checkbox" class="ck"/> <strong>Termostato</strong>: 19–21ºC en invierno, 25–27ºC en verano.</label><br/>
+          <label><input type="checkbox" class="ck"/> <strong>Aislar/sellar</strong> una estancia (burletes, persianas, toldo).</label><br/>
+          <label><input type="checkbox" class="ck"/> Valorar <strong>bomba de calor</strong> y/o <strong>autoconsumo</strong>.</label>
+        </p>
+        <details>
+          <summary>Guía rápida</summary>
+          <ul class="checklist">
+            <li>Empieza por lo <em>barato y rápido</em>: burletes, cortinas térmicas, sombra exterior.</li>
+            <li>Programa lavadora/lavavajillas en horas valle y llena cargas.</li>
+            <li>Si puedes, pide <em>dos presupuestos</em> de bomba de calor o placas solares.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Alimentación -->
+      <article class="card" data-id="dieta" data-peso="2">
+        <div class="tag med">Impacto medio–alto</div>
+        <h3>Alimentación y desperdicio 🥗</h3>
+        <p>
+          <label><input type="checkbox" class="ck"/> <strong>2 días/semana</strong> sin carne roja.</label><br/>
+          <label><input type="checkbox" class="ck"/> Plan de <strong>menú y compra</strong> para reducir desperdicio.</label><br/>
+          <label><input type="checkbox" class="ck"/> Preferir <strong>producto local y de temporada</strong>.</label>
+        </p>
+        <details>
+          <summary>Guía rápida</summary>
+          <ul class="checklist">
+            <li>Congela raciones y ordena la nevera (FIFO: primero en entrar, primero en salir).</li>
+            <li>Legumbres 2–3 veces/semana: baratas, sanas y con baja huella.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Consumo y residuos -->
+      <article class="card" data-id="consumo" data-peso="2">
+        <div class="tag med">Impacto medio</div>
+        <h3>Consumo y residuos ♻️</h3>
+        <p>
+          <label><input type="checkbox" class="ck"/> Regla <strong>1 en 1</strong>: si entra algo, sale algo.</label><br/>
+          <label><input type="checkbox" class="ck"/> <strong>Reparar</strong> y comprar de segunda mano antes de nuevo.</label><br/>
+          <label><input type="checkbox" class="ck"/> <strong>Botella reutilizable</strong> y taza propia.</label>
+        </p>
+        <details>
+          <summary>Guía rápida</summary>
+          <ul class="checklist">
+            <li>Evita compras por impulso: lista y 24 horas de espera.</li>
+            <li>Separa bien: vidrio, envases, papel, orgánico. Reduce plásticos de un solo uso.</li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Voz y comunidad -->
+      <article class="card" data-id="voz" data-peso="1">
+        <div class="tag low">Impacto cívico continuo</div>
+        <h3>Tu voz y tu comunidad 📣</h3>
+        <p>
+          <label><input type="checkbox" class="ck"/> <strong>Apoyar</strong> iniciativas locales (reforestación, energía vecinal).</label><br/>
+          <label><input type="checkbox" class="ck"/> <strong>Hablar</strong> del tema con respeto y datos claros.</label><br/>
+          <label><input type="checkbox" class="ck"/> <strong>Elegir</strong> proveedores con energía renovable certificada.</label>
+        </p>
+        <details>
+          <summary>Guía rápida</summary>
+          <ul class="checklist">
+            <li>Pregunta en tu ayuntamiento por ayudas de eficiencia y autoconsumo.</li>
+            <li>En el trabajo o comunidad, propone medidas sencillas (iluminación LED, horarios de climatización).</li>
+          </ul>
+        </details>
+      </article>
+    </div>
+  </section>
+
+  <!-- CUIDADOS cuando "hace daño" (derivadas del punto 2) -->
+  <section aria-labelledby="t-cuidados">
+    <div class="section-title">
+      <h2 id="t-cuidados">Cuando hace daño: cuida de los tuyos</h2>
+      <span class="muted">Medidas sencillas para olas de calor, incendios y sequía. Derivadas del punto 2.</span>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="warn">🌡️ Olas de calor</h3>
+        <ul class="checklist">
+          <li>Revisa a <strong>mayores y bebés</strong> 2 veces al día.</li>
+          <li>Hidrata: agua a mano; evita alcohol y exceso de cafeína.</li>
+          <li>Ventila de madrugada, <strong>sombrea</strong> y usa paños húmedos.</li>
+          <li>Limita actividad exterior; busca <em>refugios climáticos</em> (biblioteca, centro cívico).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="danger">🔥 Incendios</h3>
+        <ul class="checklist">
+          <li>No hagas fuego ni uses maquinaria que genere chispas.</li>
+          <li>Mantén despejado el entorno de casa si vives en interfaz urbano‑forestal.</li>
+          <li>Si hay humo, cierra ventanas y usa <strong>mascarilla</strong> si sales.</li>
+          <li>Ten a mano un <em>kit básico</em>: documentación, agua, radio, linterna.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>💧 Sequía</h3>
+        <ul class="checklist">
+          <li>Ducha corta, <strong>cierra el grifo</strong> al enjabonar y arregla fugas.</li>
+          <li>Riego de plantas al amanecer/anochecer y con goteo.</li>
+          <li>Lavadora y lavavajillas siempre llenos.</li>
+          <li>Reutiliza agua de aclarado para WC o riego.</li>
+        </ul>
+      </div>
+      <aside class="plan">
+        <div class="plan-box" aria-live="polite">
+          <h3>Tu plan personal (borrador)</h3>
+          <p class="muted">Se rellena con tus selecciones. Puedes descargarlo.</p>
+          <div id="pills"></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+            <button class="btn primary" id="btnDescargar">⬇️ Descargar mi plan</button>
+            <button class="btn" id="btnReset">🧹 Reiniciar</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Historias y emoción -->
+  <section aria-labelledby="t-historias">
+    <div class="section-title">
+      <h2 id="t-historias">Para sentirlo: 3 miradas</h2>
+      <span class="muted">Porque no nos mueven solo los números.</span>
+    </div>
+    <div class="stories">
+      <article class="story">
+        <h3>📬 Carta a mi nieta de 2050</h3>
+        <blockquote>
+          Hoy he decidido hacer tres cosas pequeñas que, juntas, cambian mi vida: ir más a pie, cocinar con calma y aislar el cuarto donde dormimos. No sé si bastará, pero sé que estarás orgullosa de que lo intenté. Cuando haga calor, quiero que tengas un sitio fresco donde leer. Cuando el aire esté sucio, que puedas respirar tranquila. Si alguna vez dudas, recuerda: nadie lo hizo todo, pero todos podíamos hacer algo.
+        </blockquote>
+      </article>
+      <article class="story">
+        <h3>🚲 Menos coche, más vida</h3>
+        <p>Un sábado sin coche se convirtió en un paseo en bici con risas y un café al sol. Llegué más tarde, pero llegué mejor. A veces el clima mejora cuando <em>tu día</em> mejora.</p>
+      </article>
+      <article class="story">
+        <h3>🏘️ Vecindario</h3>
+        <p>En la comunidad, bajamos un grado la calefacción y cambiamos a LED. La factura bajó y alguien dijo: “pensé que sería un lío… y no”. Hicimos algo <em>juntos</em>.</p>
+      </article>
+    </div>
+  </section>
+
+
+</main>
+
+<script>
+(function(){
+  const chips = document.querySelectorAll('.chip');
+  const motivoMsg = document.getElementById('motivo-msg');
+  const accionesEl = document.getElementById('acciones');
+  const puntosEl = document.getElementById('puntos');
+  const nivelEl = document.getElementById('nivel');
+  const pills = document.getElementById('pills');
+  const btnDescargar = document.getElementById('btnDescargar');
+  const btnReset = document.getElementById('btnReset');
+
+  const LS_KEY = 'pagina5_plan_v1';
+
+  let state = {
+    motivo: null,
+    checks: {} // { accionId: [bool,bool,...] }
+  };
+
+  // Leer estado
+  try{
+    const saved = JSON.parse(localStorage.getItem(LS_KEY));
+    if(saved && typeof saved === 'object') state = saved;
+  }catch(e){}
+
+  // Motivos
+  chips.forEach(ch => {
+    const m = ch.dataset.motivo;
+    if(state.motivo===m) ch.setAttribute('aria-pressed','true');
+    ch.addEventListener('click', () => {
+      chips.forEach(x=>x.setAttribute('aria-pressed','false'));
+      ch.setAttribute('aria-pressed','true');
+      state.motivo = m;
+      motivoMsg.textContent = mensajesMotivo(m);
+      persist();
+      renderPlan();
+    });
+  });
+  if(state.motivo){ motivoMsg.textContent = mensajesMotivo(state.motivo); }
+
+  function mensajesMotivo(m){
+    const map = {
+      familia: 'Objetivo familia: casas más frescas, aire limpio y tiempo juntos.',
+      salud: 'Objetivo salud: más pasos, menos humo, comida simple y real.',
+      ahorro: 'Objetivo ahorro: paga menos ajustando termostato y moviéndote mejor.',
+      naturaleza: 'Objetivo naturaleza: protege ríos, árboles y la fauna cercana.',
+      futuro: 'Objetivo futuro: dejar un lugar habitable para quien viene detrás.'
+    };
+    return map[m] || '(Opcional) Toca un motivo: lo usaremos para personalizar tu plan.';
+  }
+
+  // Acciones y checkboxes
+  accionesEl.querySelectorAll('.card').forEach(card =>{
+    const id = card.dataset.id;
+    const peso = parseInt(card.dataset.peso || '1',10);
+    const cks = card.querySelectorAll('input.ck');
+    if(!state.checks[id]) state.checks[id] = Array.from({length:cks.length},()=>false);
+    // hidratar
+    cks.forEach((ck,i)=>{ ck.checked = !!state.checks[id][i]; });
+    // eventos
+    cks.forEach((ck,i)=>{
+      ck.addEventListener('change',()=>{
+        state.checks[id][i] = ck.checked;
+        persist();
+        computeImpact();
+        renderPlan();
+      });
+    });
+    // guarda peso para cómputo
+    card.dataset.pesoval = peso;
+  });
+
+  function computeImpact(){
+    let puntos = 0;
+    accionesEl.querySelectorAll('.card').forEach(card =>{
+      const id = card.dataset.id;
+      const peso = parseInt(card.dataset.pesoval,10);
+      const anyChecked = (state.checks[id]||[]).some(Boolean);
+      if(anyChecked) puntos += peso;
+    });
+    puntosEl.textContent = String(puntos);
+    let nivel = '—';
+    let cls = '';
+    if(puntos >= 6){ nivel = 'Alto'; cls='tag high'; }
+    else if(puntos >= 3){ nivel = 'Medio'; cls='tag med'; }
+    else if(puntos > 0){ nivel = 'Bajo'; cls='tag low'; }
+    else { cls='tag'; }
+    nivelEl.textContent = 'Nivel: ' + nivel;
+    nivelEl.className = cls;
+  }
+
+  function renderPlan(){
+    pills.innerHTML = '';
+    const frag = document.createDocumentFragment();
+    const entries = Object.entries(state.checks);
+    entries.forEach(([id,arr])=>{
+      const card = document.querySelector(`.card[data-id="${id}"]`);
+      const titulo = card ? card.querySelector('h3').textContent : id;
+      arr.forEach((v,idx)=>{
+        if(v){
+          const labelEl = card.querySelectorAll('label')[idx];
+          const text = labelEl ? labelEl.textContent.trim() : 'Acción';
+          const pill = document.createElement('div');
+          pill.className = 'pill';
+          pill.textContent = text;
+          frag.appendChild(pill);
+        }
+      });
+    });
+    if(!frag.childNodes.length){
+      const p = document.createElement('p');
+      p.className='muted';
+      p.textContent = 'Aún no has marcado ninguna acción.';
+      pills.appendChild(p);
+    }else{
+      pills.appendChild(frag);
+    }
+    computeImpact();
+  }
+
+  function persist(){
+    try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){}
+  }
+
+  function descargar(){
+    // compone texto del plan
+    const fecha = new Date().toLocaleString();
+    let txt = '# Mi plan personal (borrador)\n\n';
+    txt += `Fecha: ${fecha}\n`;
+    if(state.motivo) txt += `Motivo principal: ${state.motivo}\n`;
+    txt += '\nAcciones seleccionadas:\n';
+    let count=0;
+    Object.entries(state.checks).forEach(([id,arr])=>{
+      const card = document.querySelector(`.card[data-id="${id}"]`);
+      const section = card ? card.querySelector('h3').textContent : id;
+      arr.forEach((v,idx)=>{
+        if(v){
+          const labelEl = card.querySelectorAll('label')[idx];
+          const text = labelEl ? labelEl.textContent.trim() : 'Acción';
+          count++;
+          txt += ` - [ ] ${section}: ${text}\n`;
+        }
+      });
+    });
+    if(!count) txt += ' (ninguna todavía)\n';
+    txt += `\nPuntos de impacto estimados: ${puntosEl.textContent}\n`;
+    txt += '\nRecordatorio personal (escribe aquí): __________________________\n';
+    const blob = new Blob([txt],{type:'text/plain;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'mi-plan-clima.txt';
+    a.click(); setTimeout(()=>URL.revokeObjectURL(url),5000);
+  }
+
+  btnDescargar.addEventListener('click', descargar);
+  btnReset.addEventListener('click', ()=>{
+    localStorage.removeItem(LS_KEY);
+    state={motivo:null,checks:{}};
+    // desmarcar UI
+    document.querySelectorAll('input.ck').forEach(ck=>ck.checked=false);
+    chips.forEach(x=>x.setAttribute('aria-pressed','false'));
+    motivoMsg.textContent = '(Opcional) Toca un motivo: lo usaremos para personalizar tu plan.';
+    renderPlan();
+  });
+
+  // Primera renderización
+  renderPlan();
+})();
+</script>
+
+<footer class="site-footer" aria-label="Créditos">
+  <p class="footer-line">
+    <span class="footer-updated">Última actualización: 2025-10-06</span>
+    <span class="sep" aria-hidden="true"> · </span>
+    <span class="footer-author">Autor: GMIM</span>
+    <span class="sep" aria-hidden="true"> · </span>
+    <span class="footer-license">
+      Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a>
+    </span>
+  </p>
+
+  
+</footer>
+
+</body>
+</html>

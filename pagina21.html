@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2.1 Meteorología extrema — ¿Hace daño?</title>
+  <meta name="description" content="Evidencias de meteorología extrema en un clima que cambia: olas de calor, sequías, lluvias intensas e incendios. Gráficos y fuentes técnicas." />
+  <link rel="icon" href="assets/favicon.png" />
+  <!-- Si ya usas un CSS global, comenta el bloque <style> y enlaza tu hoja de estilos común. -->
+  <style>
+    :root { --mx: 1100px; --bg:#0e1117; --card:#161b22; --ink:#e6edf3; --muted:#9aa5b1; --acc:#4fb3ff; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--ink); }
+    a { color: var(--acc); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid #242b33; background: #0c0f14; }
+    .wrap { max-width: var(--mx); margin: 0 auto; padding: 1.25rem; }
+    .breadcrumb { font-size: .9rem; color: var(--muted); margin-bottom: .5rem; }
+    .breadcrumb a { color: var(--muted); }
+    h1 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); margin: .2rem 0 0.6rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem .75rem; margin-top: .5rem; }
+    nav a { padding: .35rem .6rem; border: 1px solid #27313b; border-radius: 999px; color: var(--muted); }
+    nav a.active { background: #1b2330; color: var(--ink); border-color: #334355; }
+    main { padding-bottom: 3rem; }
+    .lead { font-size: 1.05rem; color: var(--muted); }
+    section { margin: 2rem 0; }
+    h2 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); margin: 0 0 .75rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    .card { background: var(--card); border: 1px solid #232a33; border-radius: 16px; padding: 1rem; }
+    figure { margin: 0; }
+    figure img, iframe { width: 100%; border: 0; border-radius: 10px; }
+    figcaption { color: var(--muted); font-size: .9rem; margin-top: .45rem; }
+    details { margin-top: .5rem; }
+    .note { font-size: .92rem; color: var(--muted); }
+    .sources ul { margin: .3rem 0 0 1.2rem; }
+    footer { border-top: 1px solid #242b33; color: var(--muted); font-size: .9rem; }
+    .pill { display: inline-block; padding: .25rem .55rem; font-size:.8rem; border:1px solid #334355; border-radius: 999px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="breadcrumb">⟵ <a href="index.html">Inicio</a> / <a href="pagina2.html">2. ¿Hace daño?</a> / 2.1 Meteorología extrema</div>
+      <h1>2.1 Meteorología extrema</h1>
+      <nav aria-label="Subsecciones de la página 2">
+        <a href="pagina21.html" class="active">2.1 Meteorología extrema</a>
+        <a href="pagina22.html">2.2 Pérdidas económicas (EEA)</a>
+        <a href="pagina23.html">2.3 Salud</a>
+        <a href="pagina24.html">2.4 Incendios</a>
+        <a href="pagina25.html">2.X Otros impactos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="lead">Esta página reúne indicadores simples y comparables de <strong>fenómenos meteorológicos extremos</strong> que ya están afectando a personas, economía y ecosistemas. La selección prioriza series largas y cobertura global/regional. Donde no sea posible, se incluyen <em>proxies</em> o referencias.</p>
+
+    <section id="que-medir">
+      <h2>¿Qué medimos?</h2>
+      <div class="grid">
+        <div class="card">
+          <p><span class="pill">Olas de calor</span> Duración, frecuencia e intensidad; días con T<sub>máx</sub> por encima de umbrales locales (p.ej., 35 °C).</p>
+        </div>
+        <div class="card">
+          <p><span class="pill">Sequía</span> Índices estandarizados de precipitación y humedad del suelo (SPI, SPEI), y superficie afectada.</p>
+        </div>
+        <div class="card">
+          <p><span class="pill">Lluvias extremas</span> Precipitación diaria/intensa (p99, p99.9) y eventos de inundación asociados.</p>
+        </div>
+        <div class="card">
+          <p><span class="pill">Tormentas</span> Energía ciclónica acumulada (ACE) y conteos regionales donde estén disponibles.</p>
+        </div>
+      </div>
+      <p class="note">Nota: Los extremos se definen frente a climatologías locales. Evitamos mezclar estaciones y regiones sin normalizar.</p>
+    </section>
+
+    <section id="graficos">
+      <h2>Gráficos (interactivos)</h2>
+
+      <div class="grid">
+        <!-- 1) OLAS DE CALOR -->
+        <figure class="card">
+          <iframe title="OWID – Heat extremes (World)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+            src="https://ourworldindata.org/explorers/climate-change?tab=chart&facet=none&Metric=Heat+extremes&country=~OWID_WRL&hideControls=false">
+          </iframe>
+          <figcaption>Olas de calor — indicador global en el explorador de Our World in Data. <a href="https://ourworldindata.org/explorers/climate-change" target="_blank" rel="noopener">Fuente: OWID</a>.</figcaption>
+        </figure>
+
+        <!-- 2) SEQUÍA / ANOMALÍA DE PRECIPITACIÓN (proxy global) -->
+        <figure class="card">
+          <iframe title="OWID – Global precipitation anomaly (World)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+            src="https://ourworldindata.org/grapher/global-precipitation-anomaly?tab=chart&country=~OWID_WRL">
+          </iframe>
+          <figcaption>Anomalía de precipitación (proxy de sequía/humedad) — serie global basada en ERA5 (Copernicus) procesada por OWID. <a href="https://ourworldindata.org/grapher/global-precipitation-anomaly" target="_blank" rel="noopener">Ficha del gráfico</a>.</figcaption>
+        </figure>
+
+        <!-- 3) LLUVIAS EXTREMAS -->
+        <figure class="card">
+          <iframe title="OWID – Heavy precipitation (World)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+            src="https://ourworldindata.org/explorers/climate-change?tab=chart&facet=none&Metric=Heavy+precipitation&country=~OWID_WRL&hideControls=false">
+          </iframe>
+          <figcaption>Lluvias intensas — percentiles altos (p99/p99.9) del explorador de Our World in Data. <a href="https://ourworldindata.org/explorers/climate-change" target="_blank" rel="noopener">Fuente: OWID</a>.</figcaption>
+        </figure>
+
+        <!-- 4) TORMENTAS / CICLONES -->
+        <figure class="card">
+          <iframe title="OWID – Accumulated Cyclone Energy (North Atlantic)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+            src="https://ourworldindata.org/grapher/ace-north-atlantic-hurricanes?tab=chart">
+          </iframe>
+          <figcaption>Tormentas tropicales — Energía ciclónica acumulada (ACE), Atlántico Norte (NOAA/HURDAT a través de OWID). <a href="https://ourworldindata.org/grapher/ace-north-atlantic-hurricanes" target="_blank" rel="noopener">Ficha del gráfico</a>.</figcaption>
+        </figure>
+      </div>
+
+      <p class="note">Consejo: si prefieres fijar una “foto” histórica concreta, puedes sustituir un iframe por una imagen PNG descargada del propio gráfico (menú ⋮ en la esquina superior derecha del iframe).</p>
+    </section>
+
+    <section id="lectura-rapida">
+      <h2>Lectura rápida (puntos clave para la sección 2)</h2>
+      <ul>
+        <li>Los extremos meteorológicos relevantes están aumentando en <em>frecuencia</em>, <em>duración</em> y/o <em>intensidad</em> en múltiples regiones, coherente con un mundo más cálido.</li>
+        <li>El contexto local importa: los umbrales “extremos” se definen frente a la climatología de referencia y a la exposición/vulnerabilidad.</li>
+        <li>Para el <a href="pagina22.html">bloque 2.2 Pérdidas económicas</a> se conectan estos indicadores con impactos monetizados.</li>
+      </ul>
+    </section>
+
+    <section id="fuentes" class="sources">
+      <h2>Fuentes técnicas (para anclar los gráficos definitivos)</h2>
+      <ul>
+        <li>Copernicus Climate Change Service (C3S) – <em>European State of the Climate</em> / <em>Global Climate Highlights</em>.</li>
+        <li>EEA (Agencia Europea de Medio Ambiente) – indicadores de extremos y eventos.</li>
+        <li>Our World in Data – <em>Climate Change Explorer</em> y gráficas específicas (heat extremes, heavy precipitation, ACE).</li>
+        <li>NOAA / WMO – series globales y resúmenes de temporada (huracanes, olas de calor).</li>
+      </ul>
+      <p class="note">En la versión final, enlaza cada gráfico a su fuente exacta (dataset, código y metodología) y anota el período de referencia (p. ej., 1991–2020) y el último año disponible.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Actualizado: <time datetime="2025-09-15">15·09·2025</time> · Responsable de la sección: <span class="note">(añadir)</span>
+    </div>
+  </footer>
+</body>
+</html>

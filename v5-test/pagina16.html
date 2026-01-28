@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>1.6 · Permafrost</title>
+  <meta name="description" content="Qué es el permafrost, dónde está, cómo se está calentando y por qué importa." />
+  <style>
+    :root { --bg:#0b1020; --card:#141a33; --text:#e7ecf7; --muted:#9db0d4; --accent:#87c2ff; }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    h1,h2,h3{line-height:1.2;margin:0 0 12px}
+    h1{font-size:clamp(24px,4vw,34px)}
+    h2{font-size:clamp(20px,3.2vw,26px);margin-top:28px}
+    p,li{color:var(--text)}
+    .lead{color:var(--muted)}
+    .grid{display:grid;gap:16px}
+    .cols-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:16px}
+    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .kpi{background:#0f1530;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:14px}
+    .kpi b{display:block;font-size:1.3rem;margin-bottom:6px;color:var(--accent)}
+    .small{font-size:.92rem;color:var(--muted)}
+    .iframe-wrap{background:#0f1530;border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden}
+    .iframe-wrap img{display:block;width:100%;height:auto}
+    .note{font-size:.9rem;color:var(--muted)}
+    a{color:var(--accent);text-decoration:none;border-bottom:1px dashed rgba(135,194,255,.4)}
+    a:hover{border-bottom-color:transparent}
+    .badge{display:inline-block;font-size:.8rem;padding:2px 8px;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:var(--muted)}
+    .list-check li{margin:6px 0}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="grid cols-2">
+      <div class="card">
+        <h1>1.6 · Permafrost</h1>
+        <p class="lead">El <b>permafrost</b> es suelo que permanece congelado (≤ 0 °C) durante, al menos, dos años seguidos. Se extiende por el Ártico, subártico y zonas de alta montaña. Cuando se calienta y pierde hielo, el terreno se vuelve inestable y puede liberar carbono almacenado desde hace miles de años.</p>
+        <span class="badge">Conceptos básicos</span>
+        <ul class="list-check">
+          <li><b>¿Dónde está?</b> Alaska, Canadá, Siberia, Mongolia, mesetas tibetanas y cordilleras de media y alta montaña.</li>
+          <li><b>¿Qué contiene?</b> Suelo, sedimentos y materia orgánica congelada (raíces, restos vegetales, turberas).</li>
+          <li><b>¿Por qué importa?</b> Estabilidad de infraestructuras, ecosistemas, ciclo del carbono y riesgos locales.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Evolución reciente (gráfico)</h2>
+        <div class="iframe-wrap">
+          <img src="assets/img/permafrost-awi.png" alt="Evolución de la temperatura del permafrost según AWI GlobPermafrost" />
+        </div>
+        <p class="note small">Fuente: <a href="https://maps.awi.de/awimaps/projects/public/?cu=globpermafrost_arctic_groundtemperature_timeseries#mapcontent" target="_blank" rel="noopener">AWI – GlobPermafrost Arctic Ground Temperature</a>. Imagen estática generada a partir del visor oficial.</p>
+      </div>
+    </header>
+
+    <section class="grid cols-2">
+      <div class="card">
+        <h2>Cifras clave (para situarnos)</h2>
+        <div class="kpis">
+          <div class="kpi">
+            <b>≈ 1.400–1.700 Gt C</b>
+            <span class="small">Carbono almacenado en suelos de permafrost (aprox.). Es comparable o superior al carbono en la atmósfera.</span>
+          </div>
+          <div class="kpi">
+            <b>Tendencia: ↑ temperatura</b>
+            <span class="small">El permafrost se está calentando desde finales del s. XX, con aumentos detectados en múltiples profundidades.</span>
+          </div>
+          <div class="kpi">
+            <b>Fuego + deshielo</b>
+            <span class="small">Incendios boreales y olas de calor aceleran el deshielo superficial y la inestabilidad del terreno.</span>
+          </div>
+        </div>
+        <p class="small note">Estos rangos proceden de síntesis científicas (p. ej., informes IPCC y resúmenes árticos anuales). Para más detalle ver los enlaces de “Más info y materiales”.</p>
+      </div>
+
+      <div class="card">
+        <h2>Qué pasa cuando se descongela</h2>
+        <ul class="list-check">
+          <li><b>Terreno inestable</b>: subsidencia, deslizamientos, “termokarst”, afectando carreteras, edificios, oleoductos y pueblos.</li>
+          <li><b>Hidrología alterada</b>: aparición/desaparición de lagos, cambios en ríos y humedales.</li>
+          <li><b>Ecosistemas</b>: cambios en suelos, vegetación y hábitats.</li>
+          <li><b>Salud y patrimonio</b>: riesgos locales (brotes asociados a suelos antiguos, pérdida de yacimientos arqueológicos).</li>
+          <li><b>Gases de efecto invernadero</b>: liberación de carbono del suelo (el metano se trata en la <i>página 3.4</i>).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid cols-2">
+      <div class="card">
+        <h2>Mapa y observación</h2>
+        <ul>
+          <li><a href="https://arctic.noaa.gov/Report-Card" target="_blank" rel="noopener">NOAA Arctic Report Card</a>: síntesis anual de indicadores árticos (permafrost, nieve, hielo, incendios, etc.).</li>
+          <li><a href="https://earthobservatory.nasa.gov/features/Permafrost" target="_blank" rel="noopener">NASA Earth Observatory</a>: artículos y visualizaciones didácticas.</li>
+          <li><a href="https://maps.awi.de/awimaps/projects/public/?cu=globpermafrost_arctic_groundtemperature_timeseries#mapcontent" target="_blank" rel="noopener">AWI GlobPermafrost</a>: visor interactivo original.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Material didáctico</h2>
+        <ul>
+          <li><a href="https://earthobservatory.nasa.gov/features/Permafrost" target="_blank" rel="noopener">¿Qué es el permafrost?</a> (explicación visual de NASA).</li>
+          <li><a href="https://arctic.noaa.gov/Report-Card" target="_blank" rel="noopener">Indicadores del Ártico</a> (capítulos breves, infografías).</li>
+        </ul>
+        <p class="small note">Sugerencia: en futuras versiones se podría insertar un vídeo divulgativo corto.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Preguntas rápidas (FAQ)</h2>
+      <details>
+        <summary>¿Todo el permafrost se va a descongelar?</summary>
+        <p>No. Depende del calentamiento global y de las condiciones locales. Incluso descongelamientos parciales generan impactos locales y emisiones de carbono.</p>
+      </details>
+      <details>
+        <summary>¿Se puede “recongelar” fácilmente?</summary>
+        <p>Es difícil. Una vez que el suelo pierde hielo y se deforma, la hidrología y la vegetación cambian, lo que dificulta volver al estado previo.</p>
+      </details>
+      <details>
+        <summary>¿Qué relación tiene con el metano?</summary>
+        <p>El metano (CH₄) puede emitirse tras el deshielo en suelos anóxicos. Se detalla en la <b>página 3.4</b>.</p>
+      </details>
+    </section>
+
+    <footer class="grid cols-2" style="margin-top:18px">
+      <p class="small note">Página 1.6 del repositorio climático (versión 1). El estilo se armonizará en el cierre de versión.</p>
+      <p class="small note" style="text-align:right">Fuentes: AWI GlobPermafrost, NOAA Arctic Report Card, NASA Earth Observatory.</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,245 @@
+/* ======================
+   PAGE 3
+====================== */
+body.page3{
+  background:#0b1220;
+  color:#e6eef9;
+}
+
+.page3 .lead{
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(35,52,68,.65);
+  font-size: 1rem;
+}
+
+/* 6 bloques “tipo tabla” (3x2) */
+.page3 .ideas6{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0; /* clave para efecto tabla */
+  border: 1px solid rgba(255,255,255,.25);
+  overflow: hidden;
+}
+
+.page3 .idea{
+  background: rgba(17,52,84,.85);
+  padding: 8px 16px 10px;
+  border-right: 1px solid rgba(255,255,255,.25);
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.page3 .idea:nth-child(3n){ border-right: none; }
+.page3 .idea:nth-last-child(-n+3){ border-bottom: none; }
+
+.page3 .idea__icon{
+  display:inline-block;
+  margin: 0 0 4px; line-height: 1;
+  font-size: 18px;
+}
+
+.page3 .idea h3{
+  margin: 0 0 4px; line-height: 1.1;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.page3 .idea p{
+  margin: 0;
+  font-size: .8rem;
+  line-height: 1.35;
+}
+
+.page3 .attrib{
+  margin: 10px 0 0;
+  font-size: .9rem;
+  opacity: .85;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .page3 .ideas6{ grid-template-columns: repeat(2, 1fr); }
+  .page3 .idea:nth-child(3n){ border-right: 1px solid rgba(255,255,255,.25); }
+  .page3 .idea:nth-child(2n){ border-right: none; }
+  .page3 .idea:nth-last-child(-n+3){ border-bottom: 1px solid rgba(255,255,255,.25); }
+  .page3 .idea:nth-last-child(-n+2){ border-bottom: none; }
+}
+@media (max-width: 600px){
+  .page3 .ideas6{ grid-template-columns: 1fr; }
+  .page3 .idea{ border-right: none; }
+  .page3 .idea:nth-last-child(-n+2){ border-bottom: 1px solid rgba(255,255,255,.25); }
+  .page3 .idea:last-child{ border-bottom: none; }
+}
+/* Barras: bloque clicable + texto visible */
+.page3 .rankbars{
+  display: grid;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.page3 a.rankbar{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(17,52,84,.55);
+  border: 1px solid rgba(255,255,255,.18);
+  padding: 12px 14px;
+}
+
+.page3 a.rankbar:hover{
+  border-color: rgba(255,255,255,.35);
+  background: rgba(17,52,84,.70);
+}
+
+.page3 .rankbar__meta{
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 8px;
+}
+
+.page3 .rankbar__meta .rank{
+  font-weight: 800;
+  font-size: .95rem;
+  opacity: .95;
+}
+
+.page3 .rankbar__meta .label{
+  font-size: 1rem;
+  line-height: 1.2;
+  opacity: .95;
+}
+
+.page3 .rankbar__track{
+  height: 50px;
+  border-radius: 999px;
+  background: rgba(147,197,253,.14);
+  border: 1px solid rgba(147,197,253,.22);
+  overflow: hidden;
+}
+
+.page3 .rankbar__fill{
+  height: 100%;
+  width: var(--w, 100%);
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(147,197,253,.80), rgba(147,197,253,.22));
+}
+
+/* CH4 rojo difuminado */
+.page3 a.rankbar--ch4{
+  background: rgba(90,20,20,.35);
+  border-color: rgba(255,80,80,.22);
+}
+.page3 a.rankbar--ch4:hover{
+  background: rgba(90,20,20,.50);
+  border-color: rgba(255,80,80,.35);
+}
+.page3 .rankbar--ch4 .rankbar__track{
+  background: rgba(255,80,80,.10);
+  border: 1px solid rgba(255,80,80,.22);
+}
+.page3 .rankbar--ch4 .rankbar__fill{
+  background: linear-gradient(90deg, rgba(255,80,80,.78), rgba(255,80,80,.18));
+}
+
+.page3 .note--ch4{
+  margin: 6px 0 0;
+  font-size: .92rem;
+  opacity: .85;
+}
+/* Paso 1: asegurar que <a class="rankbar"> se vea como bloque */
+.page3 .rankbars { display: grid; gap: 10px; }
+
+.page3 a.rankbar{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+/* Paso 2: tarjeta de cada fila */
+.page3 a.rankbar{
+  background: rgba(17,52,84,.55);
+  border: 1px solid rgba(255,255,255,.18);
+  padding: 12px 14px;
+}
+.page3 a.rankbar:hover{
+  background: rgba(17,52,84,.70);
+  border-color: rgba(255,255,255,.30);
+}
+
+/* meta (número + texto) */
+.page3 .rankbar__meta{
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 10px;
+  margin: 0 0 8px;
+}
+.page3 .rankbar__meta .rank{ font-weight: 800; }
+.page3 .rankbar__track{
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(147,197,253,.14);
+  border: 1px solid rgba(147,197,253,.22);
+  overflow: hidden;
+}
+.page3 .rankbar__fill{
+  height: 100%;
+  width: var(--w, 60%);
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(223, 147, 253, 0.788), rgba(147,197,253,.22));
+}
+
+/* CH4 */
+.page3 a.rankbar--ch4{
+  background: rgba(90,20,20,.35);
+  border-color: rgba(255,80,80,.22);
+}
+.page3 .rankbar--ch4 .rankbar__track{
+  background: rgba(255,80,80,.10);
+  border: 1px solid rgba(255,80,80,.22);
+}
+.page3 .rankbar--ch4 .rankbar__fill{
+  background: linear-gradient(90deg, rgba(255,80,80,.78), rgba(255,80,80,.18));
+}
+
+/* ======================
+   PAGE 4
+====================== */
+body.page4{
+  --bg:#0f172a;
+  --panel:#111827;
+  --text:#e5e7eb;
+  background:var(--bg);
+  color:var(--text);
+}
+.page4 section{
+  background:var(--panel);
+  border-radius:14px;
+  padding:18px;
+  margin: 14px 0;
+}
+
+/* ======================
+   PAGE 5
+====================== */
+body.page5{
+  background:radial-gradient(1200px 800px at 10% -10%,#1a2249 0%,#0b1020 55%);
+  color:#f5f7ff;
+}
+.page5 .card{
+  background:linear-gradient(180deg,#0f1736,#0c132b);
+  border-radius:16px;
+}
+
+/* ======================
+   PAGE 6
+====================== */
+body.page6{
+  background:#0b1220;
+  color:#eaf1ff;
+}
+.page6 .card{
+  background:#111a2b;
+  border-radius:14px;
+}

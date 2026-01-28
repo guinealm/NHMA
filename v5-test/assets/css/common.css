@@ -1,0 +1,239 @@
+/* assets/css/common.css
+   Hoja de estilos común para index.html, pagina1.html y pagina2.html
+   Versión: 1
+*/
+
+:root{
+  /* tokens base (tema oscuro tipo pagina1/pagina2) */
+  --bg:#0b1220;
+  --card:#111a2b;
+  --ink:#e8eefc;
+  --muted:#9bb0d1;
+  --link:#93c5fd;
+  --border:#1f2a44;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --radius:16px;
+  --pill:#0f1b31;
+
+  --warn:#ffdd8a; --warnbg:#1e1604;
+  --danger:#ffb3b3; --dangerbg:#1a0c0c;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+
+/* Contenedor común */
+.wrap, main.wrap, .container{max-width:1100px;margin:0 auto;padding:20px}
+@media (max-width:560px){ .wrap, main.wrap, .container{padding:16px} }
+
+/* Header + nav (común) */
+header{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter:saturate(160%) blur(6px);
+  background:linear-gradient(180deg,rgba(11,18,32,.9),rgba(11,18,32,.6));
+  border-bottom:1px solid var(--border);
+}
+nav{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+nav a{padding:8px 12px;border-radius:999px;border:1px solid transparent}
+nav a[aria-current="page"]{border-color:var(--border);background:rgba(255,255,255,.03)}
+
+/* Títulos / textos */
+h1,h2,h3{line-height:1.25;margin:0 0 .6em}
+.small{font-size:14px;color:var(--muted)}
+.meta{color:var(--muted)}
+
+/* Componentes comunes (cards / pills) */
+.cards{display:grid;gap:18px;margin:24px 0;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:18px;
+}
+.pill{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--pill);
+  font-size:14px;
+}
+.pill.warn{border-color:#614e16;background:var(--warnbg);color:var(--warn)}
+.pill.danger{border-color:#5a1a1a;background:var(--dangerbg);color:var(--danger)}
+
+/* Tabla (si se usa) */
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:var(--radius)}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:760px;background:var(--card)}
+thead th{
+  position:sticky;top:0;background:#0e1729;color:var(--muted);
+  text-align:left;font-weight:600;padding:12px;border-bottom:1px solid var(--border)
+}
+tbody td{padding:14px;border-bottom:1px solid var(--border);vertical-align:top}
+tbody tr:hover{background:#0f1b31}
+
+/* ===== Utilidades mínimas (pagina2) ===== */
+.grid{display:grid;gap:18px}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){
+  .grid.cols-3{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .grid.cols-2,.grid.cols-3{grid-template-columns:1fr}
+}
+.mt-0{margin-top:0}
+.mt-1{margin-top:12px}
+.mb-1{margin-bottom:12px}
+.mb-3{margin-bottom:24px}
+
+/* KPI (pagina2) */
+.kpi{display:flex;align-items:center;gap:10px}
+.kpi .value{font-size:22px;font-weight:700}
+
+/* Iframes */
+iframe{width:100%;height:560px;border:0}
+@media (max-width:720px){ iframe{height:420px} }
+
+/* ===== Herramientas (pagina1) ===== */
+.tools{margin-top:36px}
+.tools h2{font-size:22px;margin:0 0 12px}
+.tool-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.tool{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:16px
+}
+.tool a.block{
+  display:block;border-radius:12px;overflow:hidden;border:1px solid var(--border);
+  background:#0f1b31;transition:transform .08s ease
+}
+.tool a.block:hover{transform:translateY(-2px)}
+.tool img{display:block;width:100%;height:auto}
+.tool .t-title{margin:10px 0 6px;font-weight:600}
+.tool .t-desc{margin:0;color:var(--muted);font-size:14px}
+
+/* ===== Footer común ===== */
+.site-footer{margin:40px auto 12px;max-width:1100px;padding:0 20px;color:var(--muted)}
+.footer-line{margin:0}
+.footer-line--secondary{margin:0 auto 60px;max-width:1100px;padding:0 20px;color:var(--muted)}
+.sep{opacity:.75}
+
+/* ===== Tema HOME (index) ===== */
+body.home{
+  --bg:#111;
+  --card:#1a1a1a;
+  --ink:#f5f5f5;
+  --muted:#9aa7bd;
+  --link:#93c5fd;
+  --border:rgba(255,255,255,.12);
+  --shadow:0 2px 10px rgba(0,0,0,.55);
+  --radius:14px;
+  --pill:#0f1b31;
+}
+body.home{ text-align:center; }
+body.home header{ position:static; backdrop-filter:none; background:transparent; border-bottom:none; padding:20px 0 10px; }
+body.home header img{ max-width:260px; height:auto; margin:0 auto; }
+
+/* Botonera 3x2 en escritorio */
+body.home main.grid{
+  max-width:1000px;
+  margin:10px auto 40px;
+  padding:10px 20px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+body.home .btn{
+  display:block;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+  transition:transform .18s ease, box-shadow .18s ease;
+  outline:none;
+}
+body.home .btn:hover,
+body.home .btn:focus-visible{
+  transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(0,0,0,.6);
+}
+body.home .btn img{
+  width:100%;
+  height:auto;
+  display:block;
+  aspect-ratio:3/4;
+  object-fit:contain;
+  margin:0 auto;
+}
+@media (max-width:900px){ body.home main.grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:560px){ body.home main.grid{ grid-template-columns:1fr; } }
+/* =========================
+   PAGE 3 – ¿Por qué?
+========================= */
+body.page3 {
+  background:#0b1220;
+  color:#e6eef9;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+.page3 .lead {
+  font-size:1.1rem;
+  background:#234;
+  padding:1rem;
+  border-radius:12px;
+}
+
+.page3 .kpis {
+  display:grid;
+  gap:10px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+/* =========================
+   PAGE 4 – ¿Qué debe hacer el mundo?
+========================= */
+body.page4 {
+  --bg:#0f172a;
+  --panel:#111827;
+  --text:#e5e7eb;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.page4 section {
+  background:var(--panel);
+  border-radius:14px;
+  padding:18px;
+}
+
+/* =========================
+   PAGE 5 – ¿Qué puedo hacer yo?
+========================= */
+body.page5 {
+  background:radial-gradient(1200px 800px at 10% -10%,#1a2249 0%,#0b1020 55%);
+  color:#f5f7ff;
+}
+
+.page5 .card {
+  background:linear-gradient(180deg,#0f1736,#0c132b);
+  border-radius:16px;
+}
+
+/* =========================
+   PAGE 6 – ¿Cómo nos engañan?
+========================= */
+body.page6 {
+  background:#0b1220;
+  color:#eaf1ff;
+}
+
+.page6 .card {
+  background:#111a2b;
+  border-radius:14px;
+}

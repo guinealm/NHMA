@@ -1,0 +1,215 @@
+/* ===== Base tokens (podremos afinarlos al cierre V1) ===== */
+:root{
+  --bg:#ffffff; --text:#111; --muted:#666; --border:#e5e5e5;
+  --accent:#0a7a0a; --warn:#b58900; --bad:#b00020;
+  --radius:14px; --shadow:0 6px 20px rgba(0,0,0,.06);
+  --maxw:1100px; --gap:16px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+/* ===== Reset suave ===== */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:var(--font); color:var(--text); background:var(--bg); line-height:1.6}
+
+/* ===== Tipografía ===== */
+h1,h2,h3{line-height:1.25; margin:0 0 .5em}
+h1{font-size:clamp(1.6rem,2.5vw,2.2rem)}
+h2{font-size:clamp(1.3rem,2vw,1.6rem)}
+h3{font-size:1.15rem}
+p{margin:0 0 1rem}
+.small,.meta{font-size:.9rem;color:var(--muted)}
+.meta{letter-spacing:.02em}
+
+/* ===== Layout ===== */
+.container{max-width:var(--maxw); margin:0 auto; padding:24px}
+.grid{display:grid; gap:var(--gap)}
+.grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+
+/* ===== Tarjetas / componentes ===== */
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
+.kpi{display:flex;gap:12px;align-items:baseline}
+.kpi .value{font-size:1.6rem;font-weight:700}
+.pill{display:inline-block;padding:.25rem .6rem;border-radius:999px;border:1px solid var(--border);font-size:.85rem}
+.pill.ok{border-color:var(--accent);color:var(--accent)}
+.pill.warn{border-color:var(--warn);color:var(--warn)}
+.pill.bad{border-color:var(--bad);color:var(--bad)}
+.note{background:#fafafa;border-left:4px solid var(--border); padding:.75rem 1rem;border-radius:8px}
+
+/* ===== Enlaces / tablas ===== */
+a{color:inherit}
+a[target="_blank"]{text-decoration:underline}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid var(--border);padding:8px;vertical-align:top}
+th{background:#f7f7f7;text-align:left}
+
+/* ===== Medios ===== */
+img{max-width:100%;height:auto}
+iframe{width:100%;height:560px;border:0}
+@media (max-width:720px){ iframe{height:420px} }
+
+/* ===== Accesibilidad ===== */
+.sr-only{position:absolute;left:-9999px}
+:focus-visible{outline:2px solid #2d72d2; outline-offset:2px}
+
+/* ===== Utilidades ===== */
+.mt-0{margin-top:0}.mt-1{margin-top:.5rem}.mt-2{margin-top:1rem}.mt-3{margin-top:1.5rem}
+.mb-0{margin-bottom:0}.mb-1{margin-bottom:.5rem}.mb-2{margin-bottom:1rem}.mb-3{margin-bottom:1.5rem}
+.center{text-align:center}
+
+/* === Tipografía + colores mínimos para TODAS las páginas (armoniza 2 y 3) === */
+:root{
+  --bg:#ffffff;           /* fondo claro */
+  --text:#111111;         /* texto principal (alto contraste) */
+  --muted:#666666;        /* texto secundario */
+  --link:#1a73e8;         /* enlaces */
+}
+
+html,body{background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+h1,h2,h3{color:var(--text); line-height:1.25; margin:0 0 .6em}
+p,li{line-height:1.6}
+a{color:var(--link)}
+main, .container{max-width:1100px; margin:0 auto; padding:24px} /* se verá centrado aunque no uses clases */
+
+/* === Tema oscuro azul (override final) === */
+:root{
+  --bg:#0b2a4a;           /* azul fondo */
+  --text:#ffffff;         /* texto principal */
+  --muted:#d0d7e2;        /* texto secundario */
+  --link:#8cb8ff;         /* enlaces */
+  --border:rgba(255,255,255,.18);
+  --card:#113964;         /* fondo de tarjetas */
+  --shadow:0 8px 22px rgba(0,0,0,.35);
+}
+
+html,body{background:var(--bg); color:var(--text);}
+a{color:var(--link)}
+.meta,.small{color:var(--muted)}
+
+.card{
+  background:var(--card);
+  border-color:var(--border);
+  box-shadow:var(--shadow);
+}
+
+.pill{border-color:var(--border); color:var(--muted)}
+.pill.ok{border-color:#7ed957; color:#7ed957}
+.pill.warn{border-color:#ffd166; color:#ffd166}
+.pill.bad{border-color:#ff7b7b; color:#ff7b7b}
+
+table th, table td{ border-color:var(--border) }
+th{ background:rgba(255,255,255,.06) }
+
+/* ===== Menú superior compacto ===== */
+header nav a {
+  font-size: 0.6rem !important;  /* tamaño pequeño (≈12px) */
+  padding: 4px 6px !important;    /* menos espacio horizontal */
+  letter-spacing: 0.2px;
+  white-space: nowrap;            /* evita saltos de línea */
+}
+
+header nav {
+  display: flex;
+  flex-wrap: nowrap !important;   /* todo en una línea */
+  gap: 6px;
+  justify-content: center;        /* centra los enlaces */
+  overflow-x: auto;               /* si no cabe, permite desplazamiento */
+  scrollbar-width: none;          /* oculta scroll en Firefox */
+}
+
+header nav::-webkit-scrollbar {
+  display: none;                  /* oculta scroll en Chrome/Safari */
+}
+
+header { background: #0b1220; border-bottom: 1px solid #182230; }
+
+
+/* ===== Tarjeta KPI fusionada ===== */
+.kpi-card .kpi-header {
+  display:flex; align-items:center; gap:8px; margin-bottom:6px;
+}
+.kpi-card .kpi-header .icon {
+  width:24px; height:24px; display:grid; place-items:center;
+  border-radius:6px; background:rgba(255,255,255,.08);
+}
+.kpi-card h3 {
+  margin:0; font-size:1.05rem; font-weight:600;
+}
+.kpi-card .kpi-values {
+  display:flex; flex-wrap:wrap; gap:8px; margin-bottom:8px;
+}
+.kpi-card .pill {
+  padding:4px 10px; border-radius:999px; font-size:0.9rem;
+  border:1px solid var(--border); color:var(--muted);
+  background:#0f1b31; display:inline-block;
+}
+.kpi-card .pill.ok {
+  border-color:#3fb950; background:rgba(63,185,80,.15); color:#86efac;
+}
+.kpi-card .pill.warn {
+  border-color:#b58900; background:rgba(181,137,0,.15); color:#f6d865;
+}
+.kpi-card .pill.danger {
+  border-color:#d73a49; background:rgba(215,58,73,.15); color:#fba4a4;
+}
+.kpi-card p {margin:0 0 6px;}
+.kpi-card .ref a {color:var(--link);}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border, #e5e7eb);
+  color: var(--muted-fg, #6b7280);
+  background: var(--footer-bg, transparent);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+.site-footer .footer-line {
+  margin: 0.15rem 0;
+  font-size: var(--footer-font-size, 0.95rem);      /* páginas internas */
+  line-height: 1.5;
+  text-align: center;
+}
+
+.site-footer .footer-line--secondary {
+  font-size: var(--footer-font-size-secondary, 1.05rem); /* principal un poco mayor */
+  opacity: 0.95;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.site-footer .sep { margin: 0 0.35rem; }
+
+footer.site-footer p.footer-line,
+footer.site-footer p.footer-line.footer-line--secondary {
+  text-align: center;
+}
+
+/* Breadcrumb / Miga de pan */
+.breadcrumb{font-size:.95rem;color:#6b7280;margin:.5rem 0 1rem}
+.breadcrumb a{color:inherit;text-decoration:none}
+.breadcrumb a:hover,.breadcrumb a:focus{text-decoration:underline}
+.breadcrumb .sep{margin:0 .35rem;user-select:none}
+.breadcrumb [aria-current="page"]{font-weight:600;color:#374151}
+
+.page-header{ padding: 20px 0 8px; }
+.page-header h1{
+  font-size: 2.4rem;         /* ajusta si quieres */
+  line-height: 1.15;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #e8eefb;            /* como en la 1 */
+}
+.page-sub{
+  margin: 0;
+  color: #9aa7bd;            /* gris azulado suave */
+  font-size: 1rem;
+}
+
+
+

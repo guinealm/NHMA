@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3.2 Edificios (climatización y usos térmicos)</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#121a33; --ink:#e9eefc; --muted:#a8b3d1; --accent:#5ec2a5; --accent2:#9cb7ff; --warn:#ffd166;
+      --radius:18px;
+    }
+    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.5}
+    a{color:var(--accent2);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1050px;margin:auto;padding:22px}
+    header{margin:8px 0 22px}
+    h1{font-size:clamp(28px,3.2vw,40px);margin:0 0 6px}
+    .kicker{color:var(--muted);font-size:14px;letter-spacing:.02em}
+    .quote{background:linear-gradient(180deg,#162043,#0e1530);border:1px solid #243057;padding:16px 18px;border-radius:var(--radius);margin:14px 0 22px}
+    blockquote{margin:0;font-size:18px}
+    .grid{display:grid;gap:16px}
+    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--panel);border:1px solid #1f2a4f;border-radius:var(--radius);padding:16px}
+    .eyebrow{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .big{font-size:36px;font-weight:700}
+    .sub{color:var(--muted);font-size:14px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px dashed #30407a;border-radius:999px;padding:6px 10px;font-size:13px;color:var(--muted)}
+    .actions li{margin:6px 0}
+    .warn{background:#251f07;border-color:#4e3f0b}
+    .ok{background:#10261e;border-color:#234d3e}
+    iframe{width:100%;height:520px;border:0;border-radius:var(--radius);background:#0c1226}
+    details{background:rgba(255,255,255,.03);border:1px solid #29365f;border-radius:14px;padding:10px}
+    summary{cursor:pointer}
+    .foot{color:var(--muted);font-size:13px;margin-top:8px}
+    /* Mini calculadora */
+    .calc{display:grid;grid-template-columns:1fr;gap:10px}
+    .calc .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .badge{display:inline-block;background:#1d2b53;border:1px solid #32457e;padding:2px 8px;border-radius:999px;font-size:12px;color:#cfe0ff}
+    .num{font-variant-numeric:tabular-nums}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="kicker">3.2 Sectores &raquo; Emisiones y soluciones</div>
+      <h1>3.2 Edificios (climatización y usos térmicos)</h1>
+      <p class="sub">Calefacción, refrigeración, ACS y usos térmicos en viviendas y terciario.</p>
+    </header>
+
+    <section class="quote">
+      <blockquote>
+        “Si contamos la electricidad, los edificios pesan mucho más: <strong>aislar y pasar a bomba de calor no es cosmético, es estructural</strong>.”
+      </blockquote>
+    </section>
+
+    <section class="grid cols-2" aria-labelledby="datos-clave">
+      <article class="card" id="datos-clave">
+        <div class="eyebrow">Datos clave (aprox.)</div>
+        <div class="grid cols-2">
+          <div>
+            <div class="big">6%</div>
+            <div class="sub">Emisiones directas (combustibles in-situ).</div>
+          </div>
+          <div>
+            <div class="big">≈21%</div>
+            <div class="sub">Si incluimos electricidad y materiales (cemento, acero, etc.).</div>
+          </div>
+        </div>
+        <p class="foot">Las cifras varían por fuente y año; ver notas de fuentes al pie de página.</p>
+      </article>
+
+      <article class="card">
+        <div class="eyebrow">Palancas</div>
+        <div class="chips">
+          <span class="chip">Aislamiento y sellado</span>
+          <span class="chip">Bomba de calor (AA/ACS)</span>
+          <span class="chip">Estándares de edificio</span>
+          <span class="chip">Electrificación de usos térmicos</span>
+        </div>
+        <p class="sub" style="margin-top:8px">La secuencia típica: <strong>aislar &rarr; sellar &rarr; bomba de calor &rarr; fotovoltaica</strong>.</p>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <div class="eyebrow">Contexto global</div>
+      <p class="sub">Proporción de emisiones por sector (mundo). Pasa el cursor para ver “Energy use in buildings”.</p>
+      <iframe loading="lazy"
+        src="https://ourworldindata.org/grapher/ghg-emissions-by-sector?tab=chart&stackMode=relative">
+      </iframe>
+      <p class="foot">Fuente interactiva: Our World in Data.</p>
+    </section>
+
+    <section class="grid cols-3" style="margin-top:16px" aria-labelledby="palancas">
+      <article class="card ok">
+        <h3 style="margin:0 0 6px">Aislamiento y sellado</h3>
+        <ul class="sub actions">
+          <li>Insuflar o añadir <strong>aislante</strong> en envolvente (fachada, cubierta, cámara).</li>
+          <li><strong>Sellado</strong> de infiltraciones: cajas de persiana, encuentros, ventanas.</li>
+          <li><strong>Vidrios</strong> bajo emisivos / dobles con rotura de puente térmico.</li>
+        </ul>
+      </article>
+
+      <article class="card ok">
+        <h3 style="margin:0 0 6px">Bomba de calor</h3>
+        <ul class="sub actions">
+          <li>Sustituye caldera/gasóleo por <strong>aerotermia</strong> (AA + ACS).</li>
+          <li>Compatibiliza con <strong>radiadores sobredimensionados</strong> o <em>fan coils</em>.</li>
+          <li>Programación por zonas y <strong>termostatos</strong> inteligentes.</li>
+        </ul>
+      </article>
+
+      <article class="card ok">
+        <h3 style="margin:0 0 6px">Estándares y electrificación</h3>
+        <ul class="sub actions">
+          <li>Códigos tipo <strong>NZEB/Passivhaus</strong> en obra nueva y gran rehabilitación.</li>
+          <li><strong>Electrificar</strong> cocción/SEC y eliminar quemas in-situ.</li>
+          <li>Preparar el edificio para <strong>fotovoltaica</strong> y gestión de demanda.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:16px" aria-labelledby="acciones">
+      <div class="eyebrow">Acciones prácticas (hogar y oficina)</div>
+      <ul class="actions">
+        <li>👉 <strong>Ajusta el termostato</strong>: baja 1&nbsp;°C en invierno / sube 1&nbsp;°C en verano.</li>
+        <li>🧱 <strong>Sellado + aislamiento</strong> donde falte (cámaras, buhardilla, cajas de persiana).</li>
+        <li>🔁 <strong>Cambia a bomba de calor</strong> (espacio + ACS) cuando toque sustituir equipos.</li>
+        <li>🌬️ <strong>Ventilación cruzada</strong> y <strong>sombra</strong> (toldos, persianas) para reducir horas de AC.</li>
+      </ul>
+
+      <details style="margin-top:10px">
+        <summary><strong>Mini-calculadora</strong> de ahorro por termostato (estimación orientativa)</summary>
+        <div class="calc" style="margin-top:8px">
+          <div class="row">
+            <label for="modo">Modo:</label>
+            <select id="modo">
+              <option value="invierno" selected>Invierno (calefacción)</option>
+              <option value="verano">Verano (refrigeración)</option>
+            </select>
+            <span class="badge">Supuesto: ~7% por °C</span>
+          </div>
+          <div class="row">
+            <label for="delta">Cambio de consigna:</label>
+            <input id="delta" type="range" min="-3" max="3" step="0.5" value="-1" />
+            <span><span id="deltaVal" class="num">-1.0</span> °C</span>
+          </div>
+          <div class="row">
+            <label for="factura">Gasto anual (clima):</label>
+            <input id="factura" type="number" min="0" step="10" value="600" /> €
+          </div>
+          <div class="row">
+            <div class="badge">Ahorro estimado: <span id="ahorroPct" class="num">7.0</span>%</div>
+            <div class="badge">≈ <span id="ahorro€" class="num">42</span> €/año</div>
+          </div>
+        </div>
+      </details>
+      <p class="foot">La regla del 5–10% por °C es aproximada y depende del edificio, clima y hábitos.</p>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <div class="eyebrow">Fuentes y recursos</div>
+      <ul class="sub">
+        <li>Our World in Data – <em>Greenhouse gas emissions by sector</em> (gráfico embebido arriba).</li>
+        <li>IEA – <em>Buildings: Energy System</em> (panorama de consumo y emisiones), <em>Heat pumps</em>.</li>
+      </ul>
+      <p class="foot">Nota: tus cifras de referencia “6% directas &middot; ~21% con electricidad y materiales” encajan con rangos habituales según año y metodología.</p>
+    </section>
+
+    <script>
+      (function(){
+        const delta = document.getElementById('delta');
+        const deltaVal = document.getElementById('deltaVal');
+        const factura = document.getElementById('factura');
+        const ahorroPct = document.getElementById('ahorroPct');
+        const ahorro€ = document.getElementById('ahorro€');
+        const modo = document.getElementById('modo');
+
+        function calc(){
+          const d = parseFloat(delta.value); // °C respecto a la situación actual
+          const basePct = 7; // % por °C (supuesto medio)
+          // En invierno: bajar consigna (d<0) ahorra; en verano: subir consigna (d>0) ahorra.
+          let pct = 0;
+          if(modo.value === 'invierno'){
+            pct = -d * basePct; // d negativo => ahorro positivo
+          }else{
+            pct = d * basePct;  // d positivo => ahorro positivo
+          }
+          pct = Math.max(0, pct); // no mostramos ahorro si el cambio empeora
+          const euros = (parseFloat(factura.value||0) * pct/100).toFixed(0);
+          deltaVal.textContent = d.toFixed(1);
+          ahorroPct.textContent = pct.toFixed(1);
+          ahorro€.textContent = isFinite(euros)? euros : 0;
+        }
+        ['input','change'].forEach(ev=>{
+          delta.addEventListener(ev, calc);
+          factura.addEventListener(ev, calc);
+          modo.addEventListener(ev, calc);
+        });
+        calc();
+      })();
+    </script>
+  </main>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3. ¿Por qué está cambiando?</title>
+<link rel="stylesheet" href="assets/css/common-core.css?v=2">
+<link rel="stylesheet" href="assets/css/common-nav-footer.css?v=2">
+
+<!-- TEMPORAL (base actual) -->
+<link rel="stylesheet" href="assets/css/common.css?v=2">
+
+<!-- overrides por página (DEBE IR EL ÚLTIMO) -->
+<link rel="stylesheet" href="assets/css/pages.css?v=2">
+
+
+
+
+
+</head>
+
+<script>
+(function () {
+  const el = document.querySelector('.footer-updated');
+  if (!el) return;
+
+  // 1) Preferir meta fija si existe
+  const meta = document.querySelector('meta[name="page-updated"]');
+  let d = meta ? new Date(meta.getAttribute('content')) : new Date(document.lastModified);
+
+  if (isNaN(d)) return;
+
+  // Formato: "lunes, 6 de octubre de 2025" en zona Europe/Madrid
+  const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Europe/Madrid' };
+  const fecha = new Intl.DateTimeFormat('es-ES', opts).format(d);
+
+  el.textContent = `Última actualización: ${fecha}`;
+})();
+</script>
+
+<body class="page3">
+
+    
+    <header>
+  <div class="wrap">
+    <nav>
+      
+<div style="font-size: 0.95rem;">
+  <a href="index.html">Home</a>
+  <a href="pagina1.html">¿Está cambiando?</a>
+  <a href="pagina2.html">¿Hace daño?</a>
+  <a href="pagina3.html"aria-current="page">¿Por qué?</a>
+  <a href="pagina4.html">¿Qué debe hacer el mundo?</a>
+  <a href="pagina5.html">¿Qué debe hacer el mundo?</a>
+  <a href="pagina6.html">¿Cómo nos engañan?</a>
+</div>
+    </nav>
+  </div>
+</header>
+
+
+    
+    
+  <main class="container">
+    <h1>¿Por qué está cambiando?</h1>
+
+     <section aria-label="Seis ideas clave"></section>
+    <p class="lead">
+      La Tierra está <strong>en desequilibrio energético</strong>: entra más energía de la que sale. El
+      <em>forzamiento radiativo</em> antropogénico estimado por el IPCC para 2019 es ≈ <strong>+2,72 W/m²</strong>
+      (vs. 1750), dominado por los gases de efecto invernadero (GEI) y parcialmente enmascarado por aerosoles que enfrían.
+      El exceso de energía se acumula sobre todo en el océano.
+    </p>
+
+  <div class="ideas6">
+    <article class="idea">
+      <div class="idea__icon" aria-hidden="true">⚡</div>
+      <h3>Motor físico (ERF)</h3>
+      <p>GEI ↑ → forzamiento radiativo ↑ → más calor retenido.</p>
+    </article>
+
+    <article class="idea">
+      <div class="idea__icon" aria-hidden="true">🧪</div>
+      <h3>Quién manda</h3>
+      <p>CO₂ domina; CH₄ y N₂O aportan. Vapor de agua = retroalimentación.</p>
+    </article>
+
+    <article class="idea">
+      <div class="idea__icon" aria-hidden="true">🌫️</div>
+      <h3>Enmascaramiento</h3>
+      <p>Aerosoles reflejan luz → enfriamiento parcial y temporal.</p>
+    </article>
+
+    <article class="idea">
+      <div class="idea__icon" aria-hidden="true">🔁</div>
+      <h3>Retroalimentaciones</h3>
+      <p>Vapor de agua, hielo–albedo y nubes amplifican (nubes: mayor incertidumbre).</p>
+    </article>
+
+    <article class="idea">
+      <div class="idea__icon" aria-hidden="true">☀️</div>
+      <h3>Naturales ≠ tendencia</h3>
+      <p>Sol/volcanes no explican la tendencia reciente (volcanes: enfriamiento breve).</p>
+    </article>
+
+    <article class="idea">
+      <div class="idea__icon" aria-hidden="true">🌊</div>
+      <h3>Prueba energética</h3>
+      <p>El exceso de calor se acumula principalmente en el océano.</p>
+    </article>
+  </div>
+
+  <p class="attrib"></p>
+</section>
+
+
+
+    <!-- LOGOTIPO: barras comparativas y clicables (3.1–3.4) + botón aparte para 3.5 Metano -->
+    <h2>Impacto relativo de las causas (% CO₂ o equivalente, en el mundo)</h2>
+   <!-- (elimina la línea “Amplía …”) -->
+
+<section class="rankbars" aria-label="Impacto relativo de las causas (CO₂e, mundo)">
+  <a class="rankbar" href="pagina33.html">
+    <div class="rankbar__meta">
+      <span class="rank">1</span>
+      <span class="label">Generación de energía (36%)</span>
+    </div>
+    <div class="rankbar__track"><div class="rankbar__fill" style="--w:36%"></div></div>
+  </a>
+
+  <a class="rankbar" href="pagina34.html">
+    <div class="rankbar__meta">
+      <span class="rank">2</span>
+      <span class="label">Procesos industriales (25%)</span>
+    </div>
+    <div class="rankbar__track"><div class="rankbar__fill" style="--w:25%"></div></div>
+  </a>
+
+  <a class="rankbar" href="pagina31.html">
+    <div class="rankbar__meta">
+      <span class="rank">3</span>
+      <span class="label">Transporte (18%)</span>
+    </div>
+    <div class="rankbar__track"><div class="rankbar__fill" style="--w:18%"></div></div>
+  </a>
+
+ 
+  <a class="rankbar" href="pagina32.html">
+    <div class="rankbar__meta">
+      <span class="rank">4</span>
+      <span class="label">Edificios (6%)</span>
+    </div>
+    <div class="rankbar__track"><div class="rankbar__fill" style="--w:6%"></div></div>
+  </a>
+
+  <a class="rankbar rankbar--ch4" href="pagina35.html">
+    <div class="rankbar__meta">
+      <span class="rank">CH₄</span>
+      <span class="label">Metano (tratado aparte)</span>
+    </div>
+    <div class="rankbar__track"><div class="rankbar__fill" style="--w:15%"></div></div>
+  </a>
+
+  <p class="note note--ch4">
+    Metano (CH₄) → Nota: Las barras azules comparan CO₂e por sectores. CH₄ se destaca aparte por su potencia y ciclo de vida.
+  </p>
+</section>
+
+
+
+
+    <!-- ====== Datos clave: se mantienen ====== -->
+    <h2>Datos clave (visores interactivos)</h2>
+
+    <!-- 1) ¿De dónde vienen las emisiones? por sector (mundo) -->
+    <h3>¿De dónde vienen las emisiones? (reparto por sector)</h3>
+    <iframe 
+      src="https://ourworldindata.org/grapher/ghg-emissions-by-sector?tab=chart&stackMode=relative&region=~OWID_WRL"
+      loading="lazy" allow="web-share; clipboard-write"></iframe>
+    <small class="note">Comparte emisiones de GEI por sector (mundo). Fuente: OWID &amp; Climate Watch.</small>
+
+    <!-- 2) ¿Qué gases/fuentes explican el calentamiento? -->
+    <h3>¿Qué gases/fuentes explican el calentamiento?</h3>
+    <iframe
+      src="https://ourworldindata.org/grapher/global-warming-by-gas-and-source?tab=chart"
+      loading="lazy" allow="web-share; clipboard-write"></iframe>
+    <small class="note">Contribución al aumento de la temperatura global por gas y por fuente.</small>
+
+    <!-- 3) Metano: por qué importa además del CO₂ -->
+    <h3>Metano en la atmósfera</h3>
+    <iframe
+      src="https://ourworldindata.org/grapher/global-methane-concentrations?tab=chart"
+      loading="lazy" allow="web-share; clipboard-write"></iframe>
+    <small class="note">Concentración atmosférica de CH₄ (ppb). Útil como anticipo de la página 3.5.</small>
+
+    <!-- Metodología y fronteras -->
+    <details>
+      <summary><strong>Metodología y fronteras</strong></summary>
+      <ul>
+        <li><em>GEI</em> en CO₂e (GWP100). El reparto por sector procede de inventarios internacionales armonizados.</li>
+        <li>“Contribuciones al calentamiento” agregan el efecto de gases y fuentes sobre la temperatura media global.</li>
+        <li>El forzamiento radiativo antropogénico (IPCC AR6) cuantifica el desequilibrio energético respecto a 1750.</li>
+      </ul>
+    </details>
+
+    <footer>
+      <strong>Fuentes de referencia</strong>:
+      IPCC AR6 WGI/WGIII · Our World in Data · NASA/NOAA.
+    </footer>
+    
+    <!-- Opcional: fuerza una fecha fija independiente del servidor -->
+<!-- <meta name="page-updated" content="2025-10-06"> -->
+
+<footer class="site-footer" aria-label="Créditos">
+  <p class="footer-line">
+    <span class="footer-updated">Última actualización: 2025-10-06</span>
+    <span class="sep" aria-hidden="true"> · </span>
+    <span class="footer-author">Autor: GMIM</span>
+    <span class="sep" aria-hidden="true"> · </span>
+    <span class="footer-license">
+      Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a>
+    </span>
+  </p>
+
+  </p>
+</footer>
+
+  </main>
+</body>
+</html>
+

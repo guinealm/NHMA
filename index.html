@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>No hay marcha atrás</title>
+  <style>
+    :root { --bg:#111; --card:#1a1a1a; --txt:#f5f5f5; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, sans-serif; background:var(--bg); color:var(--txt); text-align:center; }
+    header { padding:20px 0 10px; }
+    header img { max-width:260px; height:auto; }
+
+    /* Botonera 3x2 en escritorio */
+    .grid {
+      max-width: 1000px;
+      margin: 10px auto 40px;
+      padding: 10px 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .btn {
+      display: block;
+      background: var(--card);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.55);
+      transition: transform .18s ease, box-shadow .18s ease;
+      outline: none;
+    }
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,.6);
+    }
+
+    .btn img {
+      width: 100%;
+      height: auto;
+      display: block;
+      /* Mantener proporciones y buen encaje si suben imágenes heterogéneas */
+      aspect-ratio: 3 / 4; /* vertical tipo póster */
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    /* Responsivo: 2 columnas en tablet, 1 en móvil */
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+
+<script>
+(function () {
+  const el = document.querySelector('.footer-updated');
+  if (!el) return;
+
+  // 1) Preferir meta fija si existe
+  const meta = document.querySelector('meta[name="page-updated"]');
+  let d = meta ? new Date(meta.getAttribute('content')) : new Date(document.lastModified);
+
+  if (isNaN(d)) return;
+
+  // Formato: "lunes, 6 de octubre de 2025" en zona Europe/Madrid
+  const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Europe/Madrid' };
+  const fecha = new Intl.DateTimeFormat('es-ES', opts).format(d);
+
+  el.textContent = `Última actualización: ${fecha}`;
+})();
+</script>
+
+<body>
+
+  <header>
+    <img src="assets/img/0nohaymarchaatras.png" alt="No hay marcha atrás - Logo" />
+  </header>
+
+  <main class="grid" aria-label="Menú principal">
+    <a class="btn" href="pagina1.html" aria-label="¿Está cambiando?">
+      <img src="assets/img/1estacambiando.png" alt="¿Está cambiando?" />
+    </a>
+
+    <a class="btn" href="pagina2.html" aria-label="¿Hace daño?">
+      <img src="assets/img/2hacedaño.png" alt="¿Hace daño?" />
+    </a>
+
+    <a class="btn" href="pagina3.html" aria-label="¿Por qué?">
+      <img src="assets/img/3porque.png" alt="¿Por qué?" />
+    </a>
+
+    <a class="btn" href="pagina4.html" aria-label="¿Qué tiene que hacer el mundo?">
+      <img src="assets/img/4quetienequehacerelmundo.png" alt="¿Qué tiene que hacer el mundo?" />
+    </a>
+
+    <a class="btn" href="pagina5.html" aria-label="¿Qué puedo hacer yo?">
+      <img src="assets/img/5quepuedohaceryo.png" alt="¿Qué puedo hacer yo?" />
+    </a>
+
+    <a class="btn" href="pagina6.html" aria-label="¿Cómo nos engañan?">
+      <img src="assets/img/6comonosengañan.png" alt="¿Cómo nos engañan?" />
+    </a>
+  </main>
+  <!-- Opcional: cambia a funcional:
+<main class="grid" aria-label="Menú principal">
+    <a class="btn" href="pagina1.html" aria-label="¿Está cambiando?">
+      <img src="assets/img/1estacambiando.png" alt="¿Está cambiando?" />
+    </a>
+
+    <a class="btn" href="pagina2.html" aria-label="¿Hace daño?">
+      <img src="assets/img/2hacedaño.png" alt="¿Hace daño?" />
+    </a>
+
+    <a class="btn" href="pagina3.html" aria-label="¿Por qué?">
+      <img src="assets/img/3porque.png" alt="¿Por qué?" />
+    </a>
+
+    <a class="btn" href="pagina4.html" aria-label="¿Qué tiene que hacer el mundo?">
+      <img src="assets/img/4quetienequehacerelmundo.png" alt="¿Qué tiene que hacer el mundo?" />
+    </a>
+
+    <a class="btn" href="pagina5.html" aria-label="¿Qué puedo hacer yo?">
+      <img src="assets/img/5quepuedohaceryo.png" alt="¿Qué puedo hacer yo?" />
+    </a>
+
+    <a class="btn" href="pagina6.html" aria-label="¿Cómo nos engañan?">
+      <img src="assets/img/6comonosengañan.png" alt="¿Cómo nos engañan?" />
+    </a>
+  </main>
+  -->
+
+<footer class="site-footer" aria-label="Créditos">
+  <p class="footer-line">
+    <span class="footer-updated">Última actualización: LUNESlunes, 6 de octubre de 2025</span>
+    <span class="sep" aria-hidden="true"> · </span>
+    <span class="footer-author">Autor: GMIM</span>
+    <span class="sep" aria-hidden="true"> · </span>
+    <span class="footer-license">
+      Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a>
+    </span>
+  </p>
+</footer>
+
+<p class="footer-line footer-line--secondary">
+  <span class="footer-project">Proyecto: No Hay Marcha Atrás</span>
+  <!-- Opcional: descomenta o añade bloques cortos:
+  <span class="sep" aria-hidden="true"> · </span>
+  <span class="footer-sources">Fuentes: IPCC, NASA, Copernicus, EEA, OWID</span>
+  <span class="sep" aria-hidden="true"> · </span>
+  <span class="footer-version">Versión: V_beta</span>
+  -->
+</p>
+
+
+</body>
+</html>

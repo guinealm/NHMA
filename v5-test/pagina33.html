@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3.3 Generación de energía (electricidad y calor)</title>
+  <meta name="description" content="Cómo contribuye la generación de electricidad y calor al CO₂ y qué palancas y acciones tenemos para descarbonizar." />
+  <style>
+    :root {
+      --bg: #0b1020;          /* fondo oscuro sobrio (versión 1: mantenemos estilos simples) */
+      --panel: #12182b;
+      --text: #e7eefb;
+      --muted: #9ab;
+      --accent: #6dd3ff;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --bad: #ef4444;
+      --card: #0f1526;
+      --shadow: 0 8px 24px rgba(0,0,0,.35);
+    }
+    html, body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Noto Sans', 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display: grid; gap: 8px; margin-bottom: 12px; }
+    nav.breadcrumb { font-size: .9rem; color: var(--muted); }
+    nav.breadcrumb a { color: var(--muted); }
+    h1 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin: 8px 0 4px; }
+    .subtitle { color: var(--muted); font-size: 1rem; }
+
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 900px) {
+      .grid.two { grid-template-columns: 1fr 1fr; }
+      .grid.three { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: 14px; box-shadow: var(--shadow); padding: 16px; }
+    .card h3 { margin-top: 0; font-size: 1.05rem; }
+    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: .85rem; background: rgba(255,255,255,.06); color: var(--muted); margin-right: 8px; }
+
+    .callout { border-left: 4px solid var(--accent); padding: 12px 12px 12px 14px; background: linear-gradient(90deg, rgba(109,211,255,.12), transparent); border-radius: 8px; }
+
+    .charts iframe { width: 100%; height: 520px; border: 0; background: #fff; border-radius: 12px; }
+
+    details { background: var(--panel); border-radius: 12px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.06); }
+    summary { cursor: pointer; font-weight: 600; }
+
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: #1f2a44; padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,.08); }
+    .btn:hover { background: #263353; }
+    .small { font-size: .9rem; color: var(--muted); }
+    footer { margin: 40px 0 20px; color: var(--muted); font-size: .9rem; }
+    hr.sep { border: none; border-top: 1px solid rgba(255,255,255,.08); margin: 24px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <nav class="breadcrumb" aria-label="migas de pan">
+        <!-- Ajusta los enlaces a tu árbol real -->
+        <a href="index.html">Inicio</a> › <a href="pagina3.html">3. ¿Por qué está cambiando?</a> › <a href="pagina32.html">3.2 Sectores</a> › <span>3.3 Generación de energía</span>
+      </nav>
+      <h1>3.3 Generación de energía (electricidad y calor)</h1>
+      <p class="subtitle">El mayor contribuidor de CO₂. Cómo descarbonizar con rapidez y rigor.</p>
+    </header>
+
+    <section class="grid two">
+      <article class="card">
+        <h3>Datos clave</h3>
+        <ul>
+          <li>La <strong>generación de electricidad y calor</strong> es el <em>mayor “pastel”</em> de las emisiones energéticas de CO₂ a nivel global.</li>
+          <li>Hoy la electricidad mundial se genera aún <strong>mayoritariamente con combustibles fósiles</strong>, aunque las <strong>renovables modernas (solar y eólica)</strong> crecen con fuerza.</li>
+          <li>Reducir el <strong>carbón</strong>, gestionar el <strong>metano fugitivo</strong> en gas y petróleo, y desplegar <strong>redes y almacenamiento</strong> son decisiones estructurales, no cosméticas.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Palancas de cambio</h3>
+        <ul>
+          <li><strong>Despliegue masivo de renovables</strong> (eólica, solar) + modernización de <strong>hidro</strong>.</li>
+          <li><strong>Salida del carbón</strong> con planes verificables y sustitución por <em>renovables firmes + flexibilidad</em>.</li>
+          <li><strong>Redes y flexibilidad</strong>: gestión de la demanda, interconexiones, respuesta a la demanda, agregadores.</li>
+          <li><strong>Almacenamiento</strong>: baterías de corta duración y tecnologías de larga duración (bombeo, térmico, hidrógeno, etc.).</li>
+          <li><strong>Metano fugitivo</strong> en <em>upstream</em> y redes: detección, sellado, y normas de ventilación/certificación.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <h3>Qué puedes hacer (acciones prácticas)</h3>
+      <div class="callout">
+        <ul>
+          <li><strong>Elige contrato/tarifa con garantía de origen renovable</strong> (GdO) o cooperativas verdes.</li>
+          <li><strong>Autoconsumo</strong> (individual o compartido) y <strong>comunidades energéticas</strong>.</li>
+          <li><strong>Eficiencia</strong> en el uso eléctrico y térmico (termostatos, aislamiento, hábitos), y <strong>electrificación</strong> de usos térmicos con bomba de calor.</li>
+        </ul>
+        <p class="small">“Elegir electricidad limpia y reducir kWh es la vía rápida y barata de bajar emisiones del sistema energético.”</p>
+      </div>
+    </section>
+
+    <section class="charts grid two" aria-label="Gráficos de contexto">
+      <article>
+        <h3>Mezcla eléctrica mundial por fuente</h3>
+        <p class="small">Producción global de electricidad por grandes familias: fósil, nuclear y renovables.</p>
+        <iframe title="Electricity production from fossil fuels, nuclear and renewables"
+          src="https://ourworldindata.org/grapher/elec-fossil-nuclear-renewables.html?tab=chart&stackMode=absolute&country=~World"
+          loading="lazy" allow="clipboard-write; web-share"></iframe>
+      </article>
+      <article>
+        <h3>Renovables modernas por tecnología</h3>
+        <p class="small">Desglose de la generación renovable moderna (eólica, solar, hidro moderna, bioenergía moderna, geotermia).</p>
+        <iframe title="Modern renewable electricity generation by source"
+          src="https://ourworldindata.org/grapher/modern-renewable-prod.html?tab=chart&stackMode=absolute&country=~World"
+          loading="lazy" allow="clipboard-write; web-share"></iframe>
+      </article>
+    </section>
+
+    <section class="card">
+      <h3>Herramientas en tiempo real</h3>
+      <div class="btns">
+        <a class="btn" target="_blank" rel="noopener" href="https://demanda.ree.es/visiona/home" title="REE – demanda y mix en tiempo real (España)">🇪🇸 REE: demanda y mix en tiempo real</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.iea.org/data-and-statistics/data-tools/real-time-electricity-tracker" title="IEA – Real‑Time Electricity Tracker">🌍 IEA: Real‑Time Electricity Tracker</a>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.iea.org/data-and-statistics/data-tools/monthly-electricity-statistics" title="IEA – Monthly Electricity Statistics">📊 IEA: Monthly Electricity Statistics</a>
+      </div>
+      <p class="small" style="margin-top:10px">Algunas webs oficiales no permiten <em>embed</em> por seguridad. Por eso se abren en pestaña nueva.</p>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h3>Notas rápidas</h3>
+        <ul>
+          <li><strong>Carbón</strong>: la mayor intensidad de CO₂ por kWh. Prioridad 1 en salida ordenada.</li>
+          <li><strong>Gas</strong>: menor CO₂ que el carbón, pero el <em>metano</em> sin controlar puede anular ventajas a corto plazo.</li>
+          <li><strong>Nuclear</strong>: baja en carbono; su rol depende de costes, tiempos y gestión de residuos/seguridad.</li>
+          <li><strong>Renovables</strong>: costes a la baja; necesitan redes flexibles y almacenamiento para firmar el suministro.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Preguntas frecuentes</h3>
+        <details>
+          <summary>¿Por qué importa el metano fugitivo?</summary>
+          <p>El metano calienta más que el CO₂ en 20 años. Detectar/evitar fugas en petróleo y gas recorta el impacto climático del kilovatio-hora a corto plazo.</p>
+        </details>
+        <details>
+          <summary>¿Redes y almacenamiento son “complementos”?</summary>
+          <p>No: son <em>infraestructura</em>. Más renovables → más necesidad de flexibilidad (redes, interconexiones, gestión de demanda) y almacenamiento para cubrir variabilidad.</p>
+        </details>
+        <details>
+          <summary>¿Qué significa “salida del carbón” práctica?</summary>
+          <p>Fechas de cierre, sustitución por renovables + flexibilidad/almacenamiento, y apoyo a regiones afectadas. Medir avances con datos públicos.</p>
+        </details>
+      </article>
+    </section>
+
+    <hr class="sep" />
+
+    <section class="grid two">
+      <article class="card">
+        <h3>Créditos de datos y licencias</h3>
+        <p class="small">Gráficos incrustados de <a href="https://ourworldindata.org/" target="_blank" rel="noopener">Our World in Data</a> (CC BY 4.0). Herramientas y estadísticas de <a href="https://www.iea.org/" target="_blank" rel="noopener">IEA</a> y <a href="https://www.ree.es/" target="_blank" rel="noopener">REE</a>. Ver enlaces superiores.</p>
+      </article>
+      <article class="card">
+        <h3>Notas para editores (interno)</h3>
+        <ul class="small">
+          <li>Puedes modificar los parámetros de los iframes añadiendo <code>&amp;country=Spain</code> o similares.</li>
+          <li>Este diseño usa estilos mínimos; la homogeneización de CSS se hará al final de la versión 1.</li>
+          <li>Si cambias la ruta del menú, ajusta los enlaces de la cabecera.</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer>
+      <p>© Proyecto “Cambio climático” — Sección 3.2.3. Última edición: <span id="ts"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    // timestamp simple de última edición (cliente)
+    const el = document.getElementById('ts');
+    if (el) { const d = new Date(); el.textContent = d.toLocaleDateString('es-ES', { year:'numeric', month:'2-digit', day:'2-digit' }); }
+  </script>
+</body>
+</html>

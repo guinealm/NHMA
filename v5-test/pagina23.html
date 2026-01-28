@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.3 Salud humana – Cambio Climático</title>
+  <!-- CSS global del proyecto -->
+  <link rel="stylesheet" href="assets/css/base.css?v=1" />
+  <style>
+    /* Estilos mínimos para maquetar mientras unificamos CSS al final de la V1 */
+    :root {
+      --maxw: 1100px;
+    }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; line-height: 1.6; }
+    header, main, footer { width: min(100%, var(--maxw)); margin: 0 auto; padding: 1rem; }
+    h1 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin: .5rem 0 1rem; }
+    h2 { font-size: clamp(1.3rem, 2vw, 1.6rem); margin: 1.5rem 0 .75rem; }
+    h3 { font-size: 1.05rem; margin: 1rem 0 .5rem; }
+    .breadcrumb { font-size: .9rem; color: #555; margin-top: .25rem; }
+    .breadcrumb a { color: inherit; text-decoration: none; border-bottom: 1px dotted #aaa; }
+    .lead { font-size: 1.05rem; color: #222; }
+    .grid { display: grid; gap: 1rem; }
+    .grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 1rem; box-shadow: 0 1px 8px rgba(0,0,0,.05); }
+    .note { background: #f1f8ff; border-left: 4px solid #0b67d3; padding: .75rem 1rem; border-radius: 8px; }
+    figure { margin: 0; }
+    figcaption { font-size: .9rem; color: #555; margin-top: .35rem; }
+    iframe { width: 100%; border: 0; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: .75rem; }
+    .kpi { background:#fafafa; border:1px dashed #ddd; border-radius: 10px; padding: .8rem; }
+    .tag { display:inline-block; padding:.15rem .5rem; border-radius:999px; font-size:.8rem; background:#eef7ee; border:1px solid #d2e8d2; }
+    .sources ul { margin:.25rem 0 0 1rem; }
+    .small { font-size:.9rem; color:#444; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f1115; color: #e5e7eb; }
+      .card { background: #151822; border-color: #1f2330; box-shadow: none; }
+      .kpi { background:#111624; border-color:#28304a; }
+      .note { background:#0f1b2d; border-left-color:#3b82f6; }
+      .breadcrumb { color:#cbd5e1; }
+      .small, figcaption { color:#a9b1c0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>2.3. Impacto en la salud humana</h1>
+    <p class="breadcrumb">Sección 2 · <a href="pagina2.html">¿Hace daño?</a> → 2.3 Salud humana</p>
+    <p class="lead">El cambio climático ya está afectando a la salud: aumenta la mortalidad por <strong>olas de calor</strong>, empeora la <strong>calidad del aire</strong> (ozono, PM2.5 por incendios) y favorece la <strong>expansión de vectores</strong> (mosquitos y garrapatas), además de dañar la salud mental tras eventos extremos. Esta página reúne indicadores clave y fuentes científicas para usar en divulgación.</p>
+  </header>
+
+  <main>
+    <!-- 1. Mensajes clave / titulares rápidos -->
+    <section id="resumen" class="card">
+      <h2>Mensajes clave</h2>
+      <div class="kpis">
+        <div class="kpi"><strong>Calor extremo</strong><br><span class="small">Más días con temperaturas que superan umbrales de riesgo; aumenta la mortalidad estival y las urgencias por golpes de calor.</span></div>
+        <div class="kpi"><strong>Calidad del aire</strong><br><span class="small">Incendios y ozono troposférico incrementan <abbr title="Partículas finas">PM2.5</abbr> y O<sub>3</sub>, con impacto en respiratorio y cardiovascular.</span></div>
+        <div class="kpi"><strong>Enfermedades vectoriales</strong><br><span class="small">Expansión de <em>Aedes</em> (dengue, chikungunya) y garrapatas (Lyme) hacia latitudes/altitudes antes poco afectadas.</span></div>
+        <div class="kpi"><strong>Vulnerabilidad</strong><br><span class="small">Mayores, niños y crónicos son los más expuestos. Las ciudades pueden reducir riesgo con sombra, alertas y vivienda eficiente.</span></div>
+      </div>
+    </section>
+
+    <!-- 2. Efectos directos -->
+    <section id="directos">
+      <h2>1) Efectos directos</h2>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>Olas de calor y mortalidad</h3>
+          <p>El incremento en frecuencia, duración e intensidad de las olas de calor aumenta ingresos hospitalarios y muertes. Los planes de prevención (alertas, sombra, hidratación, refugios climáticos) reducen el riesgo.</p>
+        </article>
+        <article class="card">
+          <h3>Fenómenos extremos</h3>
+          <p>Tormentas, inundaciones e incendios causan lesiones, pérdidas humanas y traumas. También generan desplazamientos y desabastecimientos temporales de agua y fármacos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Efectos indirectos -->
+    <section id="indirectos">
+      <h2>2) Efectos indirectos</h2>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>Calidad del aire</h3>
+          <p>El aumento de incendios y del ozono troposférico agrava patologías respiratorias y cardiovasculares. La reducción de emisiones aporta <em>co-beneficios</em> sanitarios inmediatos.</p>
+        </article>
+        <article class="card">
+          <h3>Vectores y patógenos</h3>
+          <p>El cambio en idoneidad climática favorece la transmisión de dengue, chikungunya, malaria o fiebre del Nilo, además de enfermedades por garrapatas (Lyme).</p>
+        </article>
+        <article class="card">
+          <h3>Agua y alimentos</h3>
+          <p>Sequías e inundaciones impactan seguridad hídrica y alimentaria, elevando riesgos de malnutrición y enfermedades de transmisión hídrica.</p>
+        </article>
+        <article class="card">
+          <h3>Salud mental</h3>
+          <p>Estrés, ansiedad climática y trastornos postraumáticos tras desastres. Las redes comunitarias y planes de emergencia disminuyen la carga psicológica.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Indicadores / Gráficos (iframes y estáticos) -->
+    <section id="indicadores">
+      <h2>Indicadores (España): Kairós y MoMo</h2>
+      <div class="note small">
+        <p>Usamos como referencia los dos sistemas oficiales en España, desarrollados por el Centro Nacional de Epidemiología (ISCIII) y enmarcados en el Plan del Ministerio de Sanidad: <strong>Índice Kairós</strong> (riesgo de mortalidad atribuible a temperatura, con predicción a 5 días) y <strong>MoMo</strong> (estimación de exceso de mortalidad diaria por todas las causas y atribuible a temperatura).</p>
+        <p><em>Implementación web</em>: cada tarjeta usa una <strong>ilustración estática</strong> en <code>assets/img/</code> a modo de botón que abre el panel oficial en una pestaña nueva.</p>
+      </div>
+
+      <div class="grid cols-2">
+        <figure class="card">
+          <a href="https://momo.isciii.es/kairos/" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/img/kairos-overview.png" alt="Botón: Panel Kairós — probabilidad de exceso de mortalidad atribuible a temperatura (predicción 5 días)" />
+          </a>
+          <figcaption>Índice Kairós — probabilidad de exceso de mortalidad atribuible a temperatura (predicción a 5 días). Clic para abrir el panel oficial.</figcaption>
+        </figure>
+
+        <figure class="card">
+          <a href="https://momo.isciii.es/panel_momo/" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/img/momo-overview.png" alt="Botón: Panel MoMo — estimaciones de exceso de mortalidad diaria y atribuible a temperatura" />
+          </a>
+          <figcaption>MoMo — estimaciones de exceso de mortalidad (todas las causas) y atribuible a temperatura. Clic para abrir el panel oficial.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5. Adaptación y co-beneficios -->
+    <section id="adaptacion" class="card">
+      <h2>Adaptación local y co‑beneficios</h2>
+      <ul>
+        <li><span class="tag">Alertas y refugios</span> Sistemas de aviso por calor, red de refugios climáticos (bibliotecas, centros cívicos, etc.).</li>
+        <li><span class="tag">Sombra/verde</span> Más arbolado, toldos y fuentes en calles y patios escolares.</li>
+        <li><span class="tag">Vivienda</span> Aislamiento y ventilación pasiva; evitar ganancias térmicas (persianas, lamas, albedo).</li>
+        <li><span class="tag">Movilidad</span> Menos tráfico → menos NO₂/O₃/PM: beneficios inmediatos en salud.</li>
+        <li><span class="tag">Información</span> Programas para mayores y crónicos; hidratación y medicación en olas de calor.</li>
+      </ul>
+    </section>
+
+    <!-- 6. Fuentes y referencias (enlaces informativos, no académicos formales) -->
+    <section id="fuentes" class="sources">
+      <h2>Fuentes (para incrustar o capturar gráficos)</h2>
+      <ul>
+        <li><strong>Panel Kairós</strong> (ISCIII/CNE): riesgo de mortalidad atribuible a temperatura y avisos (predicción a 5 días). URL: <code>https://momo.isciii.es/kairos/</code></li>
+        <li><strong>Panel MoMo</strong> (ISCIII/CNE): mortalidad observada/estimada, exceso por todas las causas y atribuible a temperatura. URL: <code>https://momo.isciii.es/panel_momo/</code></li>
+        <li><strong>Ministerio de Sanidad</strong> – Información MoMo y Plan contra el Calor (documentación oficial anual).</li>
+        <li><strong>ISCIII</strong> – Nota informativa sobre MoMo y Kairós (contexto y metodología).</li>
+      </ul>
+      <p class="small">Nota: Mantener esta sección sincronizada con las fuentes reales usadas. Si se prefiere, sustituir las URL por enlaces clicables.</p>
+    </section>
+  </main>
+
+  <footer class="small">
+    <p>Proyecto “Cambio Climático”: sección 2.3 Salud humana. Última edición: <time id="ultima-edicion">2025‑09‑17</time>.</p>
+  </footer>
+
+  <!-- Script mínimo (opcional) para actualizar la fecha de edición si se desea automatizar -->
+  <script>
+    // document.getElementById('ultima-edicion').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>

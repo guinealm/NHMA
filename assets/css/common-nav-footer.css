@@ -1,0 +1,23 @@
+/* Header / navegación */
+header {
+  border-bottom: 1px solid #23324f;
+}
+
+header nav a {
+  font-size: .75rem;
+  margin-right: 10px;
+}
+
+/* Footer común */
+.site-footer {
+  margin-top: 32px;
+  padding: 16px 0;
+  font-size: .85rem;
+  opacity: .85;
+}
+
+.footer-line {
+  text-align: center;
+}
+
+.sep { margin: 0 6px; }

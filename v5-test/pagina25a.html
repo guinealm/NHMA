@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.5A · Migraciones climáticas</title>
+  <link rel="stylesheet" href="assets/css/base.css?v=1" />
+  <style>
+    :root{--accent:#2563eb;--card:#111827;--text-dim:#cdd5e1}
+    body{line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+    header.hero{background:linear-gradient(180deg,rgba(37,99,235,.15),transparent);padding:2rem 1rem;border-radius:1rem;margin:1rem 0}
+    .pill{display:inline-block;padding:.2rem .6rem;border-radius:999px;font-size:.8rem;border:1px solid rgba(255,255,255,.15);color:var(--text-dim)}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:12px;text-decoration:none;border:1px solid rgba(255,255,255,.12)}
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .btn.ghost{color:var(--text-dim)}
+    .grid{display:grid;gap:1rem}
+    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:1rem}
+    figure{margin:0}
+    .img{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
+    .lede{color:var(--text-dim);max-width:70ch}
+    .sources li{margin:.3rem 0}
+    .small{font-size:.9rem;color:var(--text-dim)}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="pill">Sección 2 · ¿Hace daño?</p>
+      <h1>2.5A Migraciones climáticas</h1>
+      <p class="lede">Desplazamientos asociados a impactos climáticos: sequías, inundaciones, pérdida de suelo cultivable y subida del nivel del mar. Predominan los desplazamientos <strong>internos</strong>, con focos regionales en Sahel, Asia del Sur/Sudeste y archipiélagos del Pacífico.</p>
+      <div class="mt-2">
+        <a class="btn primary" href="pagina25.html">← Volver a 2.5 Impacto social y generacional</a>
+        <a class="btn ghost" href="#fuentes">Fuentes</a>
+      </div>
+    </header>
+
+    <section class="grid cols-2">
+      <article class="card">
+        <h2 class="mt-0">Conceptos clave</h2>
+        <ul>
+          <li><strong>Desplazamiento interno</strong>: movimiento dentro del país por desastres o degradación ambiental.</li>
+          <li><strong>Exposición</strong> + <strong>vulnerabilidad</strong>: sequías, inundaciones, ciclones, erosión costera.</li>
+          <li><strong>Multicausalidad</strong>: clima interactúa con economía, conflictos y gobernanza.</li>
+        </ul>
+        <p class="small">Nota: este es un indicador sintético. En versión final se añadirá metodología y limitaciones.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="mt-0">Visualización (provisional)</h2>
+        <figure class="img">
+          <img src="assets/img/indicador-migraciones-climaticas.png" alt="Mapa estático de hotspots de migración climática" />
+        </figure>
+        <p class="small">Sustituir por gráfico/iframe dinámico si procede (p. ej., IDMC, IOM/OIM, UNHCR, OWID). Mantener nombre de archivo para no romper enlaces.</p>
+      </article>
+    </section>
+
+    <section class="card mt-2" id="visualizacion-dinamica">
+      <h2 class="mt-0">Espacio para iframe dinámico</h2>
+      <!-- EJEMPLO DE MARCADOR: Reemplazar este <div> por el iframe real cuando se confirme fuente y URL embed -->
+      <div style="aspect-ratio:16/9;border:1px dashed rgba(255,255,255,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;opacity:.8">
+        <span>iframe pendiente (p. ej., panel IDMC/IOM u OWID)</span>
+      </div>
+      <!-- EJEMPLO DE IFAME (comentado):
+      <iframe src="https://example.com/embed" width="100%" height="480" loading="lazy" referrerpolicy="no-referrer" style="border:0;border-radius:12px"></iframe>
+      -->
+    </section>
+
+    <section class="mt-2" id="fuentes">
+      <h2 class="mt-0">Fuentes sugeridas</h2>
+      <ul class="sources">
+        <li><strong>IDMC</strong> (Internal Displacement Monitoring Centre) · Desplazamientos por desastres.</li>
+        <li><strong>OIM/IOM</strong> · Migración y clima; informes regionales.</li>
+        <li><strong>ACNUR/UNHCR</strong> · Poblaciones desplazadas y protección.</li>
+        <li><strong>Our World in Data</strong> · Indicadores comparativos y series temporales.</li>
+      </ul>
+      <p class="small">Al integrar el iframe, incluir enlace a metodología y licencia.</p>
+    </section>
+
+    <footer class="mt-2">
+      <hr />
+      <p>Archivo: <code>pagina25a.html</code> · V1</p>
+    </footer>
+  </main>
+</body>
+</html>

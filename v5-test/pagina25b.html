@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.5B · Riesgo por cohortes (generaciones)</title>
+  <link rel="stylesheet" href="assets/css/base.css?v=1" />
+  <style>
+    :root{--accent:#2563eb;--card:#111827;--text-dim:#cdd5e1;--warn:#f59e0b}
+    body{line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+    header.hero{background:linear-gradient(180deg,rgba(37,99,235,.15),transparent);padding:2rem 1rem;border-radius:1rem;margin:1rem 0}
+    .pill{display:inline-block;padding:.2rem .6rem;border-radius:999px;font-size:.8rem;border:1px solid rgba(255,255,255,.15);color:var(--text-dim)}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:12px;text-decoration:none;border:1px solid rgba(255,255,255,.12)}
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .btn.ghost{color:var(--text-dim)}
+    .grid{display:grid;gap:1rem}
+    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:1rem}
+    figure{margin:0}
+    .img{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
+    .lede{color:var(--text-dim);max-width:70ch}
+    .callout{border-left:4px solid var(--warn);background:rgba(245,158,11,.08);padding:1rem;border-radius:8px}
+    .sources li{margin:.3rem 0}
+    .small{font-size:.9rem;color:var(--text-dim)}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="pill">Sección 2 · ¿Hace daño?</p>
+      <h1>2.5B Riesgo por cohortes (generaciones)</h1>
+      <p class="lede">Las personas nacidas en años recientes vivirán más eventos extremos a lo largo de su vida que generaciones anteriores. Comparar cohortes permite valorar el retorno intergeneracional de la mitigación y la adaptación.</p>
+      <div class="mt-2">
+        <a class="btn primary" href="pagina25.html">← Volver a 2.5 Impacto social y generacional</a>
+        <a class="btn ghost" href="#metodologia">Metodología</a>
+        <a class="btn ghost" href="#fuentes">Fuentes</a>
+      </div>
+    </header>
+
+    <section class="grid cols-2">
+      <article class="card">
+        <h2 class="mt-0">Visualización (provisional)</h2>
+        <figure class="img">
+          <img src="assets/img/indicador-riesgo-cohortes.png" alt="Gráfico comparativo de exposición a extremos por año de nacimiento" />
+        </figure>
+        <p class="small">En la versión dinámica, el gráfico mostrará la exposición relativa por cohortes (p. ej., 1960, 1980, 2000, 2020) a olas de calor, sequía e inundaciones, bajo distintos escenarios.</p>
+      </article>
+      <article class="card">
+        <h2 class="mt-0">Lectura rápida</h2>
+        <ul>
+          <li><strong>Más extremos por vida</strong>: cuantos más años vivas en un clima calentado, más eventos acumulas.</li>
+          <li><strong>Desigual por región</strong>: el incremento es mayor en regiones de alta exposición y baja capacidad de adaptación.</li>
+          <li><strong>Mitigación</strong>: reduce la frecuencia/intensidad futura y acorta la cola de riesgo para las generaciones jóvenes.</li>
+        </ul>
+        <div class="callout mt-1"><strong>Idea clave:</strong> invertir hoy protege a quienes nacerán y crecerán en las próximas décadas.</div>
+      </article>
+    </section>
+
+    <section class="card mt-2" id="metodologia">
+      <h2 class="mt-0">Metodología (borrador)</h2>
+      <ol>
+        <li><strong>Definir cohortes</strong> por año de nacimiento (p. ej., 1960/1980/2000/2020).</li>
+        <li><strong>Seleccionar peligros</strong>: olas de calor, sequías, inundaciones (series observadas y/o proyectadas).</li>
+        <li><strong>Acumular exposición</strong> a lo largo de una vida media (p. ej., 80 años) usando proyecciones por escenario.</li>
+        <li><strong>Normalizar</strong> para comparación relativa entre cohortes y regiones.</li>
+      </ol>
+      <p class="small">En la integración final se añadirá ficha metodológica y enlaces a bases de datos y scripts de cálculo (si aplica).</p>
+    </section>
+
+    <section class="card mt-2" id="visualizacion-dinamica">
+      <h2 class="mt-0">Espacio para iframe dinámico</h2>
+      <!-- Sustituir este contenedor por el iframe real (p. ej., gráfico de Lancet Countdown / OWID / repositorio propio) -->
+      <div style="aspect-ratio:16/9;border:1px dashed rgba(255,255,255,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;opacity:.8">
+        <span>iframe pendiente (exposición por cohortes)</span>
+      </div>
+      <!-- EJEMPLO IFAME (comentado):
+      <iframe src="https://example.com/embed" width="100%" height="480" loading="lazy" referrerpolicy="no-referrer" style="border:0;border-radius:12px"></iframe>
+      -->
+    </section>
+
+    <section class="mt-2" id="fuentes">
+      <h2 class="mt-0">Fuentes sugeridas</h2>
+      <ul class="sources">
+        <li><strong>IPCC AR6 · WGII</strong> · Impactos y vulnerabilidad por grupos poblacionales.</li>
+        <li><strong>Lancet Countdown</strong> · Salud y exposición diferencial por edad.</li>
+        <li><strong>Our World in Data</strong> · Series comparables de extremos y exposición.</li>
+      </ul>
+    </section>
+
+    <footer class="mt-2">
+      <hr />
+      <p>Archivo: <code>pagina25b.html</code> · V1</p>
+    </footer>
+  </main>
+</body>
+</html>
