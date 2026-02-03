@@ -339,3 +339,131 @@ body.page6 {
     footer{margin-top:24px;border-top:1px solid #1d2753;padding:18px 0;color:#b7c6ff}
 
     @media (max-width:860px){.hero{grid-template-columns:1fr}}
+
+    /* Estilos mínimos (dejamos la homogeneización para el cierre de la V1) */
+    :root {
+      --bg: #0b1220;
+      --card: #111a2b;
+      --muted: #a8b3c7;
+      --text: #eaf1ff;
+      --accent: #63e;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5
+    }
+
+    a {
+      color: #9bd;
+    }
+
+    header {
+      padding: 24px 16px;
+      border-bottom: 1px solid #23324f;
+      background: linear-gradient(180deg, #0d172a, #0b1220)
+    }
+
+    header h1 {
+      margin: 0 0 6px 0;
+      font-size: clamp(22px, 4vw, 34px)
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted)
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px
+    }
+
+    .cols-2 {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #23324f;
+      border-radius: 14px;
+      padding: 16px
+    }
+
+    h2 {
+      margin-top: 28px
+    }
+
+    h3 {
+      margin-top: 20px
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border: 1px solid #2c3a5a;
+      border-radius: 999px;
+      color: #cdd5e6;
+      font-size: 12px
+    }
+
+    details {
+      background: #101a2b;
+      border: 1px solid #24324f;
+      border-radius: 12px;
+      padding: 10px 14px
+    }
+
+    details+details {
+      margin-top: 10px
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600
+    }
+
+    .iframe-card iframe {
+      width: 100%;
+      height: 460px;
+      border: 0;
+      border-radius: 10px;
+      background: #0a1020
+    }
+
+    .foot {
+      margin-top: 28px;
+      font-size: 14px;
+      color: #9fb0c8
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid #2c3a5a;
+      border-radius: 10px;
+      margin-right: 8px;
+      margin-top: 6px
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .list-check li {
+      margin: 6px 0
+    }
+
+    .warn {
+      background: #22111b;
+      border: 1px solid #7a1d40
+    }
