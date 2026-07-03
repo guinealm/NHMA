@@ -243,3 +243,59 @@ body.page6{
   background:#111a2b;
   border-radius:14px;
 }
+
+/* ======================
+   NOVEDADES / NOTE CARDS
+====================== */
+.hero--compact {
+  padding: 1.5rem 1rem;
+}
+
+.note-card {
+  background: #f9f9f9;
+  border-left: 4px solid #0b67d3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+
+.note-date {
+  font-weight: 600;
+  color: #0b67d3;
+  font-size: .95rem;
+}
+
+.note-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.note-topic {
+  display: inline-block;
+  background: #e8f0fb;
+  color: #0b67d3;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: .85rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .note-card {
+    background: #151822;
+    border-left-color: #3b82f6;
+  }
+  .note-title {
+    color: #e5e7eb;
+  }
+  .note-topic {
+    background: #0f1b2d;
+    color: #3b82f6;
+  }
+  .note-date {
+    color: #3b82f6;
+  }
+}
