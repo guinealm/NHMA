@@ -4,66 +4,32 @@
   <meta charset="UTF-8">
   <title>1.2 Temperatura del mar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      line-height: 1.6;
-      margin: 0 auto;
-      padding: 1rem;
-      max-width: 900px;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.2rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.4rem;
-      color: #333;
-    }
-    p.small {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      margin-top: 1rem;
-    }
-    .meta {
-      font-size: 0.85rem;
-      color: #555;
-      margin-bottom: 1rem;
-    }
-    figure {
-      margin: 0;
-    }
-    figure img {
-      width: 100%;
-      height: auto;
-      border: 0;
-      display: block;
-    }
-    figcaption {
-      font-size: .9rem;
-      color: #666;
-      margin-top: .4rem;
-    }
-  </style>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-graficos.css">
 </head>
-<body>
+<body class="site-shell nhma-articulo graficos-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina1.html" aria-current="page">¿Está cambiando?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main graficos-main"><div class="container">
+    <p class="graficos-back"><a href="pagina1.html">← Volver a ¿Está cambiando?</a></p>
 
-  <h1>1.2. Temperatura y Nivel del mar</h1>
-  <div class="meta">jueves, 17 de julio de 2025 – 11:34</div>
+  <h1 class="graficos-page-title">1.2. Temperatura y Nivel del mar</h1>
+  <p class="graficos-meta">jueves, 17 de julio de 2025 – 11:34</p>
 
-  <h2>World Meteorological Organization</h2>
+  <section class="card graficos-card"><h2>World Meteorological Organization</h2>
   <p><strong>Ocean heat content 0–2000m (1960–2024)</strong></p>
 
   <!-- Imagen estática clicable -->
   <a href="https://wmo.int/resources/dashboards/ocean-heat-content-0-2000m-1960-2024"
      target="_blank" rel="noopener">
-    <figure>
+    <figure class="graficos-figure">
       <img src="assets/img/ohc-0-2000m-1960-2024.png"
            alt="Gráfico WMO: Ocean heat content 0–2000 m, 1960–2024 (diferencia vs 2005–2020)" />
       <figcaption>
@@ -73,26 +39,32 @@
   </a>
 
   <!-- Enlace de refuerzo -->
-  <p class="small">
-    Ver en WMO: 
+  <p class="graficos-source">
+    Ver en WMO:
     <a href="https://wmo.int/resources/dashboards/ocean-heat-content-0-2000m-1960-2024"
        target="_blank" rel="noopener">wmo.int/resources/dashboards/ocean-heat-content-0-2000m-1960-2024</a>
   </p>
 
-  <h2>Our World in Data</h2>
+  </section>
+  <section class="graficos-group"><h2>Our World in Data</h2>
   <p><strong>Anomalías anuales de la temperatura de la superficie del mar (periodo preindustrial)</strong></p>
-  <p class="small">Fuente: 
-    <a href="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly" target="_blank">
+  <p class="graficos-source">Fuente:
+    <a href="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly" target="_blank" rel="noopener">
     OWID – Sea Surface Temperature Anomaly</a>
   </p>
-  <iframe src="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly" loading="lazy"></iframe>
+  <div class="graficos-iframe"><iframe title="Anomalías de temperatura de la superficie del mar — Our World in Data" src="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly" loading="lazy"></iframe></div>
+  <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/sea-surface-temperature-anomaly" target="_blank" rel="noopener">Abrir gráfico</a></p>
 
   <p><strong>Monthly average surface temperatures by year</strong></p>
-  <p class="small">Fuente: 
-    <a href="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year" target="_blank">
+  <p class="graficos-source">Fuente:
+    <a href="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year" target="_blank" rel="noopener">
     OWID – Monthly Surface Temperatures</a>
   </p>
-  <iframe src="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year" loading="lazy"></iframe>
+  <div class="graficos-iframe"><iframe title="Temperaturas superficiales medias mensuales por año — Our World in Data" src="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year" loading="lazy"></iframe></div>
+  <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/monthly-average-surface-temperatures-by-year" target="_blank" rel="noopener">Abrir gráfico</a></p>
+  </section>
 
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><p>No hay marcha atrás · Clima y evidencias · Jumalenin</p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
 </body>
 </html>

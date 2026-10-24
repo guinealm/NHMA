@@ -5,55 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>2.1 Meteorología extrema — ¿Hace daño?</title>
   <meta name="description" content="Evidencias de meteorología extrema en un clima que cambia: olas de calor, sequías, lluvias intensas e incendios. Gráficos y fuentes técnicas." />
-  <link rel="icon" href="assets/favicon.png" />
-  <!-- Si ya usas un CSS global, comenta el bloque <style> y enlaza tu hoja de estilos común. -->
-  <style>
-    :root { --mx: 1100px; --bg:#0e1117; --card:#161b22; --ink:#e6edf3; --muted:#9aa5b1; --acc:#4fb3ff; }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--ink); }
-    a { color: var(--acc); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header { border-bottom: 1px solid #242b33; background: #0c0f14; }
-    .wrap { max-width: var(--mx); margin: 0 auto; padding: 1.25rem; }
-    .breadcrumb { font-size: .9rem; color: var(--muted); margin-bottom: .5rem; }
-    .breadcrumb a { color: var(--muted); }
-    h1 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); margin: .2rem 0 0.6rem; }
-    nav { display: flex; flex-wrap: wrap; gap: .5rem .75rem; margin-top: .5rem; }
-    nav a { padding: .35rem .6rem; border: 1px solid #27313b; border-radius: 999px; color: var(--muted); }
-    nav a.active { background: #1b2330; color: var(--ink); border-color: #334355; }
-    main { padding-bottom: 3rem; }
-    .lead { font-size: 1.05rem; color: var(--muted); }
-    section { margin: 2rem 0; }
-    h2 { font-size: clamp(1.3rem, 2.2vw, 1.6rem); margin: 0 0 .75rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
-    .card { background: var(--card); border: 1px solid #232a33; border-radius: 16px; padding: 1rem; }
-    figure { margin: 0; }
-    figure img, iframe { width: 100%; border: 0; border-radius: 10px; }
-    figcaption { color: var(--muted); font-size: .9rem; margin-top: .45rem; }
-    details { margin-top: .5rem; }
-    .note { font-size: .92rem; color: var(--muted); }
-    .sources ul { margin: .3rem 0 0 1.2rem; }
-    footer { border-top: 1px solid #242b33; color: var(--muted); font-size: .9rem; }
-    .pill { display: inline-block; padding: .25rem .55rem; font-size:.8rem; border:1px solid #334355; border-radius: 999px; color: var(--muted); }
-  </style>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-graficos.css">
+  <link rel="stylesheet" href="assets/css/nhma-impactos.css">
 </head>
-<body>
-  <header>
-    <div class="wrap">
+<body class="site-shell nhma-articulo impacto-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina2.html" aria-current="page">¿Hace daño?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+
+
+
+  <main id="contenido" class="site-main impacto-main"><div class="container">
       <div class="breadcrumb">⟵ <a href="index.html">Inicio</a> / <a href="pagina2.html">2. ¿Hace daño?</a> / 2.1 Meteorología extrema</div>
       <h1>2.1 Meteorología extrema</h1>
-      <nav aria-label="Subsecciones de la página 2">
-        <a href="pagina21.html" class="active">2.1 Meteorología extrema</a>
-        <a href="pagina22.html">2.2 Pérdidas económicas (EEA)</a>
+      <nav class="impacto-subnav" aria-label="Subsecciones de la página 2">
+        <a href="pagina21.html" aria-current="page">2.1 Meteorología extrema</a>
+        <a href="pagina22.html">2.2 Incendios forestales</a>
         <a href="pagina23.html">2.3 Salud</a>
-        <a href="pagina24.html">2.4 Incendios</a>
+        <a href="pagina24.html">2.4 Impacto económico</a>
         <a href="pagina25.html">2.X Otros impactos</a>
       </nav>
-    </div>
-  </header>
-
-  <main class="wrap">
     <p class="lead">Esta página reúne indicadores simples y comparables de <strong>fenómenos meteorológicos extremos</strong> que ya están afectando a personas, economía y ecosistemas. La selección prioriza series largas y cobertura global/regional. Donde no sea posible, se incluyen <em>proxies</em> o referencias.</p>
 
     <section id="que-medir">
@@ -78,36 +56,40 @@
     <section id="graficos">
       <h2>Gráficos (interactivos)</h2>
 
-      <div class="grid">
+      <div class="grid impacto-chart-grid">
         <!-- 1) OLAS DE CALOR -->
         <figure class="card">
-          <iframe title="OWID – Heat extremes (World)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+          <div class="graficos-iframe"><iframe title="OWID – Heat extremes (World)" loading="lazy"  allow="web-share; clipboard-write"
             src="https://ourworldindata.org/explorers/climate-change?tab=chart&facet=none&Metric=Heat+extremes&country=~OWID_WRL&hideControls=false">
-          </iframe>
+          </iframe></div>
+          <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/explorers/climate-change?tab=chart&facet=none&Metric=Heat+extremes&country=~OWID_WRL&hideControls=false" target="_blank" rel="noopener">Abrir gráfico</a></p>
           <figcaption>Olas de calor — indicador global en el explorador de Our World in Data. <a href="https://ourworldindata.org/explorers/climate-change" target="_blank" rel="noopener">Fuente: OWID</a>.</figcaption>
         </figure>
 
         <!-- 2) SEQUÍA / ANOMALÍA DE PRECIPITACIÓN (proxy global) -->
         <figure class="card">
-          <iframe title="OWID – Global precipitation anomaly (World)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+          <div class="graficos-iframe"><iframe title="OWID – Global precipitation anomaly (World)" loading="lazy"  allow="web-share; clipboard-write"
             src="https://ourworldindata.org/grapher/global-precipitation-anomaly?tab=chart&country=~OWID_WRL">
-          </iframe>
+          </iframe></div>
+          <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/global-precipitation-anomaly?tab=chart&country=~OWID_WRL" target="_blank" rel="noopener">Abrir gráfico</a></p>
           <figcaption>Anomalía de precipitación (proxy de sequía/humedad) — serie global basada en ERA5 (Copernicus) procesada por OWID. <a href="https://ourworldindata.org/grapher/global-precipitation-anomaly" target="_blank" rel="noopener">Ficha del gráfico</a>.</figcaption>
         </figure>
 
         <!-- 3) LLUVIAS EXTREMAS -->
         <figure class="card">
-          <iframe title="OWID – Heavy precipitation (World)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+          <div class="graficos-iframe"><iframe title="OWID – Heavy precipitation (World)" loading="lazy"  allow="web-share; clipboard-write"
             src="https://ourworldindata.org/explorers/climate-change?tab=chart&facet=none&Metric=Heavy+precipitation&country=~OWID_WRL&hideControls=false">
-          </iframe>
+          </iframe></div>
+          <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/explorers/climate-change?tab=chart&facet=none&Metric=Heavy+precipitation&country=~OWID_WRL&hideControls=false" target="_blank" rel="noopener">Abrir gráfico</a></p>
           <figcaption>Lluvias intensas — percentiles altos (p99/p99.9) del explorador de Our World in Data. <a href="https://ourworldindata.org/explorers/climate-change" target="_blank" rel="noopener">Fuente: OWID</a>.</figcaption>
         </figure>
 
         <!-- 4) TORMENTAS / CICLONES -->
         <figure class="card">
-          <iframe title="OWID – Accumulated Cyclone Energy (North Atlantic)" loading="lazy" style="height:560px" allow="web-share; clipboard-write"
+          <div class="graficos-iframe"><iframe title="OWID – Accumulated Cyclone Energy (North Atlantic)" loading="lazy"  allow="web-share; clipboard-write"
             src="https://ourworldindata.org/grapher/ace-north-atlantic-hurricanes?tab=chart">
-          </iframe>
+          </iframe></div>
+          <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/ace-north-atlantic-hurricanes?tab=chart" target="_blank" rel="noopener">Abrir gráfico</a></p>
           <figcaption>Tormentas tropicales — Energía ciclónica acumulada (ACE), Atlántico Norte (NOAA/HURDAT a través de OWID). <a href="https://ourworldindata.org/grapher/ace-north-atlantic-hurricanes" target="_blank" rel="noopener">Ficha del gráfico</a>.</figcaption>
         </figure>
       </div>
@@ -120,7 +102,7 @@
       <ul>
         <li>Los extremos meteorológicos relevantes están aumentando en <em>frecuencia</em>, <em>duración</em> y/o <em>intensidad</em> en múltiples regiones, coherente con un mundo más cálido.</li>
         <li>El contexto local importa: los umbrales “extremos” se definen frente a la climatología de referencia y a la exposición/vulnerabilidad.</li>
-        <li>Para el <a href="pagina22.html">bloque 2.2 Pérdidas económicas</a> se conectan estos indicadores con impactos monetizados.</li>
+        <li>Para el <a href="pagina24.html">bloque 2.4 Impacto económico</a> se conectan estos indicadores con impactos monetizados.</li>
       </ul>
     </section>
 
@@ -134,12 +116,12 @@
       </ul>
       <p class="note">En la versión final, enlaza cada gráfico a su fuente exacta (dataset, código y metodología) y anota el período de referencia (p. ej., 1991–2020) y el último año disponible.</p>
     </section>
-  </main>
+  </div></main>
 
-  <footer>
-    <div class="wrap">
+  <div class="container impacto-update">
       Actualizado: <time datetime="2025-09-15">15·09·2025</time> · Responsable de la sección: <span class="note">(añadir)</span>
-    </div>
-  </footer>
+  </div>
+  <footer class="site-footer"><div class="container footer-inner"><p>No hay marcha atrás · Clima e impactos · Jumalenin</p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
+
 </body>
 </html>

@@ -1,0 +1,28 @@
+/* Meteorología e incendios: componentes propios sobre el núcleo Common. */
+.impacto-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.impacto-main > .container > h1 { margin: .5rem 0 1rem; }
+.impacto-main .breadcrumb, .impacto-update { color: var(--jm-text-muted); font-size: .9rem; }
+.impacto-main .lead { font-size: 1.08rem; max-width: 90ch; }
+.impacto-main section { margin: 1.75rem 0; }
+.impacto-main .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1rem; }
+.impacto-main .grid > * { min-width: 0; }
+.impacto-main .impacto-chart-grid { grid-template-columns: minmax(0, 1fr); }
+.impacto-main .card { height: auto; }
+.impacto-main figure { margin: 0; }
+.impacto-main figcaption, .impacto-main .note { color: var(--jm-text-muted); font-size: .95rem; }
+.impacto-main details { margin-top: 1rem; }
+.impacto-main .pill, .impacto-main .badge { display: inline-block; padding: .15rem .5rem; border: 1px solid var(--jm-border); border-radius: 999px; font-size: .85rem; }
+.impacto-subnav { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 1.5rem; }
+.impacto-subnav a { display: inline-flex; align-items: center; min-height: 44px; padding: .4rem .7rem; border: 1px solid var(--jm-border); border-radius: 999px; }
+.impacto-subnav a[aria-current="page"] { background: var(--jm-bg-soft); font-weight: 700; }
+.impacto-page .section { max-width: none; padding: 0; }
+.impacto-page .section.card { padding: clamp(1rem, 3vw, 1.5rem); }
+.impacto-page .section.card .graficos-iframe { margin-top: 1rem; }
+.impacto-page .section.card .graficos-actions { margin-bottom: 1.25rem; }
+.impacto-page .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.impacto-page .impacto-visor { border-style: dashed; }
+.impacto-page .open { display: inline-flex; align-items: center; min-height: 44px; margin-top: .5rem; }
+.impacto-page object { display: block; max-width: 100%; border: 1px solid var(--jm-border); border-radius: 12px; }
+.impacto-pdf-fallback { padding: 1rem; text-align: center; }
+.impacto-update { margin-bottom: 1rem; }
+@media (max-width: 800px) { .impacto-page .grid-2 { grid-template-columns: 1fr; } }

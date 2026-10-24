@@ -1,32 +1,49 @@
-pagina14
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>1.4. Hielo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-graficos.css">
 </head>
-<body>
-  <h1>1.4. Hielo</h1>
+<body class="site-shell nhma-articulo graficos-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina1.html" aria-current="page">¿Está cambiando?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main graficos-main"><div class="container">
+    <p class="graficos-back"><a href="pagina1.html">← Volver a ¿Está cambiando?</a></p>
+  <h1 class="graficos-page-title">1.4. Hielo</h1>
 
   <p>
     El hielo marino del Ártico y las grandes capas de hielo de Groenlandia y la Antártida son indicadores clave del cambio climático. Su retroceso refleja el aumento de las temperaturas globales y tiene consecuencias directas sobre el nivel del mar, la circulación oceánica y los ecosistemas polares.
   </p>
 
-  <h2>El efecto albedo</h2>
-  <div>
-    <!-- Aquí se incorporaría el reproductor del video -->
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/LnKZbScb5pA" 
-      title="¿Qué es el ALBEDO?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
+  <section class="graficos-group"><h2>El efecto albedo</h2>
+  <div class="graficos-video" id="video-albedo">
+    <div class="graficos-video-fallback">
+      <img src="https://i.ytimg.com/vi/LnKZbScb5pA/hqdefault.jpg" alt="Carátula del vídeo ¿Qué es el albedo?" loading="lazy">
+      <a class="graficos-video-play" href="https://www.youtube.com/watch?v=LnKZbScb5pA" target="_blank" rel="noopener" aria-label="Ver ¿Qué es el albedo? en YouTube"><span aria-hidden="true">▶</span></a>
+      <span class="graficos-video-label">Ver en YouTube</span>
+    </div>
+    <iframe title="¿Qué es el ALBEDO?" data-src="https://www.youtube.com/embed/LnKZbScb5pA" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
   </div>
+  <p class="graficos-actions"><a class="btn btn-secondary" href="https://www.youtube.com/watch?v=LnKZbScb5pA" target="_blank" rel="noopener">Abrir vídeo</a></p>
   <p>
     Este video explica cómo la nieve y el hielo reflejan gran parte de la radiación solar (efecto albedo), ayudando a mantener el planeta más frío. A medida que el hielo se reduce, su capacidad reflectante disminuye, lo que acelera el calentamiento global a través de un mecanismo de retroalimentación positiva.
   </p>
 
-  <h2>NASA Climate Dashboard</h2>
+  </section>
+  <section class="graficos-group"><h2>NASA Climate Dashboard</h2>
   <p>Arctic Sea Ice Minimum Extent</p>
   <p>
-    <a href="https://nsidc.org/sea-ice-today/sea-ice-tools#anchor-sea-ice-extent-spatial-comparison-tool" target="_blank">
+    <a href="https://nsidc.org/sea-ice-today/sea-ice-tools#anchor-sea-ice-extent-spatial-comparison-tool" target="_blank" rel="noopener">
       Herramienta interactiva del NSIDC
     </a>
   </p>
@@ -34,24 +51,31 @@ pagina14
     Esta herramienta permite comparar la extensión mínima del hielo marino en el Ártico a lo largo de los años y visualizar cómo se ha reducido de forma significativa en las últimas décadas.
   </p>
 
-  <h2>Our World in Data</h2>
+  </section>
+  <section class="graficos-group"><h2>Our World in Data</h2>
 
   <h3>Extensión del hielo marino del Ártico</h3>
-  <iframe src="https://ourworldindata.org/grapher/arctic-sea-ice?tab=chart" 
-          loading="lazy" style="width: 100%; height: 600px; border: 0;" 
-          allow="web-share; clipboard-write"></iframe>
+  <div class="graficos-iframe"><iframe title="Extensión del hielo marino del Ártico — Our World in Data" src="https://ourworldindata.org/grapher/arctic-sea-ice?tab=chart"
+          loading="lazy"
+          allow="web-share; clipboard-write"></iframe></div>
   <p>
     Este gráfico muestra la evolución de la extensión del hielo marino en el Ártico, con una tendencia clara de disminución desde finales del siglo XX. La pérdida de hielo marino afecta al equilibrio climático global y acelera el calentamiento en latitudes altas.
   </p>
 
+  <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/arctic-sea-ice?tab=chart" target="_blank" rel="noopener">Abrir gráfico</a></p>
   <h3>Cambio en la masa de las capas de hielo</h3>
-  <iframe src="https://ourworldindata.org/grapher/ice-sheet-mass-balance?tab=chart" 
-          loading="lazy" style="width: 100%; height: 600px; border: 0;" 
-          allow="web-share; clipboard-write"></iframe>
+  <div class="graficos-iframe"><iframe title="Cambio en la masa de las capas de hielo — Our World in Data" src="https://ourworldindata.org/grapher/ice-sheet-mass-balance?tab=chart"
+          loading="lazy"
+          allow="web-share; clipboard-write"></iframe></div>
   <p>
     Aquí se observa la evolución de la masa de las grandes capas de hielo, principalmente Groenlandia y la Antártida. Ambas están perdiendo masa de forma acelerada, lo que contribuye directamente a la subida global del nivel del mar.
   </p>
 
+  <p class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/ice-sheet-mass-balance?tab=chart" target="_blank" rel="noopener">Abrir gráfico</a></p>
+  </section>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><p>No hay marcha atrás · Clima y evidencias · Jumalenin</p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
+  <script src="assets/js/nhma-video.js" defer></script>
 </body>
 </html>
 
