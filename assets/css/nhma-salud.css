@@ -1,0 +1,33 @@
+/* Adaptación visual de la página 2.3; no altera sus afirmaciones ni fuentes. */
+.salud-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.salud-hero { padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1.25rem; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); border: 1px solid var(--jm-border); border-radius: 12px; }
+.salud-hero h1 { margin-bottom: .8rem; }
+.salud-hero .breadcrumb { margin-bottom: 1rem; color: var(--jm-text-muted); font-size: .92rem; }
+.salud-hero .lead { max-width: 82ch; margin-bottom: 0; font-size: 1.08rem; }
+.salud-page main section { margin-bottom: 1.25rem; }
+.salud-page main section > h2 { margin-bottom: 1rem; }
+.salud-page .card { height: auto; }
+.salud-page .card p, .salud-page .card li { color: var(--jm-text); }
+.salud-page .card h3 { margin-bottom: .55rem; }
+.salud-page .card ul { padding-left: 1.4rem; }
+.salud-page .card li + li { margin-top: .6rem; }
+.salud-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.salud-grid > * { min-width: 0; }
+.salud-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; }
+.salud-kpi { min-width: 0; padding: 1rem; background: var(--jm-bg-soft); border: 1px solid var(--jm-border); border-radius: 12px; }
+.salud-kpi strong { color: var(--jm-primary); }
+.salud-page .small, .salud-page figcaption { color: var(--jm-text-muted); font-size: .92rem; }
+.salud-note { margin-bottom: 1.25rem; padding: 1rem 1.2rem; border-left: 4px solid var(--jm-primary); border-radius: 8px; background: var(--jm-bg-soft); }
+.salud-note p:last-child { margin-bottom: 0; }
+.salud-page figure { margin: 0; }
+.salud-page figure img { display: block; width: 100%; height: auto; border: 1px solid var(--jm-border); border-radius: 12px; }
+.salud-page figcaption { margin-top: .6rem; }
+.salud-tag { display: inline-block; margin-right: .35rem; padding: .15rem .5rem; border: 1px solid var(--jm-border); border-radius: 999px; background: var(--jm-bg-soft); font-size: .82rem; }
+.salud-page .sources { padding: clamp(1.4rem, 3vw, 2rem); background: var(--jm-surface); border: 1px solid var(--jm-border); border-radius: 12px; }
+.salud-page .sources ul { padding-left: 1.4rem; }
+.salud-page .sources li + li { margin-top: .45rem; }
+.salud-page .sources code { overflow-wrap: anywhere; }
+.salud-meta { margin-top: 1.5rem; }
+@media (max-width: 1000px) { .salud-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 800px) { .salud-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .salud-kpis { grid-template-columns: 1fr; } }

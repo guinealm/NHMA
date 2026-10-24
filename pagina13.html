@@ -1,30 +1,66 @@
-pagina1.3
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>1.3 Nivel del mar</title>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css" />
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css" />
+  <link rel="stylesheet" href="assets/css/nhma-graficos.css" />
 </head>
-<body>
-  <h1>1.3 Nivel del mar</h1>
-  <p>
-    El aumento del nivel del mar es una de las consecuencias más visibles del
-    calentamiento global. Se debe principalmente a la expansión térmica del agua
-    de los océanos y al deshielo de glaciares y capas de hielo. El seguimiento 
-    histórico y los datos satelitales recientes muestran un incremento constante 
-    en las últimas décadas.
-  </p>
+<body class="site-shell nhma-articulo graficos-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="nhma-brand">
+        <a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal">
+          <img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin" />
+        </a>
+        <span class="nhma-brand__divider" aria-hidden="true"></span>
+        <a class="nhma-brand__name" href="index.html">No hay marcha atrás</a>
+      </div>
+      <nav class="site-nav" aria-label="Navegación de No hay marcha atrás">
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html" aria-current="page">¿Está cambiando?</a>
+        <a href="novedades.html">Novedades</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="site-main graficos-main">
+    <div class="container">
+      <section class="graficos-hero" aria-labelledby="graficos-title">
+        <p class="graficos-back"><a href="pagina1.html">← Volver a ¿Está cambiando?</a></p>
+        <h1 id="graficos-title">1.3 Nivel del mar</h1>
+        <p>El aumento del nivel del mar es una de las consecuencias más visibles del calentamiento global. Se debe principalmente a la expansión térmica del agua de los océanos y al deshielo de glaciares y capas de hielo. El seguimiento histórico y los datos satelitales recientes muestran un incremento constante en las últimas décadas.</p>
+      </section>
 
-  <h2>Evolución histórica (1880–actualidad)</h2>
-  <iframe src="https://ourworldindata.org/grapher/sea-level-rise"
-          loading="lazy"
-          style="width: 100%; height: 600px; border: 0px none;"
-          allow="web-share; clipboard-write"></iframe>
-
-  <h2>Mediciones satelitales (1993–actualidad)</h2>
- <iframe src="https://ourworldindata.org/grapher/sea-level?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
-
-  <p><small>Fuente: <a href="https://ourworldindata.org/sea-level-rise" target="_blank">
-    Our World in Data</a></small></p>
+      <div class="graficos-grid graficos-grid--charts">
+        <section class="card graficos-card" aria-labelledby="mar-historico">
+          <h2 id="mar-historico">Evolución histórica (1880–actualidad)</h2>
+          <div class="graficos-iframe">
+            <iframe title="Evolución histórica del nivel del mar — Our World in Data" src="https://ourworldindata.org/grapher/sea-level-rise" loading="lazy" allow="web-share; clipboard-write"></iframe>
+          </div>
+          <div class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/sea-level-rise" target="_blank" rel="noopener">Abrir gráfico</a></div>
+        </section>
+        <section class="card graficos-card" aria-labelledby="mar-satelite">
+          <h2 id="mar-satelite">Mediciones satelitales (1993–actualidad)</h2>
+          <div class="graficos-iframe">
+            <iframe title="Mediciones satelitales del nivel del mar — Our World in Data" src="https://ourworldindata.org/grapher/sea-level?tab=line" loading="lazy" allow="web-share; clipboard-write"></iframe>
+          </div>
+          <div class="graficos-actions"><a class="btn btn-secondary" href="https://ourworldindata.org/grapher/sea-level?tab=line" target="_blank" rel="noopener">Abrir gráfico</a></div>
+        </section>
+      </div>
+      <p class="graficos-source"><small>Fuente: <a href="https://ourworldindata.org/sea-level-rise" target="_blank" rel="noopener">Our World in Data</a></small></p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>No hay marcha atrás · Clima y evidencias · Jumalenin</p>
+      <p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p>
+    </div>
+  </footer>
 </body>
 </html>

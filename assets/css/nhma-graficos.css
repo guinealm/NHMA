@@ -1,0 +1,23 @@
+/* Artículos de evidencias con gráficos externos; Common aporta base, estructura y tarjetas. */
+.graficos-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.graficos-hero { padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1.25rem; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); border: 1px solid var(--jm-border); border-radius: 12px; }
+.graficos-hero h1 { margin-bottom: 1rem; }
+.graficos-hero p:last-child { max-width: 78ch; margin-bottom: 0; font-size: 1.08rem; }
+.graficos-back { margin-bottom: 1rem; }
+.graficos-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem; }
+.graficos-grid--charts { grid-template-columns: minmax(0, 1fr); }
+.graficos-grid > * { min-width: 0; }
+.graficos-page .card { height: auto; }
+.graficos-page .card h2 { margin-bottom: 1rem; }
+.graficos-page .card p { color: var(--jm-text); }
+.graficos-page .card .graficos-note, .graficos-page .card .graficos-source { color: var(--jm-text-muted); font-size: .92rem; }
+.graficos-iframe { overflow: hidden; height: clamp(390px, 38vw, 560px); border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.graficos-iframe iframe { display: block; width: 100%; height: 100%; border: 0; }
+.graficos-iframe:focus-within { outline: 3px solid var(--jm-primary); outline-offset: 3px; }
+.graficos-actions { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; margin-top: 1rem; }
+.graficos-actions a { display: inline-flex; align-items: center; min-height: 44px; }
+.graficos-source { margin-top: .9rem; color: var(--jm-text-muted); }
+.graficos-source a { color: var(--jm-primary); }
+.graficos-note { margin-bottom: 1rem; }
+.graficos-footer-note { margin-top: 1rem; color: var(--jm-text-muted); font-size: .92rem; }
+@media (max-width: 800px) { .graficos-grid { grid-template-columns: 1fr; } .graficos-iframe { height: clamp(320px, 90vw, 520px); } }
