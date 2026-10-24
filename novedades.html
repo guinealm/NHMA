@@ -3,71 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Novedades | No hay marcha atrás</title>
-  <meta name="description" content="Novedades y anotaciones sobre clima, salud, impactos y evidencias recientes relacionadas con No hay marcha atrás." />
-
-  <link rel="stylesheet" href="assets/css/base.css?v=1" />
-  <link rel="stylesheet" href="assets/css/common-core.css?v=1" />
-  <link rel="stylesheet" href="assets/css/common-nav-footer.css?v=1" />
-  <link rel="stylesheet" href="assets/css/pages.css?v=1" />
+  <meta name="description" content="Noticias climáticas y análisis de No hay marcha atrás, con fuentes y contexto para entender sus efectos." />
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css" />
+  <link rel="stylesheet" href="assets/css/novedades.css" />
 </head>
-
-<body>
+<body class="site-shell">
   <header class="site-header">
-    <div class="site-header__inner">
-      <a class="site-title" href="index.html">No hay marcha atrás</a>
-
-      <nav class="site-nav" aria-label="Navegación principal">
+    <div class="container header-inner">
+      <div class="news-brand">
+        <a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal">
+          <img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin" />
+        </a>
+        <span class="news-brand__divider" aria-hidden="true"></span>
+        <a class="news-brand__name" href="index.html">No hay marcha atrás</a>
+      </div>
+      <nav class="site-nav" aria-label="Navegación de No hay marcha atrás">
         <a href="index.html">Inicio</a>
         <a href="novedades.html" aria-current="page">Novedades</a>
       </nav>
     </div>
   </header>
-
-  <main class="page">
-    <section class="hero hero--compact">
-      <p class="eyebrow">Actualizaciones</p>
-      <h1>Novedades y anotaciones</h1>
-      <p class="lead">
-        Notas breves para mantener viva la web sin modificar su estructura principal.
-        Cada novedad enlaza con una sección existente de la web.
-      </p>
+  <main class="site-main">
+    <section class="news-hero" aria-labelledby="news-title">
+      <div class="container news-reading">
+        <p class="news-eyebrow">No hay marcha atrás <span aria-hidden="true">/</span> Actualidad climática</p>
+        <h1 id="news-title">Novedades</h1>
+        <p class="news-intro">Noticias y análisis sobre el clima y sus efectos. Cada entrada identifica sus fuentes y, cuando aporta contexto, enlaza con la base de conocimiento de NHMA.</p>
+      </div>
     </section>
-
-    <section class="content-section">
-      <article class="note-card">
-        <p class="note-date">2026-07-03</p>
-
-        <h2>El calor extremo ya tiene impacto sanitario medible</h2>
-
-        <p>
-          Las altas temperaturas de junio de 2026 han dejado en España una mortalidad atribuible al calor superior al millar de personas, según estimaciones provisionales del sistema MoMo del Instituto de Salud Carlos III.
-        </p>
-
-        <p>
-          La comparación con el COVID1 debe hacerse con cuidado. El peor mes de la pandemia en España fue abril de 2020, con unas 26.500 muertes entre casos confirmados y sospechosos. Por tanto, el calor de junio no fue más mortal que el peor mes del COVID. Pero la comparación sí ayuda a dimensionar el problema: el calor extremo ya no es solo una molestia ambiental, sino un factor de mortalidad relevante, medible y recurrente.
-        </p>
-
-        <p>
-          Esta evidencia refuerza la necesidad de tratar las olas de calor como un riesgo sanitario directo, especialmente para las personas mayores, vulnerables o expuestas a temperaturas elevadas durante varios días.
-        </p>
-
-        <p>
-          <strong>Relacionado con:</strong>
-          <a href="pagina23.html">2.3 Salud humana</a>
-        </p>
-
-        <p>
-          <strong>Fuente:</strong>
-          <a href="https://elpais.com/clima-y-medio-ambiente/2026-07-01/la-ola-de-calor-dispara-a-900-las-muertes-ligadas-a-las-altas-temperaturas-en-espana-en-junio.html">El País, a partir de datos de MoMo / Instituto de Salud Carlos III.</a>
-        </p>
-      </article>
+    <section class="section news-section" aria-labelledby="news-list-title">
+      <div class="container news-reading">
+        <div class="news-section__head">
+          <h2 id="news-list-title">Últimas entradas</h2>
+          <p>Información con fuentes y contexto</p>
+        </div>
+        <article class="card news-entry" aria-labelledby="news-heat-title">
+          <div class="news-entry__meta">
+            <span class="badge badge-primary">Resumen de noticia</span>
+            <time datetime="2026-07-03">3 de julio de 2026</time>
+          </div>
+          <h3 id="news-heat-title">El calor extremo deja una huella medible en la salud</h3>
+          <p>Las estimaciones de MoMo del Instituto de Salud Carlos III atribuyen al calor parte de la mortalidad registrada en España durante junio de 2026. Son estimaciones estadísticas que pueden revisarse conforme se completan las notificaciones, por lo que conviene consultar el dato actualizado junto con su fecha de extracción.</p>
+          <p>El calor intenso supone un riesgo sanitario especial para las personas mayores y quienes tienen enfermedades previas. La vigilancia de sus efectos ayuda a orientar las medidas de prevención.</p>
+          <div class="news-entry__details">
+            <p><strong>Relacionado con</strong> <a href="pagina23.html">2.3 Salud humana</a></p>
+            <div class="news-entry__sources">
+              <strong>Fuentes</strong>
+              <ul>
+                <li><a href="https://momo.isciii.es/panel_momo/?origen=app">MoMo · Instituto de Salud Carlos III</a></li>
+                <li><a href="https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6926">Ministerio de Sanidad · Plan de calor 2026</a></li>
+                <li><a href="https://elpais.com/clima-y-medio-ambiente/2026-07-01/la-ola-de-calor-dispara-a-900-las-muertes-ligadas-a-las-altas-temperaturas-en-espana-en-junio.html">El País · noticia del 1 de julio de 2026</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <p>No hay marcha atrás · Clima y evidencias</p>
+    <div class="container footer-inner">
+      <p>No hay marcha atrás · Clima y evidencias · Jumalenin</p>
+      <p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p>
+    </div>
   </footer>
 </body>
 </html>
