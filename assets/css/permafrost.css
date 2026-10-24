@@ -1,12 +1,4 @@
-/* Adaptación de la página 1.6; el núcleo visual se carga antes de esta hoja. */
-.permafrost-brand { display: flex; align-items: center; gap: 1rem; min-width: 0; }
-.permafrost-brand__divider { width: 1px; height: 32px; background: var(--jm-border-strong); }
-.permafrost-brand__name { color: var(--jm-text); font-weight: 750; line-height: 1.2; text-decoration: none; }
-.permafrost-brand__name:hover { color: var(--jm-primary); }
-.permafrost-page .site-nav a { display: inline-flex; align-items: center; min-height: 44px; }
-.permafrost-page .site-nav a[aria-current="page"] { border-bottom: 2px solid var(--jm-primary); }
-.permafrost-skip { position: absolute; top: -5rem; left: 1rem; z-index: 100; background: var(--jm-surface); padding: .6rem 1rem; }
-.permafrost-skip:focus { top: .5rem; }
+/* Adaptación propia de la página 1.6; las reglas de cabecera y anchura están en nhma-articulos.css. */
 .permafrost-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
 .permafrost-back { margin-bottom: 1.5rem; }
 .permafrost-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem; }
@@ -34,10 +26,4 @@
 @media (max-width: 800px) {
   .permafrost-grid, .permafrost-meta { grid-template-columns: 1fr; }
   .permafrost-meta p:last-child { text-align: left; }
-}
-@media (max-width: 440px) {
-  .permafrost-brand { flex-wrap: wrap; gap: .45rem .7rem; }
-  .permafrost-brand .site-brand img { height: 36px; }
-  .permafrost-brand__divider { height: 24px; }
-  .permafrost-brand__name { font-size: .92rem; }
 }

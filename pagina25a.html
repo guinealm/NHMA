@@ -4,41 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2.5A · Migraciones climáticas</title>
-  <link rel="stylesheet" href="assets/css/base.css?v=1" />
-  <style>
-    :root{--accent:#2563eb;--card:#111827;--text-dim:#cdd5e1}
-    body{line-height:1.6}
-    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
-    header.hero{background:linear-gradient(180deg,rgba(37,99,235,.15),transparent);padding:2rem 1rem;border-radius:1rem;margin:1rem 0}
-    .pill{display:inline-block;padding:.2rem .6rem;border-radius:999px;font-size:.8rem;border:1px solid rgba(255,255,255,.15);color:var(--text-dim)}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:12px;text-decoration:none;border:1px solid rgba(255,255,255,.12)}
-    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
-    .btn.ghost{color:var(--text-dim)}
-    .grid{display:grid;gap:1rem}
-    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:1rem}
-    figure{margin:0}
-    .img{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
-    .lede{color:var(--text-dim);max-width:70ch}
-    .sources li{margin:.3rem 0}
-    .small{font-size:.9rem;color:var(--text-dim)}
-  </style>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css" />
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css" />
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css" />
+  <link rel="stylesheet" href="assets/css/nhma-social.css" />
 </head>
-<body>
-  <main class="container">
-    <header class="hero">
-      <p class="pill">Sección 2 · ¿Hace daño?</p>
-      <h1>2.5A Migraciones climáticas</h1>
-      <p class="lede">Desplazamientos asociados a impactos climáticos: sequías, inundaciones, pérdida de suelo cultivable y subida del nivel del mar. Predominan los desplazamientos <strong>internos</strong>, con focos regionales en Sahel, Asia del Sur/Sudeste y archipiélagos del Pacífico.</p>
-      <div class="mt-2">
-        <a class="btn primary" href="pagina25.html">← Volver a 2.5 Impacto social y generacional</a>
-        <a class="btn ghost" href="#fuentes">Fuentes</a>
+<body class="site-shell nhma-articulo social-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="nhma-brand">
+        <a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal">
+          <img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin" />
+        </a>
+        <span class="nhma-brand__divider" aria-hidden="true"></span>
+        <a class="nhma-brand__name" href="index.html">No hay marcha atrás</a>
       </div>
-    </header>
+      <nav class="site-nav" aria-label="Navegación de No hay marcha atrás">
+        <a href="index.html">Inicio</a>
+        <a href="pagina2.html" aria-current="page">¿Hace daño?</a>
+        <a href="novedades.html">Novedades</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="site-main social-main">
+    <div class="container">
+    <section class="social-hero" aria-labelledby="social-title">
+      <p class="badge badge-primary">Sección 2 · ¿Hace daño?</p>
+      <h1 id="social-title">2.5A Migraciones climáticas</h1>
+      <p class="social-lede">Desplazamientos asociados a impactos climáticos: sequías, inundaciones, pérdida de suelo cultivable y subida del nivel del mar. Predominan los desplazamientos <strong>internos</strong>, con focos regionales en Sahel, Asia del Sur/Sudeste y archipiélagos del Pacífico.</p>
+      <div class="social-actions">
+        <a href="pagina25.html">← Volver a 2.5 Impacto social y generacional</a>
+        <a href="#fuentes">Fuentes</a>
+      </div>
+    </section>
 
-    <section class="grid cols-2">
+    <section class="social-grid">
       <article class="card">
-        <h2 class="mt-0">Conceptos clave</h2>
+        <h2>Conceptos clave</h2>
         <ul>
           <li><strong>Desplazamiento interno</strong>: movimiento dentro del país por desastres o degradación ambiental.</li>
           <li><strong>Exposición</strong> + <strong>vulnerabilidad</strong>: sequías, inundaciones, ciclones, erosión costera.</li>
@@ -48,18 +53,18 @@
       </article>
 
       <article class="card">
-        <h2 class="mt-0">Visualización (provisional)</h2>
-        <figure class="img">
+        <h2>Visualización (provisional)</h2>
+        <figure class="social-image">
           <img src="assets/img/indicador-migraciones-climaticas.png" alt="Mapa estático de hotspots de migración climática" />
         </figure>
         <p class="small">Sustituir por gráfico/iframe dinámico si procede (p. ej., IDMC, IOM/OIM, UNHCR, OWID). Mantener nombre de archivo para no romper enlaces.</p>
       </article>
     </section>
 
-    <section class="card mt-2" id="visualizacion-dinamica">
-      <h2 class="mt-0">Espacio para iframe dinámico</h2>
+    <section class="card social-block" id="visualizacion-dinamica">
+      <h2>Espacio para iframe dinámico</h2>
       <!-- EJEMPLO DE MARCADOR: Reemplazar este <div> por el iframe real cuando se confirme fuente y URL embed -->
-      <div style="aspect-ratio:16/9;border:1px dashed rgba(255,255,255,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;opacity:.8">
+      <div class="social-placeholder">
         <span>iframe pendiente (p. ej., panel IDMC/IOM u OWID)</span>
       </div>
       <!-- EJEMPLO DE IFAME (comentado):
@@ -67,8 +72,8 @@
       -->
     </section>
 
-    <section class="mt-2" id="fuentes">
-      <h2 class="mt-0">Fuentes sugeridas</h2>
+    <section class="card social-block" id="fuentes">
+      <h2>Fuentes sugeridas</h2>
       <ul class="sources">
         <li><strong>IDMC</strong> (Internal Displacement Monitoring Centre) · Desplazamientos por desastres.</li>
         <li><strong>OIM/IOM</strong> · Migración y clima; informes regionales.</li>
@@ -78,10 +83,16 @@
       <p class="small">Al integrar el iframe, incluir enlace a metodología y licencia.</p>
     </section>
 
-    <footer class="mt-2">
-      <hr />
+    <div class="social-meta">
       <p>Archivo: <code>pagina25a.html</code> · V1</p>
-    </footer>
+    </div>
+    </div>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>No hay marcha atrás · Clima y evidencias · Jumalenin</p>
+      <p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p>
+    </div>
+  </footer>
 </body>
 </html>

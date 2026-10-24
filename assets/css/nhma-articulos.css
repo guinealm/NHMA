@@ -1,0 +1,18 @@
+/* Cabecera, navegación y anchura para artículos NHMA adaptados a Common. */
+.nhma-articulo .nhma-brand { display: flex; align-items: center; gap: 1rem; min-width: 0; }
+.nhma-articulo .nhma-brand__divider { width: 1px; height: 32px; background: var(--jm-border-strong); }
+.nhma-articulo .nhma-brand__name { color: var(--jm-text); font-weight: 750; line-height: 1.2; text-decoration: none; }
+.nhma-articulo .nhma-brand__name:hover { color: var(--jm-primary); }
+.nhma-articulo .site-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.nhma-articulo .site-nav a[aria-current="page"] { border-bottom: 2px solid var(--jm-primary); }
+.nhma-skip { position: absolute; top: -5rem; left: 1rem; z-index: 100; background: var(--jm-surface); padding: .6rem 1rem; }
+.nhma-skip:focus { top: .5rem; }
+@media (min-width: 1200px) {
+  .nhma-articulo .container { width: min(1640px, calc(100% - 4rem)); }
+}
+@media (max-width: 440px) {
+  .nhma-articulo .nhma-brand { flex-wrap: wrap; gap: .45rem .7rem; }
+  .nhma-articulo .nhma-brand .site-brand img { height: 36px; }
+  .nhma-articulo .nhma-brand__divider { height: 24px; }
+  .nhma-articulo .nhma-brand__name { font-size: .92rem; }
+}

@@ -1,0 +1,23 @@
+/* Lectura de los dos artículos 2.5A/2.5B; se carga después de Common. */
+.social-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.social-hero { padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1.25rem; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); border: 1px solid var(--jm-border); border-radius: 12px; }
+.social-hero .badge { margin-bottom: 1rem; }
+.social-hero h1 { margin-bottom: 1rem; }
+.social-lede { max-width: 75ch; font-size: 1.1rem; }
+.social-actions { display: flex; flex-wrap: wrap; gap: .7rem 1.3rem; margin-top: 1.5rem; }
+.social-actions a { display: inline-flex; align-items: center; min-height: 44px; }
+.social-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem; }
+.social-grid > * { min-width: 0; }
+.social-page .card { height: auto; }
+.social-page .card h2 { margin-bottom: 1rem; }
+.social-page .card p, .social-page .card li { color: var(--jm-text); }
+.social-page .card .small { color: var(--jm-text-muted); font-size: .92rem; }
+.social-page .card ul, .social-page .card ol { padding-left: 1.4rem; }
+.social-page .card li + li { margin-top: .45rem; }
+.social-image { margin: 0; overflow: hidden; border: 1px solid var(--jm-border); border-radius: 12px; }
+.social-image img { display: block; width: 100%; height: auto; }
+.social-block { margin-bottom: 1.25rem; }
+.social-callout { margin-top: 1rem; padding: 1rem; border-left: 4px solid var(--jm-accent); border-radius: 8px; background: var(--jm-bg-soft); }
+.social-placeholder { display: flex; align-items: center; justify-content: center; width: min(100%, 36rem); min-height: 7rem; margin-inline: auto; aspect-ratio: 16 / 9; padding: 1rem; border: 1px dashed var(--jm-border-strong); border-radius: 12px; color: var(--jm-text-muted); text-align: center; }
+.social-meta { color: var(--jm-text-muted); font-size: .92rem; }
+@media (max-width: 800px) { .social-grid { grid-template-columns: 1fr; } }
