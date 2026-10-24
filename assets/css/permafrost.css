@@ -1,0 +1,43 @@
+/* Adaptación de la página 1.6; el núcleo visual se carga antes de esta hoja. */
+.permafrost-brand { display: flex; align-items: center; gap: 1rem; min-width: 0; }
+.permafrost-brand__divider { width: 1px; height: 32px; background: var(--jm-border-strong); }
+.permafrost-brand__name { color: var(--jm-text); font-weight: 750; line-height: 1.2; text-decoration: none; }
+.permafrost-brand__name:hover { color: var(--jm-primary); }
+.permafrost-page .site-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.permafrost-page .site-nav a[aria-current="page"] { border-bottom: 2px solid var(--jm-primary); }
+.permafrost-skip { position: absolute; top: -5rem; left: 1rem; z-index: 100; background: var(--jm-surface); padding: .6rem 1rem; }
+.permafrost-skip:focus { top: .5rem; }
+.permafrost-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.permafrost-back { margin-bottom: 1.5rem; }
+.permafrost-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 1.25rem; }
+.permafrost-grid > *, .permafrost-kpis > * { min-width: 0; }
+.permafrost-page .card { height: auto; }
+.permafrost-page .card p, .permafrost-page .card li { color: var(--jm-text); }
+.permafrost-page .card .small, .permafrost-page .card .note { color: var(--jm-text-muted); font-size: .92rem; }
+.permafrost-page .card h2 { margin-bottom: 1rem; }
+.permafrost-page .card ul { padding-left: 1.3rem; }
+.permafrost-page .card li + li { margin-top: .45rem; }
+.permafrost-page .card .lead { font-size: 1.05rem; }
+.permafrost-page .badge { margin: .25rem 0 .5rem; }
+.permafrost-image { overflow: hidden; border: 1px solid var(--jm-border); border-radius: 12px; }
+.permafrost-image img { display: block; width: 100%; height: auto; }
+.permafrost-kpis { display: grid; gap: .8rem; }
+.permafrost-kpi { padding: 1rem; background: var(--jm-bg-soft); border: 1px solid var(--jm-border); border-radius: 12px; }
+.permafrost-kpi b { display: block; margin-bottom: .35rem; color: var(--jm-primary); font-size: 1.15rem; }
+.permafrost-faq { margin-bottom: 1.25rem; }
+.permafrost-faq details { padding: .8rem 0; border-top: 1px solid var(--jm-border); }
+.permafrost-faq summary { cursor: pointer; font-weight: 650; }
+.permafrost-faq details p { margin: .75rem 0 0; }
+.permafrost-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; color: var(--jm-text-muted); }
+.permafrost-meta p { margin: 0; }
+.permafrost-meta p:last-child { text-align: right; }
+@media (max-width: 800px) {
+  .permafrost-grid, .permafrost-meta { grid-template-columns: 1fr; }
+  .permafrost-meta p:last-child { text-align: left; }
+}
+@media (max-width: 440px) {
+  .permafrost-brand { flex-wrap: wrap; gap: .45rem .7rem; }
+  .permafrost-brand .site-brand img { height: 36px; }
+  .permafrost-brand__divider { height: 24px; }
+  .permafrost-brand__name { font-size: .92rem; }
+}
