@@ -25,4 +25,17 @@
 .impacto-page object { display: block; max-width: 100%; border: 1px solid var(--jm-border); border-radius: 12px; }
 .impacto-pdf-fallback { padding: 1rem; text-align: center; }
 .impacto-update { margin-bottom: 1rem; }
+.impacto-economia .impacto-hero { margin-top: 0; }
+.impacto-economia .impacto-hero h1 { margin: .5rem 0 1rem; }
+.impacto-economia .impacto-hero .small, .impacto-economia .note, .impacto-economia .muted { color: var(--jm-text-muted); }
+.impacto-economia .impacto-hero-nav { display: flex; flex-wrap: wrap; gap: .65rem; }
+.impacto-economia .impacto-hero-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.impacto-economia .card { overflow: hidden; padding: 0; }
+.impacto-economia .impacto-card-heading { padding: 1rem 1.25rem; border-bottom: 1px solid var(--jm-border); background: var(--jm-bg-soft); }
+.impacto-economia .impacto-card-heading h2 { margin: 0; }
+.impacto-economia .impacto-card-body { padding: 1rem 1.25rem 1.25rem; }
+.impacto-economia .impacto-card-body > p:first-child { margin-top: 0; }
+.impacto-economia .impacto-economic-grid { grid-template-columns: minmax(0, 1fr); }
+.impacto-economia .impacto-pagination { padding-top: 1rem; }
+.impacto-economia .small { font-size: .9rem; }
 @media (max-width: 800px) { .impacto-page .grid-2 { grid-template-columns: 1fr; } }
