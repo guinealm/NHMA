@@ -1,0 +1,24 @@
+/* Página 6: desinformación climática. */
+.lote17-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.lote17-secciones { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.lote17-secciones a { display: inline-flex; align-items: center; min-height: 44px; padding: .45rem .75rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-surface); text-decoration: none; }
+.lote17-secciones a:hover { background: var(--jm-bg-soft); }
+.lote17-hero, .engaños-page main section { padding: clamp(1.25rem, 3vw, 2rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.lote17-hero { background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.lote17-hero h1 { margin: 0 0 .75rem; }
+.lote17-hero p { margin: 0; }
+.engaños-page main section h2 { margin: 0 0 1rem; }
+.engaños-page main section h3 { margin: 1rem 0 .6rem; }
+.engaños-page .grid.cols-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.engaños-page .grid.cols-2 > * { min-width: 0; }
+.engaños-page .card { padding: 1.15rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-bg-soft); }
+.engaños-page .card h3:first-child { margin-top: 0; }
+.engaños-page .muted, .engaños-page .foot { color: var(--jm-text-muted); }
+.engaños-page .warn { margin: 1rem 0; border-left: 4px solid #a06b00; }
+.engaños-page details { padding: .85rem 1rem; margin-top: .7rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-bg-soft); }
+.engaños-page summary { cursor: pointer; font-weight: 650; }
+.engaños-page .iframe-card iframe { display: block; width: 100%; height: 460px; border: 1px solid var(--jm-border); border-radius: 8px; }
+.engaños-page .chart-link { margin: .6rem 0; overflow-wrap: anywhere; }
+.engaños-page .pill { display: inline-block; margin: .3rem; padding: .45rem .65rem; border: 1px solid var(--jm-border); border-radius: 99px; background: var(--jm-bg-soft); }
+@media (max-width: 800px) { .engaños-page .grid.cols-2 { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .engaños-page .iframe-card iframe { height: 420px; } }

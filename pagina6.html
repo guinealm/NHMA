@@ -1,183 +1,26 @@
 <!doctype html>
 <html lang="es">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="preconnect" href="https://ourworldindata.org" />
-  <link rel="stylesheet" href="assets/css/common-core.css?v=2">
-  <link rel="stylesheet" href="assets/css/common-nav-footer.css?v=2">
-
-  <!-- TEMPORAL (base actual) -->
-  <link rel="stylesheet" href="assets/css/common.css?v=2">
-
-  <!-- overrides por página (DEBE IR EL ÚLTIMO) -->
-  <link rel="stylesheet" href="assets/css/pages.css?v=2">
-
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>6. ¿Cómo nos engañan? · Cambio climático</title>
-  <!-- <style>
-    /* Estilos mínimos (dejamos la homogeneización para el cierre de la V1) */
-    :root {
-      --bg: #0b1220;
-      --card: #111a2b;
-      --muted: #a8b3c7;
-      --text: #eaf1ff;
-      --accent: #63e;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5
-    }
-
-    a {
-      color: #9bd;
-    }
-
-    header {
-      padding: 24px 16px;
-      border-bottom: 1px solid #23324f;
-      background: linear-gradient(180deg, #0d172a, #0b1220)
-    }
-
-    header h1 {
-      margin: 0 0 6px 0;
-      font-size: clamp(22px, 4vw, 34px)
-    }
-
-    header p {
-      margin: 0;
-      color: var(--muted)
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px 16px
-    }
-
-    .grid {
-      display: grid;
-      gap: 16px
-    }
-
-    .cols-2 {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid #23324f;
-      border-radius: 14px;
-      padding: 16px
-    }
-
-    h2 {
-      margin-top: 28px
-    }
-
-    h3 {
-      margin-top: 20px
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 2px 8px;
-      border: 1px solid #2c3a5a;
-      border-radius: 999px;
-      color: #cdd5e6;
-      font-size: 12px
-    }
-
-    details {
-      background: #101a2b;
-      border: 1px solid #24324f;
-      border-radius: 12px;
-      padding: 10px 14px
-    }
-
-    details+details {
-      margin-top: 10px
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 600
-    }
-
-    .iframe-card iframe {
-      width: 100%;
-      height: 460px;
-      border: 0;
-      border-radius: 10px;
-      background: #0a1020
-    }
-
-    .foot {
-      margin-top: 28px;
-      font-size: 14px;
-      color: #9fb0c8
-    }
-
-    .pill {
-      display: inline-block;
-      padding: 6px 10px;
-      border: 1px solid #2c3a5a;
-      border-radius: 10px;
-      margin-right: 8px;
-      margin-top: 6px
-    }
-
-    .muted {
-      color: var(--muted)
-    }
-
-    .list-check li {
-      margin: 6px 0
-    }
-
-    .warn {
-      background: #22111b;
-      border: 1px solid #7a1d40
-    }
-  </style> -->
+  <meta name="description" content="Cómo reconocer desinformación climática y consultar datos abiertos.">
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-enganos.css">
 </head>
-
-<body>
-
-
-  <header>
-    <div class="wrap">
-      <nav>
-
-        <div style="font-size: 0.95rem;">
-          <a href="index.html">Home</a>
-          <a href="pagina1.html">¿Está cambiando?</a>
-          <a href="pagina2.html">¿Hace daño?</a>
-          <a href="pagina3.html">¿Por qué?</a>
-          <a href="pagina4.html">¿Qué debe hacer el mundo?</a>
-          <a href="pagina5.html">¿Qué debe hacer el mundo?</a>
-          <a href="pagina6.html">¿Cómo nos engañan?</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-
-  <header>
-    <div style="max-width:1100px;margin:0 auto">
-      <h1>¿Cómo nos engañan?</h1>
-      <p>Cómo reconocer desinformación sobre clima y anclar el debate en datos abiertos y verificables.</p>
-    </div>
-  </header>
-
-  <main>
+<body class="site-shell nhma-articulo engaños-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina6.html" aria-current="page">Desinformación</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main lote17-main"><div class="container">
+    <nav class="lote17-secciones" aria-label="Secciones climáticas"><a href="pagina1.html">¿Está cambiando?</a><a href="pagina2.html">¿Hace daño?</a><a href="pagina3.html">¿Por qué?</a><a href="pagina4.html">¿Qué debe hacer el mundo?</a><a href="pagina5.html">¿Qué puedo hacer yo?</a><a href="pagina6.html">¿Cómo nos engañan?</a></nav>
+    <section class="lote17-hero"><h1>¿Cómo nos engañan?</h1><p>Cómo reconocer desinformación sobre clima y anclar el debate en datos abiertos y verificables.</p></section>
     <section class="card">
       <h2>Actitudes frecuentes ante el cambio climático</h2>
       <div class="grid cols-2">
@@ -264,21 +107,24 @@
     <section id="datos" class="grid cols-2">
       <article class="card iframe-card" id="graf-temp">
         <h3>Temperatura global (anomalía anual)</h3>
-        <iframe loading="lazy" src="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart"></iframe>
+        <iframe title="Anomalía anual de temperatura global" loading="lazy" src="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart"></iframe>
+        <p class="chart-link"><a href="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart" target="_blank" rel="noopener noreferrer">Abrir gráfica en Our World in Data</a></p>
         <p class="muted">Fuente: Our World in Data (HadCRUT, NOAA, NASA). 2024 fue el año más cálido registrado; la
           racha cálida continúa.</p>
       </article>
 
       <article class="card iframe-card" id="graf-co2">
         <h3>CO₂ atmosférico (ppm)</h3>
-        <iframe loading="lazy" src="https://ourworldindata.org/grapher/global-co2-concentration?tab=chart"></iframe>
+        <iframe title="Concentración global de CO₂" loading="lazy" src="https://ourworldindata.org/grapher/global-co2-concentration?tab=chart"></iframe>
+        <p class="chart-link"><a href="https://ourworldindata.org/grapher/global-co2-concentration?tab=chart" target="_blank" rel="noopener noreferrer">Abrir gráfica en Our World in Data</a></p>
         <p class="muted">Serie a largo plazo (hielo + Mauna Loa). Actualización mensual en origen.</p>
       </article>
 
       <article class="card iframe-card">
         <h3>Emisiones anuales de CO₂ (incl. uso del suelo)</h3>
-        <iframe loading="lazy"
+        <iframe title="Emisiones anuales de CO₂, incluido uso del suelo" loading="lazy"
           src="https://ourworldindata.org/grapher/annual-co2-including-land-use?tab=chart&stackMode=absolute&region=~World"></iframe>
+        <p class="chart-link"><a href="https://ourworldindata.org/grapher/annual-co2-including-land-use?tab=chart&stackMode=absolute&region=~World" target="_blank" rel="noopener noreferrer">Abrir gráfica en Our World in Data</a></p>
         <p class="muted">Fuente: Global Carbon Budget (OWID). Esta serie contextualiza el <em>presupuesto de
             carbono</em>.</p>
       </article>
@@ -349,22 +195,8 @@
 
     <p class="foot">Esta página enlaza a fuentes oficiales y repositorios abiertos. Los gráficos de OWID se actualizan
       en origen sin que tengas que tocar esta web.</p>
-  </main>
 
-  <footer class="site-footer" aria-label="Créditos">
-    <p class="footer-line">
-      <span class="footer-updated">Última actualización: 2025-10-06</span>
-      <span class="sep" aria-hidden="true"> · </span>
-      <span class="footer-author">Autor: GMIM</span>
-      <span class="sep" aria-hidden="true"> · </span>
-      <span class="footer-license">
-        Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC
-          BY 4.0</a>
-      </span>
-    </p>
-
-
-  </footer>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><p>Fecha indicada en la versión anterior: 6 de octubre de 2025 · Autor: GMIM · Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a></p></div></footer>
 </body>
-
 </html>
