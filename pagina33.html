@@ -5,64 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>3.3 Generación de energía (electricidad y calor)</title>
   <meta name="description" content="Cómo contribuye la generación de electricidad y calor al CO₂ y qué palancas y acciones tenemos para descarbonizar." />
-  <style>
-    :root {
-      --bg: #0b1020;          /* fondo oscuro sobrio (versión 1: mantenemos estilos simples) */
-      --panel: #12182b;
-      --text: #e7eefb;
-      --muted: #9ab;
-      --accent: #6dd3ff;
-      --ok: #22c55e;
-      --warn: #f59e0b;
-      --bad: #ef4444;
-      --card: #0f1526;
-      --shadow: 0 8px 24px rgba(0,0,0,.35);
-    }
-    html, body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Noto Sans', 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { display: grid; gap: 8px; margin-bottom: 12px; }
-    nav.breadcrumb { font-size: .9rem; color: var(--muted); }
-    nav.breadcrumb a { color: var(--muted); }
-    h1 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin: 8px 0 4px; }
-    .subtitle { color: var(--muted); font-size: 1rem; }
-
-    .grid { display: grid; gap: 16px; }
-    @media (min-width: 900px) {
-      .grid.two { grid-template-columns: 1fr 1fr; }
-      .grid.three { grid-template-columns: 1fr 1fr 1fr; }
-    }
-
-    .card { background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: 14px; box-shadow: var(--shadow); padding: 16px; }
-    .card h3 { margin-top: 0; font-size: 1.05rem; }
-    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: .85rem; background: rgba(255,255,255,.06); color: var(--muted); margin-right: 8px; }
-
-    .callout { border-left: 4px solid var(--accent); padding: 12px 12px 12px 14px; background: linear-gradient(90deg, rgba(109,211,255,.12), transparent); border-radius: 8px; }
-
-    .charts iframe { width: 100%; height: 520px; border: 0; background: #fff; border-radius: 12px; }
-
-    details { background: var(--panel); border-radius: 12px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.06); }
-    summary { cursor: pointer; font-weight: 600; }
-
-    .btns { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; background: #1f2a44; padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,.08); }
-    .btn:hover { background: #263353; }
-    .small { font-size: .9rem; color: var(--muted); }
-    footer { margin: 40px 0 20px; color: var(--muted); font-size: .9rem; }
-    hr.sep { border: none; border-top: 1px solid rgba(255,255,255,.08); margin: 24px 0; }
-  </style>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-energia.css">
 </head>
-<body>
-  <div class="wrap">
-    <header>
+<body class="site-shell nhma-articulo energia-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina3.html" aria-current="page">¿Por qué?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main energia-main"><div class="container">
+    <section class="energia-hero">
       <nav class="breadcrumb" aria-label="migas de pan">
-        <!-- Ajusta los enlaces a tu árbol real -->
-        <a href="index.html">Inicio</a> › <a href="pagina3.html">3. ¿Por qué está cambiando?</a> › <a href="pagina32.html">3.2 Sectores</a> › <span>3.3 Generación de energía</span>
+        <a href="index.html">Inicio</a> › <a href="pagina3.html">3. ¿Por qué está cambiando?</a> › <a href="pagina32.html">3.2 Edificios</a> › <span>3.3 Generación de energía</span>
       </nav>
       <h1>3.3 Generación de energía (electricidad y calor)</h1>
       <p class="subtitle">El mayor contribuidor de CO₂. Cómo descarbonizar con rapidez y rigor.</p>
-    </header>
+    </section>
 
     <section class="grid two">
       <article class="card">
@@ -103,15 +66,17 @@
         <h3>Mezcla eléctrica mundial por fuente</h3>
         <p class="small">Producción global de electricidad por grandes familias: fósil, nuclear y renovables.</p>
         <iframe title="Electricity production from fossil fuels, nuclear and renewables"
-          src="https://ourworldindata.org/grapher/elec-fossil-nuclear-renewables.html?tab=chart&stackMode=absolute&country=~World"
+          src="https://ourworldindata.org/grapher/elec-fossil-nuclear-renewables.html?tab=chart&amp;stackMode=absolute&amp;country=~World"
           loading="lazy" allow="clipboard-write; web-share"></iframe>
+        <p class="energia-chart-link"><a href="https://ourworldindata.org/grapher/elec-fossil-nuclear-renewables.html?tab=chart&amp;stackMode=absolute&amp;country=~World" target="_blank" rel="noopener">Abrir gráfico de mezcla eléctrica mundial</a></p>
       </article>
       <article>
         <h3>Renovables modernas por tecnología</h3>
         <p class="small">Desglose de la generación renovable moderna (eólica, solar, hidro moderna, bioenergía moderna, geotermia).</p>
         <iframe title="Modern renewable electricity generation by source"
-          src="https://ourworldindata.org/grapher/modern-renewable-prod.html?tab=chart&stackMode=absolute&country=~World"
+          src="https://ourworldindata.org/grapher/modern-renewable-prod.html?tab=chart&amp;stackMode=absolute&amp;country=~World"
           loading="lazy" allow="clipboard-write; web-share"></iframe>
+        <p class="energia-chart-link"><a href="https://ourworldindata.org/grapher/modern-renewable-prod.html?tab=chart&amp;stackMode=absolute&amp;country=~World" target="_blank" rel="noopener">Abrir gráfico de renovables modernas por tecnología</a></p>
       </article>
     </section>
 
@@ -122,7 +87,7 @@
         <a class="btn" target="_blank" rel="noopener" href="https://www.iea.org/data-and-statistics/data-tools/real-time-electricity-tracker" title="IEA – Real‑Time Electricity Tracker">🌍 IEA: Real‑Time Electricity Tracker</a>
         <a class="btn" target="_blank" rel="noopener" href="https://www.iea.org/data-and-statistics/data-tools/monthly-electricity-statistics" title="IEA – Monthly Electricity Statistics">📊 IEA: Monthly Electricity Statistics</a>
       </div>
-      <p class="small" style="margin-top:10px">Algunas webs oficiales no permiten <em>embed</em> por seguridad. Por eso se abren en pestaña nueva.</p>
+      <p class="small energia-tools-note">Algunas webs oficiales no permiten <em>embed</em> por seguridad. Por eso se abren en pestaña nueva.</p>
     </section>
 
     <section class="grid two">
@@ -163,19 +128,17 @@
         <h3>Notas para editores (interno)</h3>
         <ul class="small">
           <li>Puedes modificar los parámetros de los iframes añadiendo <code>&amp;country=Spain</code> o similares.</li>
-          <li>Este diseño usa estilos mínimos; la homogeneización de CSS se hará al final de la versión 1.</li>
+          <li>Esta página ya usa los estilos Common; revisar su coherencia visual antes de publicar.</li>
           <li>Si cambias la ruta del menú, ajusta los enlaces de la cabecera.</li>
         </ul>
       </article>
     </section>
 
-    <footer>
-      <p>© Proyecto “Cambio climático” — Sección 3.2.3. Última edición: <span id="ts"></span></p>
-    </footer>
-  </div>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© Proyecto “Cambio climático” — Sección 3.3. Fecha de consulta (tu dispositivo): <time id="ts"></time></p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
 
   <script>
-    // timestamp simple de última edición (cliente)
+    // Fecha de consulta del dispositivo; no indica revisión editorial.
     const el = document.getElementById('ts');
     if (el) { const d = new Date(); el.textContent = d.toLocaleDateString('es-ES', { year:'numeric', month:'2-digit', day:'2-digit' }); }
   </script>

@@ -1,0 +1,25 @@
+/* Página 3.1 Transporte sobre Common. */
+.transporte-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.transporte-content { max-width: 100%; }
+.transporte-hero { padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.transporte-hero p:first-child { margin-bottom: 1rem; }
+.transporte-hero h1 { margin-bottom: .75rem; }
+.transporte-hero p:last-child { margin-bottom: 0; }
+.transporte-kpis { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; margin-bottom: 2rem; }
+.transporte-kpi { min-width: 0; padding: 1rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.transporte-kpi div:first-child { color: var(--jm-text-muted); font-size: .94rem; }
+.transporte-kpi div:last-child { margin-top: .35rem; font-size: 1.5rem; font-weight: 700; }
+.transporte-content h2 { margin: 2rem 0 1rem; }
+.transporte-content h3 { margin: 1.75rem 0 .75rem; }
+.transporte-graph { padding: 1rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.transporte-graph iframe { display: block; width: 100%; height: 520px; border: 0; }
+.transporte-graph:last-of-type iframe { height: 560px; }
+.transporte-graph p { margin: .75rem 0 0; }
+.transporte-content ul { padding-left: 1.5rem; }
+.transporte-content li { margin-bottom: .5rem; }
+.transporte-content details { margin-top: 1.5rem; padding: 1rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.transporte-content summary { cursor: pointer; }
+.transporte-content details p { margin: .75rem 0 0; }
+@media (max-width: 1200px) { .transporte-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .transporte-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 460px) { .transporte-kpis { grid-template-columns: 1fr; } .transporte-graph iframe { height: 480px; } }
