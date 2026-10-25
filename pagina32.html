@@ -4,49 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>3.2 Edificios (climatización y usos térmicos)</title>
-  <style>
-    :root{
-      --bg:#0b1020; --panel:#121a33; --ink:#e9eefc; --muted:#a8b3d1; --accent:#5ec2a5; --accent2:#9cb7ff; --warn:#ffd166;
-      --radius:18px;
-    }
-    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.5}
-    a{color:var(--accent2);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:1050px;margin:auto;padding:22px}
-    header{margin:8px 0 22px}
-    h1{font-size:clamp(28px,3.2vw,40px);margin:0 0 6px}
-    .kicker{color:var(--muted);font-size:14px;letter-spacing:.02em}
-    .quote{background:linear-gradient(180deg,#162043,#0e1530);border:1px solid #243057;padding:16px 18px;border-radius:var(--radius);margin:14px 0 22px}
-    blockquote{margin:0;font-size:18px}
-    .grid{display:grid;gap:16px}
-    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .card{background:var(--panel);border:1px solid #1f2a4f;border-radius:var(--radius);padding:16px}
-    .eyebrow{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
-    .big{font-size:36px;font-weight:700}
-    .sub{color:var(--muted);font-size:14px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{border:1px dashed #30407a;border-radius:999px;padding:6px 10px;font-size:13px;color:var(--muted)}
-    .actions li{margin:6px 0}
-    .warn{background:#251f07;border-color:#4e3f0b}
-    .ok{background:#10261e;border-color:#234d3e}
-    iframe{width:100%;height:520px;border:0;border-radius:var(--radius);background:#0c1226}
-    details{background:rgba(255,255,255,.03);border:1px solid #29365f;border-radius:14px;padding:10px}
-    summary{cursor:pointer}
-    .foot{color:var(--muted);font-size:13px;margin-top:8px}
-    /* Mini calculadora */
-    .calc{display:grid;grid-template-columns:1fr;gap:10px}
-    .calc .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .badge{display:inline-block;background:#1d2b53;border:1px solid #32457e;padding:2px 8px;border-radius:999px;font-size:12px;color:#cfe0ff}
-    .num{font-variant-numeric:tabular-nums}
-  </style>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-edificios.css">
 </head>
-<body>
-  <main class="wrap">
-    <header>
+<body class="site-shell nhma-articulo edificios-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina3.html" aria-current="page">¿Por qué?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main edificios-main"><div class="container">
+    <section class="edificios-hero">
+      <p><a href="pagina3.html">← Volver a ¿Por qué?</a></p>
       <div class="kicker">3.2 Sectores &raquo; Emisiones y soluciones</div>
       <h1>3.2 Edificios (climatización y usos térmicos)</h1>
       <p class="sub">Calefacción, refrigeración, ACS y usos térmicos en viviendas y terciario.</p>
-    </header>
+    </section>
 
     <section class="quote">
       <blockquote>
@@ -54,7 +31,7 @@
       </blockquote>
     </section>
 
-    <section class="grid cols-2" aria-labelledby="datos-clave">
+    <section class="grid cols-2 edificios-grid" aria-labelledby="datos-clave">
       <article class="card" id="datos-clave">
         <div class="eyebrow">Datos clave (aprox.)</div>
         <div class="grid cols-2">
@@ -78,22 +55,22 @@
           <span class="chip">Estándares de edificio</span>
           <span class="chip">Electrificación de usos térmicos</span>
         </div>
-        <p class="sub" style="margin-top:8px">La secuencia típica: <strong>aislar &rarr; sellar &rarr; bomba de calor &rarr; fotovoltaica</strong>.</p>
+        <p class="sub">La secuencia típica: <strong>aislar &rarr; sellar &rarr; bomba de calor &rarr; fotovoltaica</strong>.</p>
       </article>
     </section>
 
-    <section class="card" style="margin-top:16px">
+    <section class="card">
       <div class="eyebrow">Contexto global</div>
       <p class="sub">Proporción de emisiones por sector (mundo). Pasa el cursor para ver “Energy use in buildings”.</p>
-      <iframe loading="lazy"
-        src="https://ourworldindata.org/grapher/ghg-emissions-by-sector?tab=chart&stackMode=relative">
+      <iframe loading="lazy" title="Emisiones de gases de efecto invernadero por sector — Our World in Data"
+        src="https://ourworldindata.org/grapher/ghg-emissions-by-sector?tab=chart&amp;stackMode=relative">
       </iframe>
-      <p class="foot">Fuente interactiva: Our World in Data.</p>
+      <p class="foot">Fuente interactiva: Our World in Data. <span class="edificios-chart-link"><a href="https://ourworldindata.org/grapher/ghg-emissions-by-sector?tab=chart&amp;stackMode=relative" target="_blank" rel="noopener">Abrir gráfico en la fuente</a></span></p>
     </section>
 
-    <section class="grid cols-3" style="margin-top:16px" aria-labelledby="palancas">
+    <section class="grid cols-3" aria-label="Palancas para edificios">
       <article class="card ok">
-        <h3 style="margin:0 0 6px">Aislamiento y sellado</h3>
+        <h2>Aislamiento y sellado</h2>
         <ul class="sub actions">
           <li>Insuflar o añadir <strong>aislante</strong> en envolvente (fachada, cubierta, cámara).</li>
           <li><strong>Sellado</strong> de infiltraciones: cajas de persiana, encuentros, ventanas.</li>
@@ -102,7 +79,7 @@
       </article>
 
       <article class="card ok">
-        <h3 style="margin:0 0 6px">Bomba de calor</h3>
+        <h2>Bomba de calor</h2>
         <ul class="sub actions">
           <li>Sustituye caldera/gasóleo por <strong>aerotermia</strong> (AA + ACS).</li>
           <li>Compatibiliza con <strong>radiadores sobredimensionados</strong> o <em>fan coils</em>.</li>
@@ -111,7 +88,7 @@
       </article>
 
       <article class="card ok">
-        <h3 style="margin:0 0 6px">Estándares y electrificación</h3>
+        <h2>Estándares y electrificación</h2>
         <ul class="sub actions">
           <li>Códigos tipo <strong>NZEB/Passivhaus</strong> en obra nueva y gran rehabilitación.</li>
           <li><strong>Electrificar</strong> cocción/SEC y eliminar quemas in-situ.</li>
@@ -120,7 +97,7 @@
       </article>
     </section>
 
-    <section class="card" style="margin-top:16px" aria-labelledby="acciones">
+    <section class="card" aria-label="Acciones prácticas para el hogar y la oficina">
       <div class="eyebrow">Acciones prácticas (hogar y oficina)</div>
       <ul class="actions">
         <li>👉 <strong>Ajusta el termostato</strong>: baja 1&nbsp;°C en invierno / sube 1&nbsp;°C en verano.</li>
@@ -129,9 +106,9 @@
         <li>🌬️ <strong>Ventilación cruzada</strong> y <strong>sombra</strong> (toldos, persianas) para reducir horas de AC.</li>
       </ul>
 
-      <details style="margin-top:10px">
+      <details>
         <summary><strong>Mini-calculadora</strong> de ahorro por termostato (estimación orientativa)</summary>
-        <div class="calc" style="margin-top:8px">
+        <div class="calc">
           <div class="row">
             <label for="modo">Modo:</label>
             <select id="modo">
@@ -149,7 +126,7 @@
             <label for="factura">Gasto anual (clima):</label>
             <input id="factura" type="number" min="0" step="10" value="600" /> €
           </div>
-          <div class="row">
+          <div class="row calc-result" aria-live="polite">
             <div class="badge">Ahorro estimado: <span id="ahorroPct" class="num">7.0</span>%</div>
             <div class="badge">≈ <span id="ahorro€" class="num">42</span> €/año</div>
           </div>
@@ -158,7 +135,7 @@
       <p class="foot">La regla del 5–10% por °C es aproximada y depende del edificio, clima y hábitos.</p>
     </section>
 
-    <section class="card" style="margin-top:16px">
+    <section class="card">
       <div class="eyebrow">Fuentes y recursos</div>
       <ul class="sub">
         <li>Our World in Data – <em>Greenhouse gas emissions by sector</em> (gráfico embebido arriba).</li>
@@ -173,7 +150,7 @@
         const deltaVal = document.getElementById('deltaVal');
         const factura = document.getElementById('factura');
         const ahorroPct = document.getElementById('ahorroPct');
-        const ahorro€ = document.getElementById('ahorro€');
+        const ahorroEuros = document.getElementById('ahorro€');
         const modo = document.getElementById('modo');
 
         function calc(){
@@ -190,7 +167,7 @@
           const euros = (parseFloat(factura.value||0) * pct/100).toFixed(0);
           deltaVal.textContent = d.toFixed(1);
           ahorroPct.textContent = pct.toFixed(1);
-          ahorro€.textContent = isFinite(euros)? euros : 0;
+          ahorroEuros.textContent = isFinite(euros)? euros : 0;
         }
         ['input','change'].forEach(ev=>{
           delta.addEventListener(ev, calc);
@@ -200,6 +177,7 @@
         calc();
       })();
     </script>
-  </main>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><p>No hay marcha atrás · Autor: GMIM · Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a></p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
 </body>
 </html>
