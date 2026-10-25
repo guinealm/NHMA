@@ -1,211 +1,111 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cambio Climático — ¿Está cambiando?</title>
-  <meta name="description" content="Indicadores clave para responder a la pregunta: ¿Está cambiando el clima? Temperatura global, temperatura del mar, nivel del mar, hielo, CO₂ y permafrost." />
- 
- 
-<link rel="preconnect" href="https://ourworldindata.org" />
-<link rel="stylesheet" href="assets/css/common-core.css?v=2">
-<link rel="stylesheet" href="assets/css/common-nav-footer.css?v=2">
-
-<!-- TEMPORAL (base actual) -->
-<link rel="stylesheet" href="assets/css/common.css?v=2">
-
-<!-- overrides por página (DEBE IR EL ÚLTIMO) -->
-<link rel="stylesheet" href="assets/css/pages.css?v=2">
-  
-  
-  <!--<style>
-    :root{
-      --bg:#0b1220;
-      --card:#111a2b;
-      --ink:#e8eefc;
-      --muted:#9bb0d1;
-      --link:#93c5fd;
-      --border:#1f2a44;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
-      --radius:16px;
-      --pill:#0f1b31;
-      --warn:#ffdd8a; --warnbg:#1e1604;
-      --danger:#ffb3b3; --dangerbg:#1a0c0c;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:var(--link);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(6px);
-      background:linear-gradient(180deg,rgba(11,18,32,.9),rgba(11,18,32,.6));border-bottom:1px solid var(--border)}
-    .wrap{max-width:1100px;margin:auto;padding:20px}
-    nav{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-    nav a{padding:8px 12px;border-radius:999px;border:1px solid transparent}
-    nav a[aria-current="page"]{border-color:var(--border);background:rgba(255,255,255,.03)}
-    .brand{font-weight:700;margin-right:auto}
-    .hero{display:grid;gap:10px;margin:22px 0}
-    .hero h1{margin:0;font-size:clamp(28px,4.2vw,42px);line-height:1.15}
-    .hero .sub{color:var(--muted)}
-
-    .cards{display:grid;gap:18px;margin:24px 0;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;display:grid;gap:10px}
-    .kpi{display:flex;align-items:center;gap:10px}
-    .icon{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:#0f1b31;border:1px solid var(--border)}
-    .kpi h3{margin:0;font-size:18px}
-    .meta{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:var(--pill);font-size:14px}
-    .pill.warn{border-color:#614e16;background:var(--warnbg);color:var(--warn)}
-    .pill.danger{border-color:#5a1a1a;background:var(--dangerbg);color:var(--danger)}
-    .small{font-size:14px;color:var(--muted)}
-
-    .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:var(--radius)}
-    table{width:100%;border-collapse:separate;border-spacing:0;min-width:760px;background:var(--card)}
-    thead th{position:sticky;top:0;background:#0e1729;color:var(--muted);text-align:left;font-weight:600;padding:12px;border-bottom:1px solid var(--border)}
-    tbody td{padding:14px;border-bottom:1px solid var(--border);vertical-align:top}
-    tbody tr:hover{background:#0f1b31}
-    .ref a{white-space:nowrap}
-
-    footer{margin:40px 0 60px;color:var(--muted)}
-    .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-
-    /* ===== Utilidades (botones con imagen) ===== */
-    .tools{margin-top:36px}
-    .tools h2{font-size:22px;margin:0 0 12px}
-    .tool-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-    .tool{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
-    .tool a.block{display:block;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#0f1b31;transition:transform .08s ease}
-    .tool a.block:hover{transform:translateY(-2px)}
-    .tool img{display:block;width:100%;height:auto}
-    .tool .t-title{margin:10px 0 6px;font-weight:600}
-    .tool .t-desc{margin:0;color:var(--muted);font-size:14px}
-  </style> -->
+  <meta name="description" content="Indicadores clave para responder a la pregunta: ¿Está cambiando el clima? Temperatura global, temperatura del mar, nivel del mar, hielo, CO₂ y permafrost.">
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-evidencias.css">
 </head>
-
-<script src="assets/js/breadcrumb.js" defer></script>
-
-<body>
-  <!-- ===== Header ===== -->
-<header>
-  <div class="wrap">
-    <nav>
-      
-<div style="font-size: 0.95rem;">
-  <a href="index.html">Home</a>
-  <a href="pagina1.html" aria-current="page">¿Está cambiando?</a>
-  <a href="pagina2.html">¿Hace daño?</a>
-  <a href="pagina3.html">¿Por qué?</a>
-  <a href="pagina4.html">¿Qué debe hacer el mundo?</a>
-  <a href="pagina5.html">¿Qué debe hacer el mundo?</a>
-  <a href="pagina6.html">¿Cómo nos engañan?</a>
-  </div>
+<body class="site-shell nhma-articulo evidencias-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina1.html" aria-current="page">¿Está cambiando?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main evidencias-main"><div class="container">
+    <nav class="evidencias-secciones" aria-label="Secciones climáticas">
+      <a href="pagina2.html">¿Hace daño?</a><a href="pagina3.html">¿Por qué?</a><a href="pagina4.html">¿Qué debe hacer el mundo?</a><a href="pagina5.html">¿Qué puedo hacer yo?</a><a href="pagina6.html">¿Cómo nos engañan?</a>
     </nav>
-  </div>
-</header>
+    <section class="evidencias-hero" aria-labelledby="evidencias-title"><h1 id="evidencias-title">¿Está cambiando?</h1><p>Resumen de indicadores clave que muestran el cambio en curso.</p></section>
+    <section aria-labelledby="evidencias-indicadores"><h2 id="evidencias-indicadores" class="visually-hidden">Indicadores climáticos</h2><div class="evidencias-grid">
 
-  <main class="wrap">
-    <!-- ===== Hero ===== -->
-    <section class="hero">
-      <h1>¿Está cambiando?</h1>
-      <div class="sub">
-        Resumen de indicadores clave que muestran el cambio en curso.
-      </div>
-    </section>
-
-    <!-- ===== Tarjetas (6 enlaces) ===== -->
-    <section>
-        
-        <!-- ===== Tarjetas KPI (tabla fusionada en tarjetas) ===== -->
-<section>
-  <div class="cards">
 
     <!-- 1) Temperatura global -->
     <article class="card kpi-card">
-      <a href="pagina11.html" style="color:inherit;text-decoration:none;">
+      <a href="pagina11.html" class="evidencias-card-link">
         <div class="kpi-header"><div class="icon">🌡️</div><h3>Temperatura global</h3></div>
         <div class="kpi-values">
           <span class="pill">Umbral: 1,5 °C</span>
           <span class="pill warn">≈ 1,4 °C</span>
         </div>
         <p class="small">Meta para limitar impactos graves. Se superaría entre 2030–2035 si no cambiamos.</p>
+        </a>
         <p class="ref small"><strong>Ref.:</strong> <a href="https://climate.copernicus.eu" target="_blank" rel="noopener">Copernicus C3S</a></p>
-      </a>
     </article>
 
     <!-- 2) Temperatura del mar (SST) -->
     <article class="card kpi-card">
-      <a href="pagina12.html" style="color:inherit;text-decoration:none;">
+      <a href="pagina12.html" class="evidencias-card-link">
         <div class="kpi-header"><div class="icon">🌊</div><h3>Temperatura del mar (SST)</h3></div>
         <div class="kpi-values">
           <span class="pill">Umbral: —</span>
           <span class="pill warn">En elaboración</span>
         </div>
         <p class="small">Influye en ciclo hidrológico, lluvias extremas, ciclones y teleconexiones.</p>
+        </a>
         <p class="ref small"><strong>Ref.:</strong> <a href="https://ourworldindata.org/grapher/sea-surface-temp-anomaly-pih" target="_blank" rel="noopener">OWID – SST anomaly</a></p>
-      </a>
     </article>
 
     <!-- 3) Nivel del mar -->
     <article class="card kpi-card">
-      <a href="pagina13.html" style="color:inherit;text-decoration:none;">
+      <a href="pagina13.html" class="evidencias-card-link">
         <div class="kpi-header"><div class="icon">📈</div><h3>Nivel del mar</h3></div>
         <div class="kpi-values">
           <span class="pill">Umbral: 3 mm/año</span>
           <span class="pill danger">3,4 mm/año</span>
         </div>
         <p class="small">Aumento sostenido: más riesgo de inundaciones costeras y marejadas.</p>
+        </a>
         <p class="ref small"><strong>Ref.:</strong> <a href="https://climate.nasa.gov/vital-signs/sea-level/" target="_blank" rel="noopener">NASA – Sea Level</a></p>
-      </a>
     </article>
 
     <!-- 4) CO₂ atmosférico -->
     <article class="card kpi-card">
-      <a href="pagina14.html" style="color:inherit;text-decoration:none;">
+      <a href="pagina15.html" class="evidencias-card-link">
         <div class="kpi-header"><div class="icon">🧪</div><h3>CO₂ atmosférico</h3></div>
         <div class="kpi-values">
           <span class="pill">Umbral: 450 ppm</span>
           <span class="pill warn">424–426 ppm</span>
         </div>
         <p class="small">Umbral aproximado para mantenernos &lt; 2 °C. Riesgo de crecimientos &gt; 5 ppm/año.</p>
+        </a>
         <p class="ref small"><strong>Ref.:</strong> <a href="https://gml.noaa.gov/ccgg/trends/mlo.html" target="_blank" rel="noopener">NOAA – Mauna Loa</a></p>
-      </a>
     </article>
 
     <!-- 5) Hielo (ártico/capas) -->
     <article class="card kpi-card">
-      <a href="pagina15.html" style="color:inherit;text-decoration:none;">
+      <a href="pagina14.html" class="evidencias-card-link">
         <div class="kpi-header"><div class="icon">🧊</div><h3>Hielo (ártico/capas)</h3></div>
         <div class="kpi-values">
           <span class="pill">Umbral: −50 %</span>
           <span class="pill danger">−55–63 %</span>
         </div>
         <p class="small">Pérdida de albedo y posibles cambios en circulación (p. ej., AMOC). Riesgo alto.</p>
+        </a>
         <p class="ref small"><strong>Ref.:</strong> <a href="https://climate.nasa.gov/vital-signs/arctic-sea-ice/" target="_blank" rel="noopener">NASA – Arctic Sea Ice</a></p>
-      </a>
     </article>
 
     <!-- 6) Permafrost -->
     <article class="card kpi-card">
-      <a href="pagina16.html" style="color:inherit;text-decoration:none;">
+      <a href="pagina16.html" class="evidencias-card-link">
         <div class="kpi-header"><div class="icon">🌍</div><h3>Permafrost</h3></div>
         <div class="kpi-values">
           <span class="pill">Umbral: —</span>
           <span class="pill warn">En deshielo</span>
         </div>
         <p class="small">Riesgo de liberar metano y dañar infraestructuras. Señales de aceleración.</p>
+        </a>
         <p class="ref small"><strong>Ref.:</strong> <a href="https://maps.awi.de/awimaps/projects/public/?cu=globpermafrost_arctic_groundtemperature_timeseries#mapcontent" target="_blank" rel="noopener">AWI – Permafrost</a></p>
-      </a>
     </article>
 
-  </div>
-</section>
-
-     
-
-    
-
-
-    <!-- ===== Utilidades para explorar el clima ===== -->
-    <section class="tools" aria-labelledby="ttl-tools">
+    </div></section>
+<section class="tools" aria-labelledby="ttl-tools">
       <h2 id="ttl-tools">Herramientas para explorar el clima</h2>
 
       <div class="tool-grid">
@@ -228,29 +128,7 @@
 
       
     </section>
-
-  </main>
-
-  <script>
-    (function(){
-      const now = new Date();
-      const fmt = new Intl.DateTimeFormat('es-ES',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
-      document.getElementById('fecha').textContent = fmt.format(now);
-      document.getElementById('fecha2').textContent = fmt.format(now);
-    })();
-  </script>
-  
-  <footer class="site-footer" aria-label="Créditos">
-  <p class="footer-line">
-    <span class="footer-updated">Última actualización: lunes, 6 de octubre de 2025</span>
-    <span class="sep" aria-hidden="true"> · </span>
-    <span class="footer-author">Autor: GMIM</span>
-    <span class="sep" aria-hidden="true"> · </span>
-    <span class="footer-license">
-      Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a>
-    </span>
-  </p>
-</footer>
-
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><p><span class="footer-updated">Última actualización: lunes, 6 de octubre de 2025</span> · <span class="footer-author">Autor: GMIM</span> · Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a></p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
 </body>
 </html>
