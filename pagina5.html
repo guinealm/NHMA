@@ -1,126 +1,25 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>5. ¿Qué puedo hacer yo? | Cambio Climático</title>
-  <meta name="description" content="Guía práctica y emocional para pasar de la preocupación a la acción: tus 3 acciones 80/20, cuidados en olas de calor e incendios, y plan personal descargable." />
-  
-    <link rel="preconnect" href="https://ourworldindata.org" />
-<link rel="stylesheet" href="assets/css/common-core.css?v=2">
-<link rel="stylesheet" href="assets/css/common-nav-footer.css?v=2">
-
-<!-- TEMPORAL (base actual) -->
-<link rel="stylesheet" href="assets/css/common.css?v=2">
-
-<!-- overrides por página (DEBE IR EL ÚLTIMO) -->
-<link rel="stylesheet" href="assets/css/pages.css?v=2">
-  
-  
-  
-  <!-- <style>
-    :root{
-      --bg:#0b1020;           /* fondo oscuro, cómodo para noche */
-      --card:#121939;         /* tarjetas */
-      --muted:#9db3ff;        /* textos secundarios */
-      --text:#f5f7ff;         /* texto principal */
-      --accent:#4ade80;       /* verde acción */
-      --accent-2:#22d3ee;     /* cian suave */
-      --warning:#f59e0b;      /* calor/incendios */
-      --danger:#ef4444;       /* peligro */
-      --ok:#10b981;           /* ok */
-      --link:#93c5fd;         /* enlaces */
-      --shadow:0 8px 30px rgba(0,0,0,.35)
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:radial-gradient(1200px 800px at 10% -10%,#1a2249 0%,#0b1020 55%), var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial}
-    a{color:var(--link)}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;background:rgba(11,16,32,.7);backdrop-filter:blur(6px);border-bottom:1px solid #23306d;z-index:50}
-    nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
-    nav .brand{display:flex;gap:10px;align-items:center}
-    .brand .logo{width:36px;height:36px;border-radius:50%;background:conic-gradient(from 220deg,#4ade80,#22d3ee,#93c5fd,#4ade80);box-shadow:0 0 0 3px #0b1020,0 0 20px rgba(147,197,253,.3)}
-    nav a{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--text)}
-    nav a:hover{background:#1a244f}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center;padding:30px 0}
-    .hero-card{background:linear-gradient(180deg,#121939,rgba(18,25,57,.6));border:1px solid #24306d;border-radius:16px;padding:26px;box-shadow:var(--shadow)}
-    .kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem}
-    h1{font-weight:800;line-height:1.15;margin:.2rem 0 1rem;font-size:clamp(28px,3.2vw,42px)}
-    .lead{font-size:1.1rem;color:#e9ecff}
-    .motivos{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-    .chip{display:inline-flex;gap:8px;align-items:center;padding:10px 12px;border:1px solid #2a387a;background:#0f1736;border-radius:999px;cursor:pointer;user-select:none}
-    .chip[aria-pressed="true"]{outline:2px solid var(--accent);background:#0d1a2e}
-    .metric{font-variant-numeric:tabular-nums}
-
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-    .card{background:linear-gradient(180deg,#0f1736,#0c132b);border:1px solid #24306d;border-radius:16px;padding:18px;box-shadow:var(--shadow)}
-    .card h3{margin:6px 0 8px}
-    .tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:.78rem;border:1px solid #3350b7;color:#cfe0ff;background:#0b1538}
-    .tag.high{border-color:#1f8a4c;color:#b8f5d3}
-    .tag.med{border-color:#b3861f;color:#ffe2b3}
-    .tag.low{border-color:#5b5b5b;color:#d6d6d6}
-    .btn{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:12px;border:1px solid #2a387a;background:#0f1736;color:var(--text);cursor:pointer;text-decoration:none}
-    .btn:hover{background:#162155}
-    .btn.primary{background:linear-gradient(180deg,#1b6f44,#165938);border-color:#1f8a4c}
-    .btn.warn{background:linear-gradient(180deg,#8a5a1f,#744b1a);border-color:#b3861f}
-
-    details{border:1px dashed #2a387a;border-radius:12px;padding:10px;margin-top:10px}
-    details[open]{background:#0f1736}
-
-    section{scroll-margin-top:68px;padding:28px 0}
-    .section-title{display:flex;align-items:baseline;gap:12px;margin:0 0 12px 0}
-    .section-title h2{margin:0;font-size:clamp(22px,2.2vw,30px)}
-    .muted{color:var(--muted)}
-
-    .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-    .checklist li{margin:8px 0}
-    .ok{color:var(--ok)}
-    .warn{color:var(--warning)}
-    .danger{color:var(--danger)}
-
-    .plan{position:sticky;top:78px}
-    .plan-box{background:linear-gradient(180deg,#0c142b,#0a1126);border:1px solid #24306d;border-radius:16px;padding:16px}
-    .plan-box h3{margin:8px 0}
-    .pill{display:inline-flex;align-items:center;gap:8px;background:#0f1736;border:1px solid #2a387a;border-radius:999px;padding:8px 12px;margin:6px 6px 0 0}
-
-    .stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-    .story{background:linear-gradient(180deg,#10183a,#0b132d);border:1px solid #24306d;border-radius:16px;padding:16px}
-    blockquote{margin:8px 0;padding:0 12px;border-left:3px solid #3350b7;color:#e6ebff}
-
-    footer{margin-top:24px;border-top:1px solid #1d2753;padding:18px 0;color:#b7c6ff}
-
-    @media (max-width:860px){.hero{grid-template-columns:1fr}}
-  </style> -->
+  <meta name="description" content="Guía para elegir acciones climáticas, cuidarse en olas de calor e incendios y crear un plan personal descargable.">
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-plan.css">
 </head>
-<body>
-<header>
-  <div class="wrap">
-    <nav>
-   
-  
-      <div>
-        <a href="index.html">El clima</a>
-        <a href="pagina1.html">¿Está cambiando?</a>
-        <a href="pagina2.html">¿Hace daño?</a>
-        <a href="pagina3.html">¿Por qué?</a>
-        <a href="pagina4.html">¿Qué debe hacer el mundo?</a>
-        <a href="#" aria-current="page" class="btn" style="padding:8px 12px">¿Qué debo hacer yo?</a>
-        <a href="pagina6.html">¿Cómo nos engañan?</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-  <header>
-    <div class="wrap">
-      <h1>¿Qué debo hacer yo?</h1>
-      <p class="subtitle">Opciones de mitigación (IPCC), políticas y normas vigentes por regiones, y estado de medidas pospuestas o poco consideradas. Enfoque: datos y fuentes.</p>
-    </div>
-  </header>
-
-  <main class="wrap">
-
-<main class="wrap">
+<body class="site-shell nhma-articulo plan-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina5.html" aria-current="page">¿Qué puedo hacer yo?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main plan-main"><div class="container">
+    <nav class="plan-secciones" aria-label="Secciones climáticas"><a href="pagina1.html">¿Está cambiando?</a><a href="pagina2.html">¿Hace daño?</a><a href="pagina3.html">¿Por qué?</a><a href="pagina4.html">¿Qué debe hacer el mundo?</a><a href="pagina6.html">¿Cómo nos engañan?</a></nav>
   <!-- HERO -->
   <section class="hero" aria-labelledby="t-hero">
     <div class="hero-card">
@@ -329,8 +228,8 @@
   </section>
 
 
-</main>
 
+  </div></main>
 <script>
 (function(){
   const chips = document.querySelectorAll('.chip');
@@ -499,20 +398,6 @@
   renderPlan();
 })();
 </script>
-
-<footer class="site-footer" aria-label="Créditos">
-  <p class="footer-line">
-    <span class="footer-updated">Última actualización: 2025-10-06</span>
-    <span class="sep" aria-hidden="true"> · </span>
-    <span class="footer-author">Autor: GMIM</span>
-    <span class="sep" aria-hidden="true"> · </span>
-    <span class="footer-license">
-      Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a>
-    </span>
-  </p>
-
-  
-</footer>
-
+  <footer class="site-footer"><div class="container footer-inner"><p>Fecha indicada en la versión anterior: 6 de octubre de 2025 · Autor: GMIM · Licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a></p></div></footer>
 </body>
 </html>
