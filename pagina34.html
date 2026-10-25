@@ -5,81 +5,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>3.4 · Procesos industriales</title>
   <meta name="description" content="Estructura base para la página 3.4 Procesos industriales: secciones, anclas y placeholders para datos y gráficos." />
-  <style>
-    :root{
-      --bg:#0b0e11; --card:#131820; --muted:#8aa0b3; --text:#e8f0f7;
-      --accent:#62b0ff; --accent-2:#93e5ab; --warn:#ffc857; --danger:#ff6b6b;
-      --max:1100px; --radius:16px;
-    }
-    html{scroll-behavior:smooth;}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-         background:var(--bg);color:var(--text);line-height:1.55;}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:var(--max);margin-inline:auto;padding:24px}
-    header{background:linear-gradient(180deg,#0b0e11 0%, #0b0e11cc 60%, transparent 100%), url('assets/img/placeholder-industria.jpg') center/cover no-repeat;}
-    .hero{padding:64px 0 28px}
-    .hero h1{font-size:clamp(28px,3.2vw,40px);margin:0 0 8px}
-    .hero p{margin:4px 0 0;color:var(--muted)}
-    .breadcrumbs{font-size:14px;color:var(--muted);margin-bottom:12px}
-    .breadcrumbs a{color:var(--muted)}
-    .chipbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-    .chip{border:1px solid #223044;background:#0f141b;color:var(--text);padding:8px 12px;border-radius:999px;font-size:13px}
-
-    /* Layout con TOC pegajoso */
-    .layout{display:grid;grid-template-columns:280px 1fr;gap:24px}
-    @media (max-width: 980px){.layout{grid-template-columns:1fr}}
-    aside.toc{position:sticky;top:12px;align-self:start;background:var(--card);border-radius:var(--radius);padding:16px}
-    .toc h3{margin:0 0 8px;font-size:16px}
-    .toc nav a{display:block;padding:8px 10px;border-radius:8px;color:var(--muted)}
-    .toc nav a:hover{background:#1a2230;color:var(--text)}
-    .toc .group{margin:10px 0 0}
-    .toc small{color:var(--muted)}
-
-    section{background:var(--card);border-radius:var(--radius);padding:20px;margin-bottom:18px}
-    section h2{margin:0 0 10px;font-size:22px}
-    section h3{margin:14px 0 8px;font-size:18px}
-    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    @media (max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}}
-    .kpi{background:#0f141b;border:1px solid #223044;border-radius:12px;padding:14px}
-    .kpi .label{color:var(--muted);font-size:12px}
-    .kpi .value{font-size:22px;margin-top:6px}
-    .note{background:#10212b;border-left:3px solid var(--accent);padding:10px;border-radius:8px;color:#cfe9ff}
-    .warn{background:#2a210f;border-left:3px solid var(--warn);color:#ffe8b3}
-
-    /* Gráficos/figuras placeholder */
-    figure{background:#0f141b;border:1px dashed #2e3b4a;border-radius:12px;padding:14px;margin:12px 0}
-    figure .chart{height:260px;background:repeating-linear-gradient(
-        -45deg,#111a22,#111a22 12px,#0d141a 12px,#0d141a 24px);
-        border-radius:8px;display:flex;align-items:center;justify-content:center;color:#5c7a94}
-    figcaption{font-size:12px;color:var(--muted);margin-top:8px}
-
-    /* Grid de palancas */
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    @media (max-width:900px){.grid-3{grid-template-columns:1fr}}
-
-    /* Sectores: patrón repetible */
-    .sector{border:1px solid #223044}
-    .badge{display:inline-block;background:#0f141b;border:1px solid #223044;border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted)}
-    .sector-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:14px}
-    @media (max-width:980px){.sector-grid{grid-template-columns:1fr}}
-    .list{padding-left:18px}
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-    .btn{display:inline-block;background:#162232;color:#d9edff;border:1px solid #2d4663;border-radius:10px;padding:8px 12px;font-size:14px}
-    .btn:hover{filter:brightness(1.1)}
-    .footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
-
-    .toplink{position:fixed;right:14px;bottom:14px;background:#162232;border:1px solid #2d4663;color:#d9edff;
-             padding:10px 12px;border-radius:12px;font-size:13px;box-shadow:0 6px 18px #0006}
-  </style>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-industria.css">
 </head>
-<body>
-
-  <header>
-    <div class="container hero">
+<body class="site-shell nhma-articulo industria-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina3.html" aria-current="page">¿Por qué?</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main industria-main"><div class="container">
+    <section class="industria-hero">
       <nav class="breadcrumbs">
-        <!-- Ajusta rutas según tu árbol -->
-        <a href="index.html">Menú</a> › <a href="pagina3.html">3 · ¿Por qué está cambiando?</a> › <a href="pagina32.html">3.2 · Sectores</a> › <strong>3.4 · Procesos industriales</strong>
+        <a href="index.html">Menú</a> › <a href="pagina3.html">3 · ¿Por qué está cambiando?</a> › <strong>3.4 · Procesos industriales</strong>
       </nav>
       <h1>3.4 · Procesos industriales</h1>
       <p>El calor es el corazón de las emisiones: combustión para calor de proceso y emisiones intrínsecas (p. ej., clínker en cemento).</p>
@@ -88,15 +30,14 @@
         <a class="chip" href="#data-fuentes">Data / Fuentes</a>
         <a class="chip" href="#acciones">Medidas</a>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <div class="container layout">
+  <div class="industria-layout">
 
     <!-- TOC pegajoso -->
     <aside class="toc">
       <h3>Contenido</h3>
-      <nav>
+      <nav aria-label="Índice de esta página">
         <a href="#tldr">TL;DR</a>
         <a href="#kpis">KPIs</a>
         <a href="#marco-energia">Qué energía usa la industria</a>
@@ -120,7 +61,7 @@
     </aside>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main>
+    <div class="industria-content">
 
       <!-- TL;DR -->
       <section id="tldr" aria-labelledby="tldr-title">
@@ -448,8 +389,8 @@
           <figcaption>Botones de descarga (CSV/PNG/JSON) cuando estén listos.</figcaption>
         </figure>
         <div class="actions">
-          <a class="btn" href="#">Descargar CSV</a>
-          <a class="btn" href="#">Descargar PNG</a>
+          <span class="btn btn-disabled" aria-disabled="true">Descargar CSV (pendiente)</span>
+          <span class="btn btn-disabled" aria-disabled="true">Descargar PNG (pendiente)</span>
         </div>
       </section>
 
@@ -457,23 +398,20 @@
       <section aria-labelledby="nav-title">
         <h2 id="nav-title">Navegación</h2>
         <div class="actions">
-          <a class="btn" href="pagina32.html">← Volver a 3.2 · Sectores</a>
-          <a class="btn" href="pagina323.html">3.2.3 · Generación de energía</a>
-          <a class="btn" href="pagina321.html">3.2.1 · Transporte</a>
-          <a class="btn" href="pagina322.html">3.2.2 · Edificios</a>
+          <a class="btn" href="pagina3.html">← Volver a ¿Por qué?</a>
+          <a class="btn" href="pagina33.html">3.3 · Generación de energía</a>
+          <a class="btn" href="pagina31.html">3.1 · Transporte</a>
+          <a class="btn" href="pagina32.html">3.2 · Edificios</a>
         </div>
       </section>
 
-    </main>
-  </div>
-
-  <a class="toplink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Arriba</a>
-
-  <footer class="footer">
-    <div class="container">
-      v1 (estructura). Rellena textos, añade iframes/embeds y conecta descargas cuando estén listos.
     </div>
-  </footer>
+  </div>
+  </div></main>
+
+  <a class="toplink" href="#contenido">↑ Arriba</a>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>v1 (estructura). Rellena textos, añade iframes/embeds y conecta descargas cuando estén listos.</p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
 
 </body>
 </html>

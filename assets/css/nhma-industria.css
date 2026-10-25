@@ -1,0 +1,44 @@
+/* Página 3.4 Procesos industriales: plantilla sobre Common. */
+.industria-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.industria-hero { padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.industria-hero .breadcrumbs { margin-bottom: 1rem; font-size: .94rem; }
+.industria-hero h1 { margin: 0 0 .75rem; }
+.industria-hero p { margin: 0; }
+.industria-hero .chipbar { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.industria-hero .chip { padding: .4rem .7rem; border: 1px solid var(--jm-border); border-radius: 999px; background: var(--jm-surface); font-size: .9rem; }
+.industria-layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); align-items: start; gap: 1.5rem; }
+.industria-layout > * { min-width: 0; }
+.industria-page .toc { position: sticky; top: 90px; padding: 1rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.industria-page .toc h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+.industria-page .toc nav a { display: block; padding: .4rem .5rem; border-radius: 7px; }
+.industria-page .toc nav a:hover { background: var(--jm-bg-soft); }
+.industria-page .toc .group { margin-top: .5rem; }
+.industria-page .toc small { color: var(--jm-text-muted); }
+.industria-content section { padding: 1.25rem; margin-bottom: 1.25rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); scroll-margin-top: 90px; }
+.industria-content section h2 { margin: 0 0 .8rem; font-size: 1.55rem; }
+.industria-content section h3 { margin: 1rem 0 .5rem; font-size: 1.15rem; }
+.industria-content .list { padding-left: 1.5rem; }
+.industria-content li { margin-bottom: .5rem; }
+.industria-content li:last-child { margin-bottom: 0; }
+.industria-content .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+.industria-content .kpi { min-width: 0; padding: 1rem; border: 1px solid var(--jm-border); border-radius: 10px; background: var(--jm-bg-soft); }
+.industria-content .kpi .label { color: var(--jm-text-muted); font-size: .9rem; }
+.industria-content .kpi .value { margin-top: .5rem; font-size: 1.55rem; font-weight: 700; }
+.industria-content .note, .industria-content .warn { padding: .8rem 1rem; border-left: 3px solid var(--jm-primary); border-radius: 7px; background: var(--jm-bg-soft); }
+.industria-content .warn { border-left-color: #a06b00; }
+.industria-content figure { min-width: 0; margin: 1rem 0 0; padding: 1rem; border: 1px dashed var(--jm-border-strong); border-radius: 10px; }
+.industria-content .chart { display: grid; place-items: center; min-height: 230px; padding: 1rem; border-radius: 8px; background: repeating-linear-gradient(-45deg, var(--jm-bg-soft), var(--jm-bg-soft) 12px, var(--jm-surface) 12px, var(--jm-surface) 24px); color: var(--jm-text-muted); text-align: center; overflow-wrap: anywhere; }
+.industria-content figcaption { margin-top: .6rem; color: var(--jm-text-muted); font-size: .9rem; }
+.industria-content .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.industria-content .grid-3 > * { min-width: 0; }
+.industria-content .sector-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1rem; }
+.industria-content .sector-grid > * { min-width: 0; }
+.industria-content .badge { display: inline-flex; align-items: center; min-height: 32px; padding: .3rem .65rem; border: 1px solid var(--jm-border); border-radius: 999px; background: var(--jm-bg-soft); color: var(--jm-text-muted); font-size: .9rem; }
+.industria-content .actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: .5rem 0 1rem; }
+.industria-content .btn { display: inline-flex; align-items: center; min-height: 40px; padding: .45rem .75rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-bg-soft); text-decoration: none; }
+.industria-content a.btn:hover { background: var(--jm-surface); }
+.industria-content .btn-disabled { color: var(--jm-text-muted); cursor: not-allowed; }
+.industria-page .toplink { position: fixed; right: 1rem; bottom: 1rem; z-index: 10; padding: .55rem .8rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-surface); box-shadow: 0 3px 12px #0002; }
+@media (max-width: 1100px) { .industria-layout { grid-template-columns: 1fr; } .industria-page .toc { position: static; } .industria-page .toc nav { columns: 2; } }
+@media (max-width: 800px) { .industria-content .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .industria-content .grid-3, .industria-content .sector-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .industria-page .toc nav { columns: 1; } .industria-page .toplink { right: .5rem; bottom: .5rem; } }
