@@ -1,0 +1,34 @@
+/* Índice 3: causas del cambio climático sobre Common. */
+.causas-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.causas-secciones { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.causas-secciones a { display: inline-flex; align-items: center; min-height: 44px; padding: .45rem .75rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-surface); text-decoration: none; }
+.causas-secciones a:hover { background: var(--jm-bg-soft); }
+.causas-hero, .causas-panel { padding: clamp(1.25rem, 3vw, 2rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.causas-hero { background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.causas-hero h1 { margin: 0 0 .75rem; }
+.causas-hero .lead { margin: 0; font-size: 1.08rem; }
+.causas-panel h2 { margin: 0 0 1rem; }
+.causas-page .ideas6 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.causas-page .idea { min-width: 0; padding: 1.15rem; border: 1px solid var(--jm-border); border-radius: 10px; background: var(--jm-bg-soft); }
+.causas-page .idea__icon { font-size: 1.65rem; }
+.causas-page .idea h3 { margin: .5rem 0; font-size: 1.15rem; }
+.causas-page .idea p { margin: 0; }
+.causas-page .rankbars { display: grid; gap: .7rem; }
+.causas-page .rankbar { display: block; min-width: 0; padding: .9rem 1rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-bg-soft); color: var(--jm-text); text-decoration: none; }
+.causas-page .rankbar:hover { border-color: var(--jm-primary); }
+.causas-page .rankbar__meta { display: flex; gap: .65rem; align-items: center; margin-bottom: .5rem; }
+.causas-page .rankbar__meta .rank { display: grid; place-items: center; flex: 0 0 2rem; min-height: 2rem; border-radius: 7px; background: var(--jm-primary); color: white; font-weight: 700; }
+.causas-page .rankbar__meta .label { font-weight: 650; }
+.causas-page .rankbar__track { height: .7rem; border-radius: 99px; background: var(--jm-border); }
+.causas-page .rankbar__fill { width: var(--w); height: 100%; border-radius: inherit; background: var(--jm-primary); }
+.causas-page .rankbar--ch4 .rankbar__meta .rank { background: #a06b00; }
+.causas-page .rankbar--ch4 .rankbar__fill { background: #a06b00; }
+.causas-page .note--ch4 { margin: .4rem 0 0; color: var(--jm-text-muted); }
+.causas-charts h3 { margin: 1.5rem 0 .6rem; }
+.causas-charts iframe { display: block; width: 100%; height: 520px; border: 1px solid var(--jm-border); border-radius: 8px; }
+.causas-charts .chart-link { margin: .6rem 0; overflow-wrap: anywhere; }
+.causas-charts .note { display: block; margin: .5rem 0 1.5rem; color: var(--jm-text-muted); }
+.causas-charts details { padding: 1rem; margin-top: 1.5rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-bg-soft); }
+.causas-charts summary { cursor: pointer; }
+@media (max-width: 1000px) { .causas-page .ideas6 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .causas-page .ideas6 { grid-template-columns: 1fr; } .causas-charts iframe { height: 440px; } }
