@@ -1,74 +1,30 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Status | NHMA</title>
-
-  <!-- Opcional: si ya tienes un CSS base común, puedes dejarlo -->
-  <!-- <link rel="stylesheet" href="assets/css/base.css"> -->
-
-  <style>
-    :root{
-      --bg:#0b1220;
-      --fg:#e6eef9;
-      --muted:rgba(230,238,249,.72);
-      --line:rgba(230,238,249,.14);
-      --card:rgba(230,238,249,.04);
-      --ok:#39d98a;
-      --warn:#ffd166;
-      --todo:#ff5c5c;
-      --na:rgba(230,238,249,.45);
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:inherit}
-    .wrap{max-width:1200px;margin:22px auto;padding:0 16px}
-    header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
-    h1{margin:0;font-size:22px}
-    .meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:var(--muted);font-size:14px}
-    .tag{display:inline-block;padding:2px 10px;border-radius:999px;background:rgba(230,238,249,.08);border:1px solid var(--line);color:var(--fg)}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px;margin:12px 0 18px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 12px}
-    .card h2{margin:0 0 8px 0;font-size:16px}
-    .small{font-size:13px;color:var(--muted);line-height:1.35}
-    .legend{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-    .dot{display:inline-block;width:10px;height:10px;border-radius:999px;margin-right:6px;vertical-align:middle}
-    .dot.ok{background:var(--ok)} .dot.warn{background:var(--warn)} .dot.todo{background:var(--todo)} .dot.na{background:var(--na)}
-    table{width:100%;border-collapse:collapse;border:1px solid var(--line);background:rgba(0,0,0,.08);border-radius:14px;overflow:hidden}
-    thead th{font-size:13px;text-transform:none;letter-spacing:.2px;color:var(--muted);background:rgba(230,238,249,.05)}
-    th,td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-    tbody tr:hover{background:rgba(230,238,249,.03)}
-    .page a{text-decoration:none;border-bottom:1px dotted rgba(230,238,249,.35)}
-    .st{white-space:nowrap;font-weight:600}
-    .st.ok{color:var(--ok)}
-    .st.warn{color:var(--warn)}
-    .st.todo{color:var(--todo)}
-    .st.na{color:var(--na);font-weight:500}
-    .note{color:var(--muted)}
-    @media (max-width:900px){
-      table{display:block;overflow-x:auto}
-      h1{font-size:20px}
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registro histórico de estado | NHMA</title>
+  <meta name="description" content="Registro histórico de mantenimiento de No hay marcha atrás, fechado el 2 de febrero de 2026.">
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
+  <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <link rel="stylesheet" href="assets/css/nhma-articulos.css">
+  <link rel="stylesheet" href="assets/css/nhma-status.css">
 </head>
-
-<body>
-  <main class="wrap">
-    <header>
-      <h1>Status NHMA</h1>
-      <div class="meta">
-        <span class="tag">Entorno: CLIMA (ALFA)</span>
-        <span class="tag">Última actualización: <strong>2026-02-02</strong></span>
-        <span class="tag">Archivo: /status.html</span>
-      </div>
-    </header>
-
+<body class="site-shell nhma-articulo status-page">
+  <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="container header-inner">
+    <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="https://common.jumalenin.com/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
+    <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="novedades.html">Novedades</a></nav>
+  </div></header>
+  <main id="contenido" class="site-main status-main"><div class="container">
+    <section class="status-hero"><h1>Registro histórico de estado NHMA</h1><p>Esta tabla conserva el registro del <strong>2 de febrero de 2026</strong> para consulta. Sus estados no acreditan el avance actual de la migración ni una revisión reciente del contenido.</p><div class="meta"><span class="tag">Entorno indicado: CLIMA (ALFA)</span><span class="tag">Fecha del registro: 2026-02-02</span><span class="tag">Archivo: /status.html</span></div></section>
     <section class="grid">
       <div class="card">
         <h2>Incidencias globales</h2>
         <div class="small">
-          <ul style="margin:0;padding-left:18px">
+          <ul >
             <li><strong>HEAD / estilos</strong>: “Poner bien el head (style)” se gestiona aquí como tarea global (no por página).</li>
             <li>Si algo se repite en varias páginas (fuentes, XHR, rutas de assets), anótalo aquí y no en cada fila.</li>
           </ul>
@@ -78,9 +34,9 @@
       <div class="card">
         <h2>Leyenda</h2>
         <div class="legend small">
-          <span><span class="dot ok"></span><strong style="color:var(--ok)">Cerrado</strong></span>
-          <span><span class="dot warn"></span><strong style="color:var(--warn)">Pendiente</strong></span>
-          <span><span class="dot todo"></span><strong style="color:var(--todo)">No iniciada</strong></span>
+          <span><span class="dot ok"></span><strong >Cerrado</strong></span>
+          <span><span class="dot warn"></span><strong >Pendiente</strong></span>
+          <span><span class="dot todo"></span><strong >No iniciada</strong></span>
           <span><span class="dot na"></span><span>— (no aplica / sin dato)</span></span>
         </div>
       </div>
@@ -89,10 +45,10 @@
     <section class="card">
       <h2>Tabla de estado</h2>
 
-      <table aria-label="Estado por página">
+      <div class="status-table-scroll" tabindex="0" role="region" aria-label="Tabla de estado desplazable"><table aria-label="Estado por página">
         <thead>
           <tr>
-            <th style="min-width:170px">Página</th>
+            <th >Página</th>
             <th>Funcional</th>
             <th>Diseño básico</th>
             <th>CSS común</th>
@@ -194,7 +150,7 @@
           </tr>
 
           <tr>
-            <td class="page"><a href="pagina41.html">Páginas 41–4x</a></td>
+            <td class="page"><span class="status-missing">Páginas 41–4x (página no creada)</span></td>
             <td class="st todo">No iniciada</td>
             <td class="st na">—</td>
             <td class="st na">—</td>
@@ -204,7 +160,7 @@
           </tr>
 
           <tr>
-            <td class="page"><a href="pagina51.html">Páginas 51–5x</a></td>
+            <td class="page"><span class="status-missing">Páginas 51–5x (página no creada)</span></td>
             <td class="st todo">No iniciada</td>
             <td class="st na">—</td>
             <td class="st na">—</td>
@@ -214,7 +170,7 @@
           </tr>
 
           <tr>
-            <td class="page"><a href="pagina61.html">Páginas 61–6x</a></td>
+            <td class="page"><span class="status-missing">Páginas 61–6x (página no creada)</span></td>
             <td class="st todo">No iniciada</td>
             <td class="st na">—</td>
             <td class="st na">—</td>
@@ -223,12 +179,14 @@
             <td class="note">—</td>
           </tr>
         </tbody>
-      </table>
+      </table></div>
 
-      <p class="small" style="margin:10px 0 0 0">
-        Nota: si tus nombres reales no son <code>paginaX.html</code>, cambia los <code>href</code> de la primera columna.
+      <p class="small" >
+        Los tres grupos sin página creada se muestran como texto. Los demás enlaces apuntan a archivos existentes.
       </p>
     </section>
-  </main>
+
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><p>Registro histórico de mantenimiento · <a href="index.html">Volver a No hay marcha atrás</a></p></div></footer>
 </body>
 </html>
