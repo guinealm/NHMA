@@ -72,6 +72,7 @@
 .news-section__head p { margin: 0; color: var(--jm-text-muted); font-size: 0.92rem; }
 
 .news-entry { height: auto; padding: clamp(1.4rem, 4vw, 2.2rem); }
+.news-entry + .news-entry { margin-top: 1.2rem; }
 .news-entry__meta { display: flex; align-items: center; flex-wrap: wrap; gap: 0.7rem 1rem; margin-bottom: 1.4rem; }
 .news-entry__meta time { color: var(--jm-text-muted); font-size: 0.9rem; }
 .news-entry h3 { margin-bottom: 1.3rem; font-size: clamp(1.55rem, 3vw, 2.1rem); }
