@@ -1,0 +1,11 @@
+/* Página 1.1: contenido de temperatura global sobre Common. */
+.temperatura-hero { margin-bottom: 1.5rem; }
+.temperatura-breadcrumbs { display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; color: var(--jm-text-muted); font-size: .9rem; margin-bottom: 1rem; }
+.temperatura-hero .lead { font-size: 1.08rem; max-width: 90ch; }
+.temperatura-page .temperatura-figure { margin: 1rem 0 1.5rem; }
+.temperatura-page .temperatura-figure figcaption { margin-top: 1rem; color: var(--jm-text-muted); font-size: .95rem; }
+.temperatura-page .temperatura-figure noscript { display: block; margin-top: 1rem; }
+.temperatura-alert { margin: 2rem 0; padding: 1rem 1.25rem; border-left: 5px solid var(--jm-primary); border-radius: 8px; background: var(--jm-bg-soft); }
+.temperatura-meta { color: var(--jm-text-muted); font-size: .95rem; overflow-wrap: anywhere; }
+.temperatura-toplink { position: fixed; right: 1rem; bottom: 1rem; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: white; background: var(--jm-primary); font-weight: 700; text-decoration: none; box-shadow: 0 3px 12px rgba(0,0,0,.18); }
+.temperatura-toplink:hover { color: white; }

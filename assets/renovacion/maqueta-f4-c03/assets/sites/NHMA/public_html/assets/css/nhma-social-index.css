@@ -1,0 +1,11 @@
+/* Ajustes del índice 2.5; la plantilla de artículos y las fichas 2.5A/B se mantienen separadas. */
+.social-index-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.social-index-tags .badge { margin: 0; }
+.social-index-links .social-index-image-link { display: block; overflow: hidden; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.social-index-links .social-index-image-link:hover { box-shadow: var(--jm-shadow); }
+.social-index-links figure, .social-index-page figure { margin: 0; }
+.social-index-links img, .social-index-page .card figure img { display: block; width: 100%; height: auto; }
+.social-index-page .card figcaption { margin-top: .6rem; color: var(--jm-text-muted); font-size: .92rem; }
+.social-index-page .card .social-index-tags { margin-top: 1.2rem; }
+.social-index-page #visualizaciones > h2 { margin-bottom: 1rem; }
+.social-index-page #visualizaciones .social-grid { margin-bottom: 0; }

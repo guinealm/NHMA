@@ -1,0 +1,142 @@
+/* ========================================================================== 
+   Jumalenin Components
+   Botones, tarjetas y elementos reutilizables
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.72rem 1.05rem;
+  border: 1px solid transparent;
+  border-radius: var(--jm-radius-sm);
+  font: inherit;
+  font-weight: 750;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+.btn-primary {
+  background: var(--jm-primary);
+  color: #ffffff;
+  box-shadow: var(--jm-shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--jm-primary-dark);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: var(--jm-surface);
+  color: var(--jm-primary);
+  border-color: var(--jm-border);
+}
+
+.btn-secondary:hover {
+  background: var(--jm-primary-soft);
+  border-color: var(--jm-primary);
+  color: var(--jm-primary-dark);
+}
+
+.btn-accent {
+  background: var(--jm-accent);
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background: var(--jm-accent-dark);
+  color: #ffffff;
+}
+
+.card {
+  height: 100%;
+  padding: clamp(1.2rem, 2.5vw, 1.6rem);
+  border: 1px solid var(--jm-border);
+  border-radius: var(--jm-radius-md);
+  background: var(--jm-surface);
+  box-shadow: var(--jm-shadow-sm);
+}
+
+.card h3 { margin-bottom: 0.55rem; }
+.card p { color: var(--jm-text-muted); }
+.card-footer { margin-top: 1.2rem; }
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--jm-primary);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.card-link:hover { color: var(--jm-primary-dark); }
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.58rem;
+  border: 1px solid var(--jm-border);
+  border-radius: 999px;
+  background: var(--jm-surface-soft);
+  color: var(--jm-text-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.badge-primary {
+  border-color: var(--jm-primary-soft);
+  background: var(--jm-primary-soft);
+  color: var(--jm-primary-dark);
+}
+
+.badge-accent {
+  border-color: var(--jm-accent-soft);
+  background: var(--jm-accent-soft);
+  color: var(--jm-accent-dark);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-card .badge { margin-bottom: 0.2rem; }
+.project-card p { flex: 1; }
+
+.notice {
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--jm-primary);
+  border-radius: var(--jm-radius-sm);
+  background: var(--jm-primary-soft);
+  color: var(--jm-primary-dark);
+}
+
+.notice p:last-child { margin-bottom: 0; }
+
+.meta-list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.meta-list li {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--jm-text-muted);
+}
+
+.meta-list strong { color: var(--jm-text); }

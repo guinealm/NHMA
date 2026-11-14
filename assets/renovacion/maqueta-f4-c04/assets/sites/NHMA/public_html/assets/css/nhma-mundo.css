@@ -1,0 +1,21 @@
+/* Página 4: acción mundial. */
+.lote17-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.lote17-secciones { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.lote17-secciones a { display: inline-flex; align-items: center; min-height: 44px; padding: .45rem .75rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-surface); text-decoration: none; }
+.lote17-secciones a:hover { background: var(--jm-bg-soft); }
+.lote17-hero, .mundo-page main section { padding: clamp(1.25rem, 3vw, 2rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.lote17-hero { background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.lote17-hero h1 { margin: 0 0 .75rem; }
+.lote17-hero p { margin: 0; }
+.mundo-page main section h2 { margin: 0 0 .8rem; }
+.mundo-page main section h3 { margin: 1.2rem 0 .6rem; }
+.mundo-page .note { color: var(--jm-text-muted); }
+.mundo-page .table-scroll { max-width: 100%; overflow-x: auto; margin: 1rem 0 1.5rem; border: 1px solid var(--jm-border); border-radius: 9px; }
+.mundo-page table { width: 100%; min-width: 650px; border-collapse: collapse; }
+.mundo-page th, .mundo-page td { padding: .75rem; border-bottom: 1px solid var(--jm-border); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.mundo-page th { background: var(--jm-bg-soft); }
+.mundo-page .status { display: inline-block; padding: .3rem .5rem; border: 1px solid var(--jm-border); border-radius: 7px; background: var(--jm-bg-soft); }
+.mundo-page .mundo-ree { padding: 1rem; margin-top: 1rem; border: 1px dashed var(--jm-border-strong); border-radius: 9px; }
+.mundo-page .mundo-ree h3 { margin-top: 0; }
+.mundo-page .btn { display: inline-flex; align-items: center; min-height: 44px; padding: .55rem .8rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-bg-soft); text-decoration: none; }
+@media (max-width: 700px) { .mundo-page table { min-width: 650px; } }

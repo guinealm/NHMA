@@ -1,0 +1,23 @@
+/* Ajustes C06 sobre las dos capas F3 aprobadas, solo en la copia. */
+.respuesta{font-size:clamp(1.2rem,2vw,1.5rem);font-weight:600;max-width:65ch}
+.indice-local{display:flex;flex-wrap:wrap;gap:12px 24px;margin:20px 0 28px}
+.indice-local a{padding:6px 0;min-height:44px}
+.engaños-page main .lote17-hero{padding:20px 0;background:none;border:0}
+.engaños-page main section{margin-bottom:28px}
+.engaños-page main h2{margin-top:0}
+.engaños-page main h3{line-height:1.35}
+.engaños-page .grid{align-items:start}
+.engaños-page details{margin-bottom:16px}
+.engaños-page summary{min-height:44px;padding:8px 4px;line-height:1.5}
+.engaños-page .evidencia{background:#eaf0e9;margin:24px 0}
+.engaños-page .iframe-card iframe{height:440px;background:#f1f3ef}
+.engaños-page .alternativa{border-left:3px solid #557462;padding-left:14px;font-size:.92rem}
+.engaños-page .limite{font-size:.88rem;color:#485a51}
+.engaños-page dt{font-weight:700;margin-top:18px}
+.engaños-page dd{margin:4px 0 16px}
+.engaños-page li{margin-block:10px}
+.engaños-page a{overflow-wrap:anywhere}
+.engaños-page [id]{scroll-margin-top:24px}
+.fuentes-lista{padding-left:24px}
+@media(max-width:800px){.engaños-page main section{padding:16px}.engaños-page .lote17-hero{padding-inline:0}.engaños-page .iframe-card iframe{height:400px}.engaños-page main .card{padding:16px}.indice-local{gap:8px 18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}

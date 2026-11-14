@@ -1,0 +1,40 @@
+/* Página 5: plan personal sobre Common. */
+.plan-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.plan-secciones { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.plan-secciones a { display: inline-flex; align-items: center; min-height: 44px; padding: .45rem .75rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-surface); text-decoration: none; }
+.plan-secciones a:hover { background: var(--jm-bg-soft); }
+.plan-page main section { padding: clamp(1.25rem, 3vw, 2rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); scroll-margin-top: 90px; }
+.plan-page main .hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr); gap: 1rem; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.plan-page .hero > * { min-width: 0; }
+.plan-page .hero-card { padding: 1.25rem; border: 1px solid var(--jm-border); border-radius: 10px; background: var(--jm-surface); }
+.plan-page .hero-card h1 { margin: .2rem 0 1rem; }
+.plan-page .kicker { color: var(--jm-text-muted); text-transform: uppercase; letter-spacing: .1em; font-size: .8rem; }
+.plan-page .lead { font-size: 1.08rem; }
+.plan-page .motivos { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.plan-page .chip { display: inline-flex; align-items: center; min-height: 44px; padding: .55rem .75rem; border: 1px solid var(--jm-border); border-radius: 99px; background: var(--jm-bg-soft); color: var(--jm-text); cursor: pointer; }
+.plan-page .chip[aria-pressed="true"] { outline: 2px solid var(--jm-primary); background: var(--jm-surface); }
+.plan-page .muted { color: var(--jm-text-muted); }
+.plan-page .tag { display: inline-flex; padding: .35rem .65rem; border: 1px solid var(--jm-border); border-radius: 99px; background: var(--jm-bg-soft); }
+.plan-page .tag.high { border-color: #368366; }
+.plan-page .tag.med { border-color: #b28738; }
+.plan-page .tag.low { border-color: #8c9298; }
+.plan-page .section-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem 1rem; margin-bottom: 1rem; }
+.plan-page .section-title h2 { margin: 0; }
+.plan-page .cards, .plan-page .stories { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.plan-page .cards > *, .plan-page .stories > * { min-width: 0; }
+.plan-page .card, .plan-page .story, .plan-page .plan-box { padding: 1.15rem; border: 1px solid var(--jm-border); border-radius: 10px; background: var(--jm-bg-soft); }
+.plan-page .card h3, .plan-page .story h3 { margin: .7rem 0; }
+.plan-page .card label { cursor: pointer; }
+.plan-page .card input.ck { margin-right: .35rem; }
+.plan-page details { padding: .8rem; margin-top: .8rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-surface); }
+.plan-page summary { cursor: pointer; }
+.plan-page .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.plan-page .grid-2 > * { min-width: 0; }
+.plan-page .plan { align-self: start; }
+.plan-page .plan-box h3 { margin: 0 0 .6rem; }
+.plan-page .pill { display: inline-flex; max-width: 100%; padding: .5rem .75rem; margin: .3rem; border: 1px solid var(--jm-border); border-radius: 99px; background: var(--jm-surface); overflow-wrap: anywhere; }
+.plan-page .btn { display: inline-flex; align-items: center; min-height: 44px; padding: .55rem .8rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-surface); color: var(--jm-text); cursor: pointer; }
+.plan-page .btn:hover { background: var(--jm-bg-soft); }
+.plan-page blockquote { margin: .7rem 0; padding-left: .8rem; border-left: 3px solid var(--jm-primary); }
+@media (max-width: 1000px) { .plan-page main .hero { grid-template-columns: 1fr; } .plan-page .cards, .plan-page .stories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .plan-page .cards, .plan-page .stories, .plan-page .grid-2 { grid-template-columns: 1fr; } }

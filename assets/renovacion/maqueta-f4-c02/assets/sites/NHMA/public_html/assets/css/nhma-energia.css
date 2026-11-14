@@ -1,0 +1,31 @@
+/* Página 3.3 Generación de energía sobre Common. */
+.energia-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.energia-hero { padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.energia-hero .breadcrumb { margin-bottom: 1rem; font-size: .94rem; }
+.energia-hero h1 { margin: 0 0 .75rem; }
+.energia-hero .subtitle { margin: 0; color: var(--jm-text-muted); font-size: 1.08rem; }
+.energia-page main section { margin-bottom: 1.5rem; }
+.energia-page main .grid { display: grid; gap: 1.25rem; }
+.energia-page main .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.energia-page main .grid > * { min-width: 0; }
+.energia-page main .card, .energia-page main .charts article { padding: 1.25rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.energia-page main .card h3, .energia-page main .charts h3 { margin: 0 0 .8rem; font-size: 1.2rem; }
+.energia-page main .card ul { margin: 0; padding-left: 1.5rem; }
+.energia-page main .card li { margin-bottom: .5rem; }
+.energia-page main .card li:last-child { margin-bottom: 0; }
+.energia-page main .small { color: var(--jm-text-muted); font-size: .94rem; }
+.energia-page main .callout { padding: 1rem; border-left: 4px solid var(--jm-primary); border-radius: 8px; background: var(--jm-bg-soft); }
+.energia-page main .callout p { margin: .75rem 0 0; }
+.energia-page main .charts p { margin: 0 0 1rem; }
+.energia-page main .charts iframe { display: block; width: 100%; height: 520px; border: 0; }
+.energia-page main .charts .energia-chart-link { margin: .75rem 0 0; overflow-wrap: anywhere; }
+.energia-page main .btns { display: flex; flex-wrap: wrap; gap: .7rem; }
+.energia-page main .btns .btn { display: inline-flex; align-items: center; min-height: 44px; padding: .55rem .8rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-bg-soft); text-decoration: none; }
+.energia-page main .btns .btn:hover { background: var(--jm-surface); }
+.energia-page main .energia-tools-note { margin: 1rem 0 0; }
+.energia-page main details { margin-top: .7rem; padding: .8rem; border: 1px solid var(--jm-border); border-radius: 9px; background: var(--jm-bg-soft); }
+.energia-page main summary { cursor: pointer; font-weight: 600; }
+.energia-page main details p { margin: .7rem 0 0; }
+.energia-page main hr.sep { border: 0; border-top: 1px solid var(--jm-border); margin: 2rem 0; }
+@media (max-width: 1000px) { .energia-page main .grid.two { grid-template-columns: 1fr; } }
+@media (max-width: 460px) { .energia-page main .charts iframe { height: 480px; } }

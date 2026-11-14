@@ -1,0 +1,42 @@
+/* Página 3.2 Edificios sobre Common. */
+.edificios-main { padding: clamp(1.5rem, 4vw, 3rem) 0; }
+.edificios-hero { padding: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1.5rem; border: 1px solid var(--jm-border); border-radius: 12px; background: linear-gradient(145deg, var(--jm-surface), var(--jm-bg-soft)); }
+.edificios-hero p:first-child { margin-bottom: 1rem; }
+.edificios-hero h1 { margin: 0 0 .75rem; }
+.edificios-hero .kicker { color: var(--jm-text-muted); font-size: .94rem; }
+.edificios-hero .sub { margin: 0; color: var(--jm-text-muted); }
+.edificios-page main section { margin-bottom: 1.5rem; }
+.edificios-page main .grid { display: grid; gap: 1.25rem; }
+.edificios-page main .grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.edificios-page main .grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.edificios-page main .grid > * { min-width: 0; }
+.edificios-page main .card, .edificios-page main .quote { padding: 1.25rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-surface); }
+.edificios-page main .quote { background: var(--jm-bg-soft); }
+.edificios-page main blockquote { margin: 0; font-size: 1.12rem; }
+.edificios-page main .card h2 { margin: 0 0 .8rem; font-size: 1.2rem; }
+.edificios-page main .card ul { margin: 0; padding-left: 1.5rem; }
+.edificios-page main .card li { margin-bottom: .5rem; }
+.edificios-page main .card li:last-child { margin-bottom: 0; }
+.edificios-page main .eyebrow { margin-bottom: .8rem; color: var(--jm-text-muted); font-size: .8rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.edificios-page main .big { font-size: 2rem; font-weight: 700; }
+.edificios-page main .sub, .edificios-page main .foot { color: var(--jm-text-muted); }
+.edificios-page main .foot { margin: 1rem 0 0; font-size: .92rem; }
+.edificios-page main .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.edificios-page main .chip { padding: .4rem .7rem; border: 1px solid var(--jm-border); border-radius: 999px; background: var(--jm-bg-soft); font-size: .92rem; }
+.edificios-page main .chips + p { margin: 1rem 0 0; }
+.edificios-page main .card.ok { border-top: 3px solid var(--jm-primary); }
+.edificios-page main iframe { display: block; width: 100%; height: 520px; border: 0; }
+.edificios-page main .edificios-chart-link { margin-left: .35rem; }
+.edificios-page main details { margin-top: 1rem; padding: 1rem; border: 1px solid var(--jm-border); border-radius: 10px; background: var(--jm-bg-soft); }
+.edificios-page main summary { cursor: pointer; }
+.edificios-page main .calc { display: grid; gap: 1rem; margin-top: 1rem; }
+.edificios-page main .calc .row { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem; }
+.edificios-page main .calc input[type="range"] { width: min(18rem, 100%); }
+.edificios-page main .calc input[type="number"] { width: 8rem; }
+.edificios-page main .calc select, .edificios-page main .calc input[type="number"] { min-height: 44px; padding: .4rem .6rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-surface); color: var(--jm-text); }
+.edificios-page main .calc input:focus-visible, .edificios-page main .calc select:focus-visible, .edificios-page main summary:focus-visible { outline: 3px solid var(--jm-primary); outline-offset: 3px; }
+.edificios-page main .badge { display: inline-flex; align-items: center; min-height: 32px; padding: .3rem .65rem; border: 1px solid var(--jm-border); border-radius: 999px; background: var(--jm-surface); font-size: .92rem; }
+.edificios-page main .num { font-variant-numeric: tabular-nums; }
+@media (max-width: 1000px) { .edificios-page main .grid.cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 800px) { .edificios-page main .grid.cols-2, .edificios-page main .grid.cols-3 { grid-template-columns: 1fr; } }
+@media (max-width: 460px) { .edificios-page main iframe { height: 480px; } }

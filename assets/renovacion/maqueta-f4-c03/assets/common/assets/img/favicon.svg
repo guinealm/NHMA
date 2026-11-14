@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Jumalenin">
+  <rect width="64" height="64" rx="14" fill="#245b5f"/>
+  <path d="M18 43c7-10 12-15 17-15s9 5 12 15" fill="none" stroke="#f3e5c6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M33 15v25c0 6-4 10-10 10-3 0-6-1-8-3" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+</svg>

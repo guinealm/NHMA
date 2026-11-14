@@ -1,0 +1,11 @@
+body .ensayo a{color:#fff}body .plan-main .hero{background:none;border:0;padding:0;gap:28px;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+body .plan-main .hero-card{padding:28px;background:#fff}body .plan-main .hero-card h1{max-width:18ch}
+body .plan-page main section{margin-block:24px}body .plan-main .lead{font-size:21px}
+.marcador{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-block:16px}.indice-local{margin-block:20px}
+body .plan-main h2{margin-top:0}.plan-page .card label{display:inline-block;padding-block:8px}.plan-page input.ck{width:20px;height:20px;vertical-align:middle}
+body .plan-main .tag{font-size:14px}body .plan-main .btn{background:#255c48;color:white}body .plan-main .btn:hover{background:#203e32}
+body .plan-box{border-left:4px solid #255c48;background:#eef3ed}#storage-status{font-size:15px}body .plan-main details{font-size:16px}
+.plan-page .grid-2{align-items:start}#mi-plan{scroll-margin-top:110px}
+.plan-page .fuente-previa{overflow-wrap:anywhere}body .plan-main .card .contexto{background:#f6f7f2}
+@media(max-width:1000px){body .plan-main .hero{grid-template-columns:1fr}}
+@media(max-width:700px){body .plan-main .hero-card{padding:18px}body .plan-main section{padding:16px}.plan-page .card,.plan-page .plan-box{padding:16px}body .plan-main .lead{font-size:19px}body .plan-main h1{font-size:36px}.plan-page .pill{margin-inline:0;border-radius:8px}}
