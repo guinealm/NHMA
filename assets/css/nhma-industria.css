@@ -42,3 +42,27 @@
 @media (max-width: 1100px) { .industria-layout { grid-template-columns: 1fr; } .industria-page .toc { position: static; } .industria-page .toc nav { columns: 2; } }
 @media (max-width: 800px) { .industria-content .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .industria-content .grid-3, .industria-content .sector-grid { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .industria-page .toc nav { columns: 1; } .industria-page .toplink { right: .5rem; bottom: .5rem; } }
+
+
+/* Consumo final de energía industrial en la UE. */
+.industria-mix ul { padding: 0; list-style: none; }
+.industria-mix li a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 4rem;
+  align-items: center;
+  gap: .75rem;
+  padding: .65rem;
+  color: #164e67;
+}
+.industria-mix li a:hover,
+.industria-mix li a:focus-visible,
+.industria-mix section:target { background: #eaf4f8; }
+.industria-mix a:focus-visible { outline: 3px solid #175d80; outline-offset: 3px; }
+.industria-mix .track { background: #edf2f4; }
+.industria-mix .track span { display: block; height: 1rem; background: #286780; }
+.industria-mix section { padding: 1rem; border-top: 1px solid #ccdbe1; }
+@media (max-width: 36rem) {
+  .industria-mix li a { grid-template-columns: minmax(0, 1fr) 4rem; }
+  .industria-mix .track { grid-row: 2; grid-column: 1 / -1; }
+  .industria-mix li strong { grid-column: 2; grid-row: 1; }
+}
