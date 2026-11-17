@@ -31,3 +31,22 @@
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 @media (max-width: 1000px) { .evidencias-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .evidencias-grid, .tool-grid { grid-template-columns: 1fr; } }
+
+/* Recorrido de lectura de la página de evidencias. */
+.evidencias-page .evidencias-card-cta { margin-top: auto; padding-top: .4rem; color: var(--jm-primary); font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+.evidencias-page .evidencias-siguiente { margin-top: 2.5rem; padding: 1.25rem; border: 1px solid var(--jm-border); border-radius: 12px; background: var(--jm-bg-soft); }
+.evidencias-page .evidencias-siguiente p { margin: 0 0 .5rem; }
+.evidencias-page .evidencias-siguiente a { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; color: var(--jm-primary); font-size: 1.2rem; font-weight: 700; text-underline-offset: .2em; }
+.evidencias-page .evidencias-siguiente a:focus-visible { outline: 3px solid var(--jm-primary); outline-offset: 4px; border-radius: 4px; }
+
+.evidencias-page .kpi-explainer { margin: 0; line-height: 1.5; }
+.evidencias-page .evidencias-glosario { margin-top: 1.25rem; padding: 1rem; border: 1px solid var(--jm-border); border-radius: 8px; background: var(--jm-bg-soft); }
+.evidencias-page .evidencias-glosario summary { cursor: pointer; min-height: 44px; align-content: center; font-weight: 700; }
+.evidencias-page .evidencias-glosario dt { margin-top: 1rem; font-weight: 700; }
+.evidencias-page .evidencias-glosario dd { margin: .4rem 0 0; }
+.evidencias-page .tool .t-title { font-size: 1.15rem; overflow-wrap: anywhere; }
+.evidencias-page .tool-purpose { margin: .5rem 0; font-weight: 700; }
+.evidencias-page .tool-note { margin: .75rem 0 0; font-size: .94rem; color: var(--jm-text-muted); }
+.evidencias-page .tool .t-title a:focus-visible, .evidencias-page .evidencias-glosario summary:focus-visible { outline: 3px solid var(--jm-primary); outline-offset: 4px; }
+.evidencias-page .footer-inner { flex-wrap: wrap; }
+.evidencias-page .footer-inner > p { min-width: 0; overflow-wrap: anywhere; }
