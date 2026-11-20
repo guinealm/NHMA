@@ -27,3 +27,36 @@
   .permafrost-grid, .permafrost-meta { grid-template-columns: 1fr; }
   .permafrost-meta p:last-child { text-align: left; }
 }
+
+/* Esquemas didácticos de la ficha de permafrost. */
+.permafrost-page figure { margin: 1rem 0; }
+.permafrost-page .layer { padding: 1rem; border-left: .7rem solid #936b48; background: #f5e9d7; color: #263831; }
+.permafrost-page .cold { border-color: #486d85; background: repeating-linear-gradient(-45deg,#e4f0f2 0 10px,#edf5f6 10px 20px); }
+.permafrost-page .big { font-size: clamp(1.6rem,4vw,2.8rem); font-weight: 700; }
+.permafrost-page .line { height: 1rem; margin: .4rem 0 1rem; background: #e5ebe7; }
+.permafrost-page .line i { display: block; height: 100%; background: #396d67; }
+.permafrost-page .flow li { padding: .4rem .65rem; border-inline-start: 2px solid #759789; }
+.permafrost-page .flow li::marker { font-weight: bold; }
+
+.permafrost-page .suelo { min-width: 0; margin: 1rem 0; padding: 1rem; border: 1px solid var(--jm-border); border-radius: .5rem; }
+.suelo legend, .suelo figcaption strong { font-weight: 700; }
+.suelo label { display: inline-block; padding: .5rem .35rem; cursor: pointer; }
+.suelo input:focus-visible + label { outline: 2px solid currentColor; outline-offset: 2px; }
+.suelo figure { display: grid; grid-template-columns: minmax(3rem, 23%) 1fr; gap: 1rem; }
+.suelo .perfil { border-top: .45rem solid #566c41; background: repeating-linear-gradient(165deg,#d4e8eb 0 18px,#bed7dc 18px 21px); }
+.suelo .franja-estacional { height: 44%; background: linear-gradient(to bottom,#b17f51,#d1a97e); transform: scaleY(0); transform-origin: top; }
+.suelo #suelo-calido:checked ~ figure .franja-estacional { transform: scaleY(1); }
+.suelo figcaption strong,.suelo figcaption small { display: block; }
+.suelo figcaption strong:not(:first-child),.suelo figcaption small { margin-top: .8rem; }
+.suelo #suelo-frio:checked ~ figure .en-verano,.suelo #suelo-calido:checked ~ figure .en-invierno { display: none; }
+@media (prefers-reduced-motion: no-preference) { .suelo .franja-estacional { transition: transform .45s ease-out; } }
+
+.pf-drawing { display:block; width:100%; height:auto; max-width:44rem; margin:1rem 0; }
+.pf-stat,.pf-awi { padding:1rem; border-inline-start:4px solid #467775; background:#edf4f0; }
+.pf-stat strong { display:block; font-size:clamp(1.8rem,4vw,3rem); }
+.permafrost-page #ciclo { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr)); gap:.7rem; padding:0; list-style-position:inside; }
+.permafrost-page #ciclo li { margin:0; padding:.8rem; background:#edf3ef; border:1px solid #a6bdb4; border-radius:.45rem; }
+.permafrost-page #ciclo .seleccionado { outline:3px solid #24675b; background:#d6eae2; }
+.pf-question { padding-block:1rem; border-top:1px solid #c9d4ce; }
+.pf-question .pf-drawing { max-width:32rem; }
+#estado-ciclo { display:block; margin-block:.5rem; }
