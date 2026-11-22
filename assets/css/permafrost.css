@@ -27,3 +27,14 @@
   .permafrost-grid, .permafrost-meta { grid-template-columns: 1fr; }
   .permafrost-meta p:last-child { text-align: left; }
 }
+
+#deshielo .diagram { margin: 1rem 0; }
+#deshielo .frame { background: #edf5f7; border-radius: .5rem; }
+#deshielo svg { display: block; width: 100%; height: auto; }
+#deshielo .loop { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+#deshielo .step { padding: .4rem .6rem; background: #edf5f7; border-radius: .4rem; }
+#deshielo .hot { background: #fff3d6; }
+#deshielo .bar-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 3rem; align-items: center; gap: .5rem; margin: .5rem 0; }
+#deshielo .bar-track { background: #edf1f2; height: .8rem; border-radius: 1rem; overflow: hidden; }
+#deshielo .bar-fill { width: var(--w); height: 100%; background: #26778a; }
+#deshielo .bar-fill.hl { background: #b78320; }

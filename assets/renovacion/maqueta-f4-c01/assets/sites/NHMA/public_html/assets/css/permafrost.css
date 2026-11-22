@@ -54,9 +54,30 @@
 .pf-drawing { display:block; width:100%; height:auto; max-width:44rem; margin:1rem 0; }
 .pf-stat,.pf-awi { padding:1rem; border-inline-start:4px solid #467775; background:#edf4f0; }
 .pf-stat strong { display:block; font-size:clamp(1.8rem,4vw,3rem); }
-.permafrost-page #ciclo { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr)); gap:.7rem; padding:0; list-style-position:inside; }
+.permafrost-page #ciclo { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(2,1fr); gap:2rem; padding:0; list-style-position:inside; }
 .permafrost-page #ciclo li { margin:0; padding:.8rem; background:#edf3ef; border:1px solid #a6bdb4; border-radius:.45rem; }
 .permafrost-page #ciclo .seleccionado { outline:3px solid #24675b; background:#d6eae2; }
 .pf-question { padding-block:1rem; border-top:1px solid #c9d4ce; }
 .pf-question .pf-drawing { max-width:32rem; }
 #estado-ciclo { display:block; margin-block:.5rem; }
+
+#deshielo { container-type: inline-size; }
+#deshielo .loop { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; gap: .3rem; margin: 1rem 0; }
+#deshielo .step { display: grid; place-items: center; min-height: 4rem; padding: .45rem; border: 1px solid #c7ddde; border-radius: .65rem; background: #dcebec; color: #19494e; text-align: center; font-size: .88rem; font-weight: 700; line-height: 1.3; }
+#deshielo .step.hot { background: #f6e7c7; color: #604816; border-color: #eed6a6; }
+#deshielo .arr { align-self: center; justify-self: center; color: #856526; }
+@container (max-width: 25rem) {
+  #deshielo .loop { grid-template-columns: 1fr; }
+  #deshielo .step { min-height: 2.8rem; }
+  #deshielo .arr { transform: rotate(90deg); }
+}
+
+#ciclo li { position: relative; overflow-wrap: anywhere; }
+#ciclo li:nth-child(3) { grid-area: 2 / 2; }
+#ciclo li:nth-child(4) { grid-area: 2 / 1; }
+#ciclo .ciclo-icono { display: inline-block; font-size: 1.5rem; vertical-align: middle; }
+#ciclo li::after { position: absolute; display: grid; place-items: center; width: 2rem; height: 2rem; font: bold 1.45rem/1 sans-serif; color: #24675b; }
+#ciclo li:nth-child(1)::after { content: "→"; left: 100%; top: calc(50% - 1rem); }
+#ciclo li:nth-child(2)::after { content: "↓"; top: 100%; left: calc(50% - 1rem); }
+#ciclo li:nth-child(3)::after { content: "←"; right: 100%; top: calc(50% - 1rem); }
+#ciclo li:nth-child(4)::after { content: "↑"; bottom: 100%; left: calc(50% - 1rem); }

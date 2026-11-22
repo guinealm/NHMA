@@ -103,11 +103,16 @@
 <section class="graficos-section">
   <h2>NASA · Contexto visual</h2>
   <div class="card">
-    <p class="graficos-note">Panel “vital signs” de NASA con CO₂ y otros indicadores climáticos (serie instrumental y paleoclima reciente):</p>
-    <div class="graficos-actions">
-      <a class="btn btn-secondary" href="https://climate.nasa.gov/vital-signs/carbon-dioxide/" target="_blank" rel="noopener">NASA Climate Dashboard: CO₂</a>
-    </div>
-    <p class="graficos-source">Fuente: NASA Climate Change.</p>
+    <p class="graficos-note">La animación recorre las mediciones de CO₂ en Mauna Loa desde 1958 y amplía la escala temporal con datos de testigos de hielo antárticos.</p>
+    <video id="nasa-co2" aria-label="Animación de la concentración atmosférica de CO₂"
+           width="2160" height="2160" style="display: block; width: 100%; height: auto;"
+           controls muted playsinline preload="none"
+           poster="https://svs.gsfc.nasa.gov/vis/a000000/a005400/a005447/paleoCO2_HD.JPG"
+           src="https://svs.gsfc.nasa.gov/vis/a000000/a005400/a005447/paleoCO2_2025-08.mp4">
+    </video>
+    <p class="graficos-source">Fuente y alternativa de reproducción:
+      <a href="https://svs.gsfc.nasa.gov/5447/" target="_blank" rel="noopener">NASA Scientific Visualization Studio</a>.
+    </p>
   </div>
 </section>
 </div>
@@ -125,5 +130,6 @@
     </div>
   </footer>
 
+  <script src="assets/js/nasa-co2.js" defer></script>
 </body>
 </html>

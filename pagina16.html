@@ -42,21 +42,81 @@
         <p>En las montañas europeas también se han comparado registros a distintas profundidades hasta 2022. <a href="https://www.nature.com/articles/s41467-024-54831-9">Estudio regional de 2024</a>.</p></details>
       </section>
       <div class="permafrost-grid">
-        <section class="card"><h2>Dos capas, dos ritmos</h2><img class="pf-drawing" src="assets/img/perfil-permafrost.svg" alt="Capa activa sobre permafrost con hielo. A la derecha la pérdida de hielo permite que el terreno ceda."><p class="small">La capa activa se descongela cada verano. Debajo puede quedar hielo durante años. Perfil conceptual sin escala.</p>
-<details><summary>¿Por qué puede hundirse la superficie?</summary><p>Si se funde hielo abundante en el subsuelo, el terreno pierde volumen. Algunas depresiones acumulan agua y forman lagunas. Ese relieve irregular se llama termokarst.</p></details><p><a href="https://nsidc.org/learn/parts-cryosphere/frozen-ground-permafrost">Cómo funciona el terreno congelado · NSIDC</a></p></section>
+        <section id="deshielo" class="card" aria-labelledby="deshielo-title">
+        <h2 id="deshielo-title">La retroalimentación del deshielo</h2>
+        <figure class="diagram">
+          <div class="frame">
+          <svg viewBox="0 0 640 300" role="img" aria-label="Esquema del deshielo del permafrost: el calor del verano penetra en la capa activa, el hielo del suelo se funde, el terreno se hunde formando un lago de termokarst y se liberan burbujas de dióxido de carbono y metano">
+            <!-- cielo y sol -->
+            <circle cx="70" cy="42" r="22" fill="#e8b93e" />
+            <g stroke="#e8b93e" stroke-width="3" stroke-linecap="round">
+              <line x1="70" y1="8" x2="70" y2="16" /><line x1="70" y1="68" x2="70" y2="76" />
+              <line x1="36" y1="42" x2="44" y2="42" /><line x1="96" y1="42" x2="104" y2="42" />
+              <line x1="46" y1="18" x2="52" y2="24" /><line x1="88" y1="60" x2="94" y2="66" />
+              <line x1="94" y1="18" x2="88" y2="24" /><line x1="52" y1="60" x2="46" y2="66" />
+            </g>
+            <text x="104" y="47" font-size="13.5" fill="#5f6f7a">veranos más cálidos</text>
+            <!-- flechas de calor -->
+            <g stroke="#c2511f" stroke-width="3" fill="none" stroke-linecap="round">
+              <path d="M200 78 L200 118" /><path d="M192 108 L200 120 L208 108" />
+              <path d="M300 78 L300 118" /><path d="M292 108 L300 120 L308 108" />
+            </g>
+            <!-- superficie y lago de termokarst -->
+            <path d="M0 128 L640 128 L640 148 L470 148 Q420 118 360 148 L0 148 Z" fill="#7a9e57" />
+            <ellipse cx="415" cy="140" rx="52" ry="10" fill="#7fb3c8" />
+            <text x="415" y="112" text-anchor="middle" font-size="13.5" fill="#183f42" font-weight="700">lago de termokarst</text>
+            <!-- capa activa -->
+            <rect x="0" y="148" width="640" height="34" fill="#b98d5f" />
+            <text x="12" y="169" font-size="13.5" fill="#3d2c17" font-weight="700">Capa activa: se descongela cada verano — y cada vez más hondo</text>
+            <!-- permafrost -->
+            <rect x="0" y="182" width="640" height="98" fill="#dcebf1" />
+            <g fill="#ffffff" opacity=".85">
+              <path d="M90 182 L118 182 L104 236 Z" /><path d="M250 182 L274 182 L262 226 Z" /><path d="M520 182 L548 182 L534 240 Z" />
+            </g>
+            <g fill="#8a6a4a" opacity=".5">
+              <circle cx="180" cy="222" r="5" /><circle cx="330" cy="248" r="6" /><circle cx="450" cy="216" r="5" /><circle cx="580" cy="252" r="6" /><circle cx="140" cy="256" r="4" />
+            </g>
+            <text x="12" y="204" font-size="13.5" fill="#245b5f" font-weight="700">Permafrost: suelo helado con carbono antiguo</text>
+            <text x="12" y="296" font-size="12.5" fill="#5f6f7a">Cuñas de hielo</text>
+            <!-- burbujas de gases -->
+            <g fill="#c28f2c">
+              <circle class="bubble" cx="400" cy="146" r="5" />
+              <circle class="bubble b2" cx="424" cy="148" r="4" />
+              <circle class="bubble b3" cx="438" cy="145" r="6" />
+            </g>
+            <text x="470" y="104" font-size="13.5" fill="#8f681d" font-weight="700">CO₂ y CH₄ ↑</text>
+            <!-- árbol inclinado -->
+            <g stroke="#5c4510" stroke-width="3" stroke-linecap="round">
+              <line x1="566" y1="128" x2="580" y2="86" />
+            </g>
+            <circle cx="583" cy="76" r="16" fill="#7a9e57" />
+            <text x="540" y="58" font-size="12.5" fill="#5f6f7a">el suelo cede</text>
+          </svg>
+          </div>
+          <figcaption>Esquema del proceso: al espesarse la capa activa, el hielo interno se funde, el terreno se hunde (termokarst) y los microbios liberan el carbono antiguo en forma de CO₂ y metano.</figcaption>
+        </figure>
+        <p>Cuando el permafrost se descongela, los microbios despiertan y descomponen ese carbono antiguo, liberando <strong>CO₂ y metano</strong>. El metano calienta entre 28 y 36 veces más que el CO₂ a 100 años, aunque dura menos en la atmósfera. Es un círculo vicioso clásico:</p>
+        <div class="loop" aria-label="Bucle de retroalimentación: calentamiento, deshielo, más gases de efecto invernadero, más calentamiento">
+          <div class="step hot">🌡️ Calentamiento</div><div class="arr" aria-hidden="true">→</div>
+          <div class="step">🧊 Deshielo del permafrost</div><div class="arr" aria-hidden="true">→</div>
+          <div class="step">💨 Más CO₂ y metano</div><div class="arr" aria-hidden="true">→</div>
+          <div class="step hot">🌡️ Más calentamiento…</div>
+        </div>
+        <div class="card">
+          <p>Por eso el permafrost es una de las grandes <strong>retroalimentaciones</strong> del sistema climático: no la encendemos directamente, pero responde a lo que emitimos. Reducir emisiones frena el bucle entero.</p>
+        </div>
+        <p>¿Cuánto permafrost superficial puede perderse de aquí a 2100? Depende, sobre todo, de nosotros:</p>
+        <div class="bars" role="img" aria-label="Pérdida prevista de superficie de permafrost en 2100: 24 % con emisiones bajas, 69 % con emisiones muy altas">
+          <div class="bar-row"><span class="blabel">Escenario de emisiones bajas</span><div class="bar-track"><div class="bar-fill" style="--w:34.8%"></div></div><span class="bval">24&nbsp;%</span></div>
+          <div class="bar-row"><span class="blabel">Escenario de emisiones muy altas</span><div class="bar-track"><div class="bar-fill hl" style="--w:100%"></div></div><span class="bval">69&nbsp;%</span></div>
+        </div>
+        <p class="src">Potencial de calentamiento del metano: NSIDC, citando a la EPA de EE. UU. Proyecciones de pérdida de superficie: IPCC SROCC (2019).</p>
+      </section>
         <section class="card"><h2>¿Dónde se encuentra?</h2><p>Hay permafrost en regiones árticas, subárticas y de alta montaña. Dentro de una misma región, puede aparecer de forma continua o en zonas aisladas.</p><figure><a href="https://doi.org/10.1016/j.earscirev.2019.04.023"><img class="pf-drawing" src="assets/img/obu-magt.png" alt="Abrir el estudio de Obu. Mapa circumpolar de temperatura del terreno con leyenda en grados Celsius."></a><figcaption>Temperatura media anual modelizada del terreno (MAGT, °C), 2000–2016. Obu et al., 2019 · CC BY-NC-ND 4.0 · <a href="assets/img/obu-magt.png">Ampliar imagen</a></figcaption></figure><p>Para 2000–2016, un modelo del hemisferio norte estimó <strong>20,8 millones de km²</strong> de región con presencia de permafrost. Dentro de ella, estimó <strong>13,9 millones de km²</strong> de terreno con permafrost.</p><p><a href="https://doi.org/10.1016/j.earscirev.2019.04.023">Obu y colaboradores, mapa de 2019</a></p></section>
         <section class="card"><h2>El carbono que guarda el terreno</h2><p class="big">1.460–1.600 Gt C</p><p>Estimación del IPCC para el carbono orgánico de los suelos de la región circumpolar septentrional de permafrost, incluidos depósitos superficiales y profundos. Una gigatonelada de carbono equivale a mil millones de toneladas de carbono.</p><p>El IPCC comparó esta reserva en 2019 con casi dos veces el carbono de la atmósfera. La fracción que puede liberarse depende del deshielo y de la descomposición de la materia orgánica.</p>
-<h3>Cómo se refuerza el calentamiento</h3><ol class="flow" id="ciclo"><li>El terreno absorbe calor y aumenta su temperatura.</li><li>Al descongelarse el terreno queda materia orgánica disponible.</li><li>Los microorganismos descomponen materia orgánica y liberan CO₂. Donde escasea el oxígeno también puede formarse metano.</li><li>Los gases que llegan a la atmósfera contribuyen a un calentamiento adicional.</li></ol><p>↺ El calentamiento adicional vuelve a influir en el terreno.</p><button id="paso" hidden type="button" aria-controls="ciclo">Recorrer el ciclo</button> <span id="estado-ciclo" aria-live="polite"></span><p><a href="https://www.ipcc.ch/srocc/chapter/chapter-3-2/">IPCC · Regiones polares, capítulo 3</a></p></section>
+<h3>Cómo se refuerza el calentamiento</h3><ol class="flow" id="ciclo"><li><span class="ciclo-icono" aria-hidden="true">🌡️</span> El terreno absorbe calor y aumenta su temperatura.</li><li><span class="ciclo-icono" aria-hidden="true">🧊</span> Al descongelarse el terreno queda materia orgánica disponible.</li><li><span class="ciclo-icono" aria-hidden="true">🦠</span> Los microorganismos descomponen materia orgánica y liberan CO₂. Donde escasea el oxígeno también puede formarse metano.</li><li><span class="ciclo-icono" aria-hidden="true">🌍</span> Los gases que llegan a la atmósfera contribuyen a un calentamiento adicional.</li></ol><p>↺ El calentamiento adicional vuelve a influir en el terreno.</p><button id="paso" hidden type="button" aria-controls="ciclo">Recorrer el ciclo</button> <span id="estado-ciclo" aria-live="polite"></span><p><a href="https://www.ipcc.ch/srocc/chapter/chapter-3-2/">IPCC · Regiones polares, capítulo 3</a></p></section>
         <section class="card"><h2>Una superficie, dos escenarios</h2><p>Reducción proyectada de la superficie de permafrost cercano a la superficie hacia 2100 respecto a 1986–2005.</p><figure><a href="https://www.ipcc.ch/site/assets/uploads/2019/12/3_SROCC_COP25_Section_B_PolarRegions_SLR.pdf#page=13"><img class="pf-drawing" src="assets/img/ipcc-permafrost-p13.png" alt="Abrir página 13 del PDF del IPCC. Curvas de cambio de superficie y bandas de incertidumbre."></a><figcaption>IPCC, Special Report on the Ocean and Cryosphere in a Changing Climate, presentación COP25, regiones polares, p. 13 · <a href="assets/img/ipcc-permafrost-p13.png">Ampliar imagen</a></figcaption></figure><p>La curva azul indica una pérdida del 24 % (±16 puntos porcentuales) bajo RCP2.6. La roja indica un 69 % (±20 puntos) bajo RCP8.5. Las bandas muestran la dispersión de las proyecciones.</p><a href="https://www.ipcc.ch/site/assets/uploads/2019/12/3_SROCC_COP25_Section_B_PolarRegions_SLR.pdf#page=13">IPCC · Proyecciones SROCC, página 13 del PDF</a></section>
       </div>
-      <section class="card permafrost-faq">
-        <h2>¿Qué cambia para quienes viven allí?</h2>
-        <p>Donde se derrite hielo del subsuelo, el terreno puede hundirse de forma desigual. Ese hundimiento, llamado subsidencia, puede deformar carreteras y cimientos. Si cambia el drenaje, algunas depresiones se llenan de agua y otras se vacían.</p>
-        <h3>Patrimonio en Qajaa</h3><img class="pf-drawing" src="assets/img/permafrost-qajaa.svg" alt="En Qajaa el deshielo y la exposición al oxígeno pueden favorecer la degradación de restos orgánicos."><p>En Qajaa, Groenlandia, el terreno congelado ha conservado restos arqueológicos orgánicos durante milenios. El deshielo, la erosión y la exposición al oxígeno pueden acelerar su deterioro. En el estudio, el consumo de oxígeno en muestras ayuda a evaluar la actividad de descomposición. <a href="https://doi.org/10.1111/arcm.12319">Estudio del yacimiento de Qajaa</a>.</p>
-        <section class="pf-question"><h3>¿Se descongelará por igual en todas partes?</h3><img class="pf-drawing" src="assets/img/permafrost-dos-perfiles.svg" alt="Dos lugares con distinta cubierta de nieve, vegetación y hielo presentan profundidades de deshielo diferentes."><p>La respuesta depende del clima local, la nieve, la vegetación y la cantidad de hielo. Un incendio puede eliminar parte de la cubierta que aísla el suelo.</p></section>
-        <section class="pf-question"><h3>¿Qué ocurre si el terreno vuelve a congelarse?</h3><img class="pf-drawing" src="assets/img/permafrost-recongelacion.svg" alt="Tres momentos. El terreno se hunde al perder hielo y puede seguir hundido después de recongelarse."><p>El agua puede volver a helarse. Una depresión o un cambio de drenaje causados por el deshielo pueden persistir.</p></section>
-        <section class="pf-question"><h3>¿Cuándo puede formarse metano?</h3><img class="pf-drawing" src="assets/img/permafrost-metano.svg" alt="Agua estancada sobre materia orgánica. Con poco oxígeno algunos microorganismos producen metano."><p>En un terreno encharcado puede escasear el oxígeno. En esas condiciones, algunos microorganismos producen metano al descomponer materia orgánica.</p></section>
-      </section>
       <section class="card permafrost-faq">
         <h2>Explorar el permafrost</h2>
         <figure class="pf-awi"><b>AWI · Permafrost_CCI</b><p>Permafrost Ground Temperature<br>　↳ 2 m depth<br>　　 ↳ <strong>Timeseries (T2m)</strong></p><figcaption>Guía de capas del visor para consultar la temperatura a dos metros.</figcaption></figure><a href="https://portal.o2a-data.de/viewers/58732619-de19-42cc-8145-cb118e4ce3de">Abrir el visor Permafrost_CCI de AWI</a><ul><li><a href="https://www.awi.de/en/science/geosciences/permafrost-research/data.html">Localizar mapas y datos de sondeos en el directorio de AWI</a>.</li>
