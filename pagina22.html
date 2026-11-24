@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-articulos.css">
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-graficos.css">
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-impactos.css">
-<link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/common-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/nhma-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/revision.css"></head>
+<link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/common-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/nhma-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/revision.css">
+  <link rel="stylesheet" href="assets/css/nhma-pulsadores.css">
+  <link rel="stylesheet" href="assets/css/nhma-incendios.css">
+</head>
 <body class="site-shell nhma-articulo impacto-page">
   <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
   <header class="site-header"><div class="container header-inner">
@@ -47,6 +50,38 @@
     <h2>2) Grandes Incendios (España, GIF &gt; 500 ha)</h2>
     <p class="note">La definición del informe MITECO consultado es GIF &gt; 500 ha de superficie forestal. No se adopta la excepción de 250 ha en islas sin una fuente específica. El PDF de abajo es un avance histórico de 2025.</p>
 
+    <div class="incendios-kpis">
+      <div class="kpi"><div class="value">354.794 ha</div><div class="label">quemadas en España en 2025 según el MITECO</div><p>El peor año de las últimas tres décadas: 7,1 veces la superficie de 2024 (49.764 ha) y 3,3 veces la media del último decenio (105.614 ha).</p></div>
+      <div class="kpi"><div class="value">63 grandes incendios</div><div class="label">de más de 500 hectáreas en 2025</div><p>La mayoría concentrados en la ola de fuego de agosto.</p></div>
+      <div class="kpi teal"><div class="value">1.º de la UE</div><div class="label">España, el país europeo con más superficie quemada en 2025 según EFFIS</div><p>393.079 ha por cartografía satelital, en el año más devastador registrado en la UE: 1.079.538 ha.</p></div>
+    </div>
+    <figure class="incendios-chart">
+      <div class="frame">
+      <svg viewBox="0 0 640 330" role="img" aria-label="Gráfico de barras con la superficie quemada en España: 49.764 hectáreas en 2024, 105.614 de media en el último decenio y 354.794 en 2025, según el MITECO">
+        <!-- ejes -->
+        <line x1="60" y1="285" x2="620" y2="285" stroke="#b8c4ca" stroke-width="1.5" />
+        <line x1="60" y1="55" x2="60" y2="285" stroke="#d7dee2" stroke-width="1" />
+        <!-- barras (base y=285; escala: 354.794 ha = 220 px) -->
+        <rect class="svgbar" x="105" y="254" width="110" height="31" rx="5" fill="#245b5f" />
+        <rect class="svgbar" x="265" y="220" width="110" height="65" rx="5" fill="#7fa8ab" />
+        <rect class="svgbar" x="425" y="65" width="110" height="220" rx="5" fill="#c2511f" />
+        <!-- valores -->
+        <text x="160" y="240" text-anchor="middle" font-size="16" font-weight="750" fill="#183f42">49.764 ha</text>
+        <text x="320" y="206" text-anchor="middle" font-size="16" font-weight="750" fill="#183f42">105.614 ha</text>
+        <text x="480" y="51" text-anchor="middle" font-size="17" font-weight="750" fill="#8a3a14">354.794 ha</text>
+        <!-- etiquetas -->
+        <text x="160" y="308" text-anchor="middle" font-size="14.5" fill="#1f2933" font-weight="650">2024</text>
+        <text x="320" y="308" text-anchor="middle" font-size="14.5" fill="#1f2933" font-weight="650">Media del último decenio</text>
+        <text x="480" y="308" text-anchor="middle" font-size="14.5" fill="#1f2933" font-weight="650">2025</text>
+      </svg>
+      </div>
+      <figcaption>Superficie forestal quemada en España (hectáreas). Fuente: MITECO, avance informativo de incendios forestales 2025 (datos provisionales de las comunidades autónomas).</figcaption>
+    </figure>
+    <div class="note">
+      <p><strong>¿Por qué EFFIS da otra cifra (393.079 ha)?</strong> El MITECO recopila los datos oficiales de las comunidades autónomas y EFFIS cartografía la superficie quemada mediante imágenes de satélite.</p>
+    </div>
+    <p class="src">Fuentes: <a href="https://www.miteco.gob.es/es/biodiversidad/temas/incendios-forestales/estadisticas-avances.html" target="_blank" rel="noopener">MITECO, avance informativo de incendios forestales 2025</a>; <a href="https://www.proteccioncivil.es/documents/20121/1681371/Informe+anual+de+incendios+forestales+2025.pdf/e21875ac-6eec-9ef0-3bc8-06227b443bcb?version=1.0&amp;t=1773732988820&amp;download=true" target="_blank" rel="noopener">Protección Civil, Informe anual de incendios forestales 2025</a>, con datos EFFIS (Copernicus/JRC).</p>
+
     <!-- Opción A: PDF alojado en TU dominio -->
     <object data="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/pdf/avance_2025-08-17.pdf#view=FitH" type="application/pdf" width="100%" height="700" aria-label="Avance de incendios forestales del MITECO en PDF">
       <div class="impacto-pdf-fallback">
@@ -66,23 +101,25 @@
   <!-- 3) Riesgo meteorológico: FWI -->
   <section class="section card">
     <h2>3) Peligro meteorológico (FWI) — visores externos</h2>
-    <p class="note">Consulta fecha de emisión, día de validez, modelo y leyenda en el visor oficial. Los enlaces abren una herramienta externa; esta copia no muestra una predicción actual.</p>
+    <p class="note">Consulta fecha de emisión, día de validez, modelo y leyenda en el visor oficial. Pulsa una captura para abrir el visor oficial. Las capturas muestran la interfaz y sus datos corresponden al momento en que se tomaron.</p>
 
     <div class="grid grid-2">
       <div class="card impacto-visor">
         <h3 >Europa — EFFIS (Copernicus)</h3>
         <p class="note">En el visor, activa la capa <em>FWI</em> y el rango de días.</p>
-        <a class="open" target="_blank" rel="noopener"
-           href="https://forest-fire.emergency.copernicus.eu/apps/effis_current_situation/">
-           Abrir visor EFFIS ↗</a>
+        <a class="incendios-visor" target="_blank" rel="noopener" href="https://forest-fire.emergency.copernicus.eu/apps/effis.csv/?c=1000000,6200000&amp;z=5&amp;t=sentinel2">
+          <img src="assets/img/incendios-effis.jpg" alt="" width="1200" height="760" loading="lazy">
+          <span>Abrir visor EFFIS (nueva pestaña)</span>
+        </a>
       </div>
 
       <div class="card impacto-visor">
         <h3 >Global — GWIS (JRC)</h3>
         <p class="note">Incluye peligro FWI global y focos activos.</p>
-        <a class="open" target="_blank" rel="noopener"
-           href="https://gwis.jrc.ec.europa.eu/apps/gwis_current_situation/index.html">
-           Abrir visor GWIS ↗</a>
+        <a class="incendios-visor" target="_blank" rel="noopener" href="https://gwis.jrc.ec.europa.eu/apps/gwis_current_situation/index.html">
+          <img src="assets/img/incendios-gwis.jpg" alt="" width="1200" height="760" loading="lazy">
+          <span>Abrir visor GWIS (nueva pestaña)</span>
+        </a>
       </div>
     </div>
 

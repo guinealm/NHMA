@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/common/assets/css/jumalenin-components.css" />
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-articulos.css" />
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-salud.css" />
-<link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/common-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/nhma-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/revision.css"></head>
+<link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/common-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/nhma-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/revision.css">
+  <link rel="stylesheet" href="assets/css/nhma-pulsadores.css">
+</head>
 <body class="site-shell nhma-articulo salud-page">
   <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
   <header class="site-header">
@@ -89,25 +91,42 @@
     <!-- 4. Indicadores / Gráficos (iframes y estáticos) -->
     <section id="indicadores">
       <h2>Indicadores (España): Kairós y MoMo</h2><p class="pendiente">Las imágenes son botones ilustrados, no capturas actuales ni datos de junio de 2026. El resumen de Lancet 2026 y la noticia de MoMo se relacionan con esta ficha, pero tienen periodos y métodos distintos.</p>
-      <div class="salud-note small">
-        <p>Usamos como referencia los dos sistemas oficiales en España, desarrollados por el Centro Nacional de Epidemiología (ISCIII) y enmarcados en el Plan del Ministerio de Sanidad: <strong>Índice Kairós</strong> (riesgo de mortalidad atribuible a temperatura, con predicción a 5 días) y <strong>MoMo</strong> (estimación de exceso de mortalidad diaria por todas las causas y atribuible a temperatura).</p>
-        <p><em>Implementación web</em>: cada tarjeta usa una <strong>ilustración estática</strong> en <code>assets/img/</code> a modo de botón que abre el panel oficial en una pestaña nueva.</p>
-      </div>
+      <p>El Centro Nacional de Epidemiología del ISCIII desarrolla ambos sistemas en el marco del Plan del Ministerio de Sanidad.</p>
 
       <div class="salud-grid">
-        <figure class="card">
-          <a href="https://momo.isciii.es/kairos/" target="_blank" rel="noopener">
-            <img loading="lazy" src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/kairos-overview.png" alt="Botón: Panel Kairós — probabilidad de exceso de mortalidad atribuible a temperatura (predicción 5 días)" />
-          </a>
-          <figcaption>Índice Kairós — probabilidad de exceso de mortalidad atribuible a temperatura (predicción a 5 días). Clic para abrir el panel oficial.</figcaption>
-        </figure>
+        <article class="card">
+          <h3>Kairós — el riesgo que viene</h3>
+          <p><strong>La herramienta de alerta.</strong> El índice Kairós estima el <strong>riesgo de exceso de mortalidad atribuible a la temperatura</strong> por provincias, con una <strong>predicción a cinco días</strong>.</p>
+          <h4>Cómo se lee</h4>
+          <ul>
+            <li>Busca tu provincia y fíjate en el nivel de riesgo de hoy y de los próximos días.</li>
+            <li>Consulta el índice antes y durante las olas de calor para anticipar medidas de prevención, como avisos a personas mayores y apertura de refugios climáticos.</li>
+            <li>Interpreta el nivel de riesgo como una estimación estadística para anticipar periodos de mayor riesgo.</li>
+          </ul>
+          <figure>
+            <a href="https://momo.isciii.es/kairos/" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/kairos-overview.png" alt="Botón: Panel Kairós — probabilidad de exceso de mortalidad atribuible a temperatura (predicción 5 días)" />
+            </a>
+            <figcaption>Índice Kairós — probabilidad de exceso de mortalidad atribuible a temperatura (predicción a 5 días). Clic para abrir el panel oficial.</figcaption>
+          </figure>
+        </article>
 
-        <figure class="card">
-          <a href="https://momo.isciii.es/panel_momo/" target="_blank" rel="noopener">
-            <img loading="lazy" src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/momo-overview.png" alt="Botón: Panel MoMo — estimaciones de exceso de mortalidad diaria y atribuible a temperatura" />
-          </a>
-          <figcaption>MoMo — estimaciones de exceso de mortalidad (todas las causas) y atribuible a temperatura. Clic para abrir el panel oficial.</figcaption>
-        </figure>
+        <article class="card">
+          <h3>MoMo — lo que ya ha pasado</h3>
+          <p><strong>La herramienta de balance.</strong> MoMo publica a diario la <strong>mortalidad observada y esperada</strong>, el <strong>exceso por todas las causas</strong> y la estimación de mortalidad <strong>atribuible a la temperatura</strong>.</p>
+          <h4>Cómo se lee</h4>
+          <ul>
+            <li>Compara la mortalidad observada con la esperada. Cuando la observada es mayor, la diferencia es el exceso.</li>
+            <li>Consulta por separado la estimación atribuible al calor o al frío para valorar el impacto de la temperatura.</li>
+            <li>Los datos recientes son provisionales y se consolidan con el tiempo.</li>
+          </ul>
+          <figure>
+            <a href="https://momo.isciii.es/panel_momo/" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/momo-overview.png" alt="Botón: Panel MoMo — estimaciones de exceso de mortalidad diaria y atribuible a temperatura" />
+            </a>
+            <figcaption>MoMo — estimaciones de exceso de mortalidad (todas las causas) y atribuible a temperatura. Clic para abrir el panel oficial.</figcaption>
+          </figure>
+        </article>
       </div>
     </section>
 

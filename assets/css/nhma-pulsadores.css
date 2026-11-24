@@ -1,0 +1,74 @@
+/* Superficie de los pulsadores, basada en las barras sectoriales de ¿Por qué? */
+body {
+  --nhma-pulsador-fondo: var(--jm-bg-soft, #eaf0e9);
+  --nhma-pulsador-borde: var(--jm-border, #cbd5ce);
+  --nhma-pulsador-texto: var(--jm-text, #202f2b);
+  --nhma-pulsador-acento: var(--jm-primary, #235d46);
+}
+
+body main :is(
+  a.rankbar,
+  a.evidencias-card-link,
+  .page2 a.card,
+  a.portada-card,
+  a.portada-news,
+  a.social-index-image-link,
+  a.btn,
+  button,
+  nav[aria-label="Secciones climáticas"] > a,
+  .impacto-subnav > a,
+  .indice-local > a,
+  .evidencias-siguiente > a,
+  nav[aria-label="Continuar explorando las evidencias"] > a,
+  .impacto-pagination > a,
+  .pager > a
+) {
+  min-height: 44px;
+  background: var(--nhma-pulsador-fondo);
+  color: var(--nhma-pulsador-texto);
+  border: 1px solid var(--nhma-pulsador-borde);
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+body main :is(
+  a.rankbar,
+  a.evidencias-card-link,
+  .page2 a.card,
+  a.portada-card,
+  a.portada-news,
+  a.social-index-image-link,
+  a.btn,
+  button,
+  nav[aria-label="Secciones climáticas"] > a,
+  .impacto-subnav > a,
+  .indice-local > a,
+  .evidencias-siguiente > a,
+  nav[aria-label="Continuar explorando las evidencias"] > a,
+  .impacto-pagination > a,
+  .pager > a
+):is(:hover, :focus-visible, :active) {
+  border-color: var(--nhma-pulsador-acento);
+}
+
+body main :is(a, button):focus-visible {
+  outline: 3px solid var(--nhma-pulsador-acento);
+  outline-offset: 3px;
+}
+
+body main a.evidencias-card-link {
+  padding: .9rem 1rem;
+}
+
+body main nav[aria-label="Continuar explorando las evidencias"] > a {
+  display: inline-flex;
+  align-items: center;
+  padding: .4rem .7rem;
+}
+
+body main .impacto-subnav > a[aria-current="page"],
+body main button[aria-pressed="true"] {
+  background: var(--nhma-pulsador-acento);
+  border-color: var(--nhma-pulsador-acento);
+  color: #fff;
+}

@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-articulos.css" />
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-social.css" />
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/css/nhma-social-index.css" />
-<link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/common-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/nhma-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/revision.css"></head>
+<link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/common-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/nhma-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c03/revision.css">
+  <link rel="stylesheet" href="assets/css/nhma-pulsadores.css">
+</head>
 <body class="site-shell nhma-articulo social-page social-index-page">
   <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
   <header class="site-header">
@@ -31,7 +33,7 @@
     </div>
   </header>
   <main id="contenido" class="site-main social-main">
-    <div class="container"><section class="revision" aria-labelledby="revision-title"><p class="eyebrow">Hace daño · Propuesta para revisión</p><h1 id="revision-title">¿Por qué los impactos son desiguales?</h1><p class="respuesta">Vivir en un lugar expuesto y disponer de pocos recursos para protegerse son condiciones diferentes que pueden acumularse. Los impactos también difieren entre generaciones.</p><p>La vivienda, los ingresos, la salud, el trabajo y el acceso a protección condicionan las consecuencias. Las dos ramas siguientes examinan movilidad humana y exposición a lo largo de la vida, con métricas distintas.</p><details class="evidencia" open><summary>Evidencia y límites</summary><p>IPCC WGII distingue exposición y vulnerabilidad en su evaluación del riesgo. Las estadísticas de desplazamiento y las proyecciones por cohortes no deben sumarse ni presentarse como una misma medida de daño social.</p><ul><li><a href="https://www.ipcc.ch/report/ar6/wg2/chapter/summary-for-policymakers/" target="_blank" rel="noopener noreferrer">S02 · IPCC WGII · SPM B.1, B.1.7 y B.3.2 · 2022</a></li><li><a href="https://api.internal-displacement.org/sites/default/files/2026-05/IDMC-GRID-2026-Global-Report-on-Internal-Displacement.pdf" target="_blank" rel="noopener noreferrer">S10 · IDMC · GRID 2026 · páginas 7–8</a></li><li><a href="https://www.nature.com/articles/s41586-025-08907-1" target="_blank" rel="noopener noreferrer">S11 · Grant et al. · Nature 2025 · resumen y Methods</a></li></ul><p class="periodo">Evaluación IPCC: 2022. GRID: edición 2026, movimientos de 2025. Estudio de cohortes: publicado 07/05/2025, escenarios futuros.</p><p>Las imágenes de las dos ramas se conservan como material provisional, también en este índice. No son mapas o gráficos validados de los indicadores propuestos.</p><p class="periodo">Consulta: 12/11/2026 · Revisión efectiva: 12/11/2026 · Codex · v0.1 propuesta.</p></details><p class="revision-note">Revisión de las afirmaciones principales; no certifica todo el material heredado. Fechas de 2025 inferiores: edición histórica, no revisión actual.  · .</p></section>
+    <div class="container"><section class="revision" aria-labelledby="revision-title"><p class="eyebrow">Hace daño · Propuesta para revisión</p><h1 id="revision-title">¿Por qué los impactos son desiguales?</h1><p class="respuesta">Vivir en un lugar expuesto y disponer de pocos recursos para protegerse son condiciones diferentes que pueden acumularse. Los impactos también difieren entre generaciones.</p><p>La vivienda, los ingresos, la salud, el trabajo y el acceso a protección condicionan las consecuencias. Las dos ramas siguientes examinan movilidad humana y exposición a lo largo de la vida, con métricas distintas.</p><details class="evidencia" open><summary>Evidencia y límites</summary><p>IPCC WGII distingue exposición y vulnerabilidad en su evaluación del riesgo. Las estadísticas de desplazamiento y las proyecciones por cohortes no deben sumarse ni presentarse como una misma medida de daño social.</p><ul><li><a href="https://www.ipcc.ch/report/ar6/wg2/chapter/summary-for-policymakers/" target="_blank" rel="noopener noreferrer">S02 · IPCC WGII · SPM B.1, B.1.7 y B.3.2 · 2022</a></li><li><a href="https://api.internal-displacement.org/sites/default/files/2026-05/IDMC-GRID-2026-Global-Report-on-Internal-Displacement.pdf" target="_blank" rel="noopener noreferrer">S10 · IDMC · GRID 2026 · páginas 7–8</a></li><li><a href="https://www.nature.com/articles/s41586-025-08907-1" target="_blank" rel="noopener noreferrer">S11 · Grant et al. · Nature 2025 · resumen y Methods</a></li></ul><p class="periodo">Evaluación IPCC: 2022. GRID: edición 2026, movimientos de 2025. Estudio de cohortes: publicado 07/05/2025, escenarios futuros.</p><p class="periodo">Consulta: 12/11/2026 · Revisión efectiva: 12/11/2026 · Codex · v0.1 propuesta.</p></details><p class="revision-note">Revisión de las afirmaciones principales; no certifica todo el material heredado. Fechas de 2025 inferiores: edición histórica, no revisión actual.  · .</p></section>
     <section class="social-hero" aria-labelledby="social-title">
       <p class="badge badge-primary">Sección 2 · ¿Hace daño?</p>
       <h2 id="social-title">2.5 Impacto social y generacional</h2>
@@ -48,73 +50,16 @@
       </div>
     </section>
 
-    <!-- Bloques de contenido -->
-    <section class="social-grid">
+    <section class="social-grid" aria-label="Dos preguntas sobre el impacto social">
       <article class="card">
-        <h2>Desigualdad y exposición</h2>
-        <p>Los impactos climáticos se concentran en grupos con menor capacidad de adaptación: hogares con menos ingresos, trabajadores al aire libre, entornos urbanos con <em>islas de calor</em> y viviendas de peor calidad. La localización (costa, cuencas fluviales, barrios densos sin arbolado) y la dependencia económica (agricultura, pesca, economía informal) incrementan la exposición.</p>
-        <div class="social-index-tags">
-          <span class="badge">Capacidad de adaptación</span>
-          <span class="badge">Islas de calor urbanas</span>
-          <span class="badge">Vivienda eficiente</span>
-          <span class="badge">Pobreza energética</span>
-        </div>
+        <h2><a href="pagina25a.html">2.5A · ¿Cómo se relacionan clima y desplazamientos?</a></h2>
+        <p><strong>Migraciones climáticas.</strong> Una inundación puede obligar a una familia a abandonar su hogar. Si vuelve a desplazarse dentro del país, el registro puede recoger dos movimientos de la misma familia.</p>
       </article>
-
       <article class="card">
-        <h2>Migraciones climáticas</h2>
-        <p>Sequías, pérdida de cosechas, aumento del nivel del mar e inundaciones repetidas empujan a migraciones internas y transfronterizas. Las estadísticas de movimientos internos no permiten deducir por sí solas la proporción que cruza fronteras. Las tendencias regionales requieren fuentes y periodos propios.</p>
-        <p>Profundiza en el indicador específico en la página dedicada →</p>
+        <h2><a href="pagina25b.html">2.5B · ¿Qué significa acumular exposición durante una vida?</a></h2>
+        <p><strong>Desigualdad y exposición.</strong> El lugar donde se vive o trabaja influye en la exposición al calor. La vivienda, la salud y los recursos disponibles condicionan la capacidad de protegerse.</p>
+        <p><strong>Riesgo por cohortes.</strong> Al agrupar a las personas por año de nacimiento, los estudios pueden comparar cuántos episodios extremos vivirían bajo distintos escenarios de calentamiento.</p>
       </article>
-    </section>
-
-    <!-- BOTONES-IMAGEN a páginas específicas (como en 2.3) -->
-    <p class="pendiente">Imágenes provisionales conservadas: la imagen de sucesos no mide exposición por año de nacimiento.</p><section class="social-grid social-index-links" aria-label="Accesos a indicadores dedicados">
-      <!-- 25A: Migraciones climáticas (imagen estática como botón) -->
-      <a class="social-index-image-link" href="pagina25a.html" title="Abrir indicador: Migraciones climáticas">
-        <figure>
-          <img src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/indicador-migraciones-climaticas.png" alt="Ilustración provisional conservada; no es un indicador verificado de migración" />
-        </figure>
-      </a>
-
-      <!-- 25B: Riesgo por cohortes (imagen estática como botón) -->
-      <a class="social-index-image-link" href="pagina25b.html" title="Abrir indicador: Riesgo por cohortes (generacional)">
-        <figure>
-          <img src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/indicador-riesgo-cohortes.png" alt="Imagen heredada de eventos registrados; no representa exposición por cohortes" />
-        </figure>
-      </a>
-    </section>
-
-    <!-- Bloque Cohortes -->
-    <section class="card social-block">
-      <h2>Riesgo por cohortes (impacto generacional)</h2>
-      <p>Los modelos proyectan diferencias de exposición acumulada entre cohortes según el escenario y el peligro; la vida futura de las cohortes recientes no está observada. Este riesgo acumulado afecta a salud, ingresos, aprendizaje y estabilidad social. Mitigación y adaptación pueden reducir riesgos futuros; esta página no calcula un retorno económico intergeneracional.</p>
-      <div class="social-callout">
-        <strong>Idea clave:</strong> la política climática es también política intergeneracional: reduce desigualdades futuras si baja la exposición de las cohortes jóvenes hoy.
-      </div>
-    </section>
-
-    <!-- Sitio para incrustar iframes más adelante (si pasamos de estático a dinámico) -->
-    <section class="social-block" id="visualizaciones">
-      <h2>Visualizaciones (espacio reservado)</h2>
-      <div class="social-grid">
-        <article class="card">
-          <h3>25A · Migraciones climáticas</h3>
-          <!-- Sustituir por iframe dinámico si procede (IOM/OIM, UNHCR, OWID, etc.) -->
-          <figure>
-            <img src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/indicador-migraciones-climaticas.png" alt="Ilustración provisional conservada; no es un indicador verificado de migración" />
-            <figcaption>Ilustración estática provisional. Clic arriba para ir a <code>pagina25a.html</code>.</figcaption>
-          </figure>
-        </article>
-        <article class="card">
-          <h3>25B · Riesgo por cohortes</h3>
-          <!-- Sustituir por iframe dinámico (p.ej., Lancet Countdown / OWID, gráfico de extremos por año de nacimiento) -->
-          <figure>
-            <img src="assets/renovacion/maqueta-f4-c03/assets/sites/NHMA/public_html/assets/img/indicador-riesgo-cohortes.png" alt="Imagen heredada de eventos registrados; no representa exposición por cohortes" />
-            <figcaption>Ilustración estática provisional. Clic arriba para ir a <code>pagina25b.html</code>.</figcaption>
-          </figure>
-        </article>
-      </div>
     </section>
 
     <!-- Fuentes -->

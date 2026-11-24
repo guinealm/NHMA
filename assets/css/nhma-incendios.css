@@ -1,0 +1,64 @@
+.incendios-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: .75rem;
+  margin-block: 1rem;
+}
+
+.incendios-kpis .kpi,
+.incendios-chart {
+  padding: 1rem;
+  background: #edf2f3;
+  border: 1px solid #d2dce1;
+  border-radius: .75rem;
+}
+
+.incendios-kpis .value {
+  margin-bottom: .5rem;
+  color: #89390e;
+  font-size: 1.65rem;
+  font-weight: 750;
+}
+
+.incendios-kpis .teal .value {
+  color: #164a50;
+}
+
+.incendios-kpis p {
+  margin-bottom: 0;
+}
+
+.incendios-chart {
+  margin: 1rem 0;
+}
+
+.incendios-chart svg {
+  display: block;
+  width: 100%;
+  max-width: 44rem;
+  height: auto;
+  margin-inline: auto;
+}
+
+.incendios-visor {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid #bacbd2;
+  border-radius: .75rem;
+}
+
+.incendios-visor img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.incendios-visor span {
+  padding: .65rem 1rem;
+  font-weight: 700;
+}
+
+.incendios-visor:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
