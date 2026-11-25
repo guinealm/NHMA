@@ -60,6 +60,21 @@ body main a.evidencias-card-link {
   padding: .9rem 1rem;
 }
 
+body main a.rankbar--metano {
+  --nhma-pulsador-fondo: #fbf3e4;
+  --nhma-pulsador-borde: #d9bd8f;
+  --nhma-pulsador-acento: #805619;
+  margin-top: .7rem;
+}
+
+.rankbar--metano .rankbar__meta {
+  margin-bottom: 0;
+}
+
+.causas-page .rankbar--metano .rankbar__meta .rank {
+  background: var(--nhma-pulsador-acento);
+}
+
 body main nav[aria-label="Continuar explorando las evidencias"] > a {
   display: inline-flex;
   align-items: center;

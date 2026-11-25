@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>3.4 · Procesos industriales</title>
-  <meta name="description" content="Estructura base para la página 3.4 Procesos industriales: secciones, anclas y placeholders para datos y gráficos." />
+  <title>¿De dónde proceden las emisiones industriales? · NHMA</title>
+  <meta name="description" content="Energía, procesos y emisiones industriales por actividad, con datos de consumo final de la UE en 2024." />
   <link rel="icon" href="assets/renovacion/maqueta-f4-c02/assets/common/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c02/assets/common/assets/css/jumalenin-core.css">
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c02/assets/common/assets/css/jumalenin-layout.css">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c02/assets/sites/NHMA/public_html/assets/css/nhma-industria.css">
 <link rel="stylesheet" href="assets/renovacion/maqueta-f4-c02/common-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c02/nhma-propuesta.css"><link rel="stylesheet" href="assets/renovacion/maqueta-f4-c02/revision.css">
   <link rel="stylesheet" href="assets/css/nhma-pulsadores.css">
+  <link rel="stylesheet" href="assets/css/nhma-tablas-industria.css">
 </head>
 <body class="site-shell nhma-articulo industria-page">
   <a class="nhma-skip" href="#contenido">Saltar al contenido</a>
@@ -20,401 +21,81 @@
     <div class="nhma-brand"><a class="site-brand" href="https://home.jumalenin.com/" aria-label="Jumalenin: página principal"><img src="assets/renovacion/maqueta-f4-c02/assets/common/assets/img/logo-horizontal.svg" alt="Jumalenin"></a><span class="nhma-brand__divider" aria-hidden="true"></span><a class="nhma-brand__name" href="index.html">No hay marcha atrás</a></div>
     <nav class="site-nav" aria-label="Navegación de No hay marcha atrás"><a href="index.html">Inicio</a><a href="pagina3.html" aria-current="page">¿Por qué?</a><a href="novedades.html">Novedades</a></nav>
   </div></header>
-  <main id="contenido" class="site-main industria-main"><div class="container"><section class="revision" aria-labelledby="revision-title"><p class="eyebrow">¿Por qué? · Propuesta para revisión</p><h1 id="revision-title">¿De dónde proceden las emisiones industriales?</h1><p class="respuesta">La industria emite por la energía que utiliza y por procesos de transformación de materiales. La energía consumida y las emisiones son magnitudes diferentes.</p><p>La cuota mundial de industria del reparto IPCC es aproximadamente 24% en 2019. El gráfico aprobado que se conserva abajo muestra productos energéticos consumidos por la industria de la UE en 2024; no explica ese porcentaje mundial de emisiones.</p><details class="evidencia" open><summary>Evidencia y límites</summary><p>El indicador europeo divide el consumo final industrial de cada producto por el total industrial de la figura 1 de Eurostat. Se mantienen los siete porcentajes publicados, sin recalcular desde la API ni repartirlos entre subsectores. La suma es 100,0%.</p><ul><li><a href="https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/" target="_blank" rel="noopener noreferrer">IPCC WGIII · B.2.1</a></li><li><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics" target="_blank" rel="noopener noreferrer">Eurostat · figura 1, energía final industrial</a></li><li><a href="https://ec.europa.eu/eurostat/cache/metadata/en/nrg_bal_esms.htm" target="_blank" rel="noopener noreferrer">Eurostat · metodología de balances</a></li></ul><p class="periodo">Emisiones mundiales: 2019 / IPCC 2022. Energía UE: 2024 / extracción editorial mayo de 2026; día de publicación no fijado.<br>Consulta y revisión efectiva de esta propuesta: 11/11/2026 · Codex · v0.1. Aceptación del responsable pendiente.</p><p>El piloto agregado y su interacción están aprobados; esta revisión de la familia sigue siendo propuesta. Los marcadores y KPI pendientes se conservan. El consumo energético no permite rellenar emisiones Scope 1/2 ni los gráficos por subsector.</p></details><p class="revision-note">Conservamos contenidos y funciones para revisión. Las afirmaciones secundarias no señaladas como contrastadas no adquieren validación por aparecer aquí.  · .</p></section>
-    <section class="industria-hero">
-      <nav class="breadcrumbs">
-        <a href="index.html">Menú</a> › <a href="pagina3.html">3 · ¿Por qué está cambiando?</a> › <strong>3.4 · Procesos industriales</strong>
-      </nav>
-      <h2>3.4 · Procesos industriales</h2>
-      <p class="notice"><strong>Contenido en preparación.</strong> Esta página conserva una estructura provisional: las cifras, los gráficos y las descargas están pendientes de completar y verificar. Los marcadores no representan datos.</p>
-      <p>La combustión para calor y las reacciones de proceso son fuentes de emisiones industriales. El gráfico agregado no cuantifica qué parte del consumo se dedica al calor.</p>
-      <div class="chipbar">
-        <span class="chip">Plantilla · v1 (estructura)</span>
-        <a class="chip" href="#data-fuentes">Data / Fuentes</a>
-        <a class="chip" href="#acciones">Medidas</a>
-      </div>
-    </section>
-
-  <div class="industria-layout">
-
-    <!-- TOC pegajoso -->
-    <aside class="toc">
-      <h3>Contenido</h3>
-      <nav aria-label="Índice de esta página">
-        <a href="#tldr">TL;DR</a>
-        <a href="#kpis">KPIs</a>
-        <a href="#marco-energia">Qué energía usa la industria</a>
-        <a href="#palancas">Palancas de descarbonización</a>
-        <div class="group">
-          <small>Sectores</small>
-          <a href="#acero">Acero</a>
-          <a href="#aluminio">Aluminio</a>
-          <a href="#quimicos">Químicos</a>
-          <a href="#cemento">Cemento</a>
-          <a href="#papel">Papel</a>
-          <a href="#mineria">Minería</a>
-          <a href="#industria-ligera">Industria ligera</a>
-          <a href="#data-centers">Data centers</a>
-        </div>
-        <a href="#casos">Casos prácticos</a>
-        <a href="#riesgos">Riesgos y límites</a>
-        <a href="#acciones">¿Qué hacer?</a>
-        <a href="#data-fuentes">Data · Fuentes · Descargas</a>
-      </nav>
-    </aside>
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <div class="industria-content">
-
-      <!-- TL;DR -->
-      <section id="tldr" aria-labelledby="tldr-title">
-        <h2 id="tldr-title">TL;DR</h2>
-        <ul class="list">
-          <li><strong>Dónde se emite:</strong> combustión para calor (baja/med/alta T) y emisiones intrínsecas de proceso (cemento/químicos).</li>
-          <li><strong>Palancas:</strong> eficiencia, electrificación del calor, H₂, calor renovable, biomasa sostenible, CCUS, circularidad.</li>
-          <li><strong>Dependencia del sistema eléctrico:</strong> redes, almacenamiento y despacho renovable (<a href="pagina33.html">ver 3.3 · Generación de energía</a>).</li>
-          <li><strong>Métricas que importan:</strong> % calor electrificado, factor clínker, % chatarra en acero, intensidad energética y de carbono.</li>
-        </ul>
-        <p class="note">Coloca aquí un resumen de 4 viñetas máximo. Mantenerlo simple, accionable y con cifras redondas cuando estén listas.</p>
-      </section>
-
-      <!-- KPIs -->
-      <section id="kpis" aria-labelledby="kpis-title">
-        <h2 id="kpis-title">Panel de KPIs</h2>
-        <p class="notice"><strong>Datos y gráficos pendientes.</strong> Los guiones y marcadores de este panel no representan valores ni resultados; están pendientes de completar y verificar.</p>
-        <div class="kpis">
-          <div class="kpi"><div class="label">% emisiones globales (Industria, Scope 1/2)</div><div class="value">—</div></div>
-          <div class="kpi"><div class="label">Mix energético industrial (Electricidad / Combustibles / Biomasa)</div><div class="value">—</div></div>
-          <div class="kpi"><div class="label">Peso de subsectores (emisiones/energía)</div><div class="value">—</div></div>
-          <div class="kpi"><div class="label">Intensidad energética / de carbono</div><div class="value">—</div></div>
-        </div>
-        <div class="industria-mix">
+  <main id="contenido" class="site-main industria-main"><div class="container">
+  <section class="industria-hero">
+    <nav class="breadcrumbs" aria-label="Ruta"><a href="index.html">Inicio</a> › <a href="pagina3.html">¿Por qué?</a> › Procesos industriales</nav>
+    <p>M03-AD-0302</p>
+    <h1>¿De dónde proceden las emisiones industriales?</h1>
+    <p>En una cementera, el molino consume electricidad, el horno necesita calor y la caliza libera CO₂ al transformarse en clínker. Incluso con un horno alimentado por calor solar, la reacción de la caliza seguiría produciendo CO₂.</p>
+  </section>
+  <div class="industria-layout"><aside class="toc"><nav aria-label="Índice de la página">
+    <a href="#origen">Dónde se emite</a><a href="#matriz-mundial">Matriz mundial</a><a href="#kpis">Energía en la UE</a><a href="#sectores">Actividad por actividad</a><a href="#data-fuentes">Fuentes</a>
+  </nav></aside><div class="industria-content">
+  <section id="origen"><h2>Tres formas de seguir las emisiones</h2>
+    <ul><li><strong>Combustión directa.</strong> El gas de una caldera o el gasóleo de una excavadora liberan CO₂ allí donde se queman.</li>
+    <li><strong>Proceso industrial.</strong> Una reacción puede liberar gases de efecto invernadero al transformar la materia prima. La calcinación de la caliza es un ejemplo.</li>
+    <li><strong>Energía comprada.</strong> Cuando una fábrica compra electricidad o vapor, parte de sus emisiones puede producirse en la central que los suministra. Al sumar fábrica y central, esas emisiones deben contarse una sola vez.</li></ul>
+  </section>
+  <section id="matriz-mundial"><h2>¿Qué industrias consumen cada fuente de energía?</h2>
+<p>Imagina que repartimos 100 unidades de energía final entre todas las industrias del mundo. Cada celda indica cuántas unidades corresponden a una rama y a una fuente a la vez. La última columna da el peso mundial de cada rama y la última fila, el de cada fuente.</p>
+<div class="industria-mix"><div class="table-scroll" role="region" tabindex="0" aria-label="Matriz mundial de actividad y energía"><table>
+<caption>Mundo · 2022 · Porcentaje del consumo final de energía industrial (130,7 EJ)</caption>
+<thead><tr><th scope="col">Actividad</th><th scope="col">Electricidad</th><th scope="col">Gas natural</th><th scope="col">Carbón y derivados</th><th scope="col">Petróleo y derivados</th><th scope="col">Biocombustibles y residuos</th><th scope="col">Calor</th><th scope="col">Total de la rama</th></tr></thead><tbody>
+<tr><th scope="row">Hierro y acero</th><td>3,4</td><td>1,9</td><td>9,7</td><td>0,2</td><td>0,2</td><td>0,4</td><td><strong>15,8 %</strong></td></tr>
+<tr><th scope="row">Química y petroquímica</th><td>3,6</td><td>5,4</td><td>1,2</td><td>1,6</td><td>0,2</td><td>3,1</td><td><strong>15,0 %</strong></td></tr>
+<tr><th scope="row">Metales no férreos (incluido el aluminio)</th><td>1,2</td><td>0,5</td><td>0,6</td><td>0,2</td><td>&lt;0,1</td><td>&lt;0,1</td><td><strong>2,5 %</strong></td></tr>
+<tr><th scope="row">Minerales no metálicos (incluidos cemento y vidrio)</th><td>0,7</td><td>1,6</td><td>5,1</td><td>1,1</td><td>0,4</td><td>0,1</td><td><strong>9,0 %</strong></td></tr>
+<tr><th scope="row">Otras industrias<br><small>Entre ellas: data center, papel y pasta, alimentación y textil.</small></th><td>19,7</td><td>13,2</td><td>8,8</td><td>6,2</td><td>7,3</td><td>2,5</td><td><strong>57,7 %</strong></td></tr></tbody><tfoot><tr><th scope="row">Total de la fuente</th><td>28,6</td><td>22,5</td><td>25,4</td><td>9,3</td><td>8,0</td><td>6,2</td><td><strong>100,0 %</strong></td></tr></tfoot></table></div></div>
+<a class="informe-onu" href="https://unstats.un.org/unsd/energystats/pubs/documents/2025pb-web.pdf#page=51" target="_blank" rel="noopener noreferrer">
+  <img src="assets/img/onu-energy-pocketbook-2025.png" alt="Portada del Energy Statistics Pocketbook 2025">
+  <span><strong>Naciones Unidas · Balance energético mundial</strong><br>Energy Statistics Pocketbook 2025 · Abrir las págs. 46–47 del informe en otra pestaña ↗</span>
+</a>
+<p><strong>Cómo leer el acero.</strong> De cada 100 unidades de energía industrial mundial, 15,8 se destinan al hierro y al acero. De esas 15,8 unidades, unas 9,7 proceden del carbón y sus derivados. Dentro de la propia siderurgia, eso equivale a cerca del 61 % (12,7 de 20,7 EJ).</p>
+<p><strong>Qué cambia al mirar otra rama.</strong> En química y petroquímica, el gas natural aporta unos 7,0 EJ de 19,6 EJ, aproximadamente el 36 % de la energía de la rama. El balance excluye usos no energéticos como la materia prima para plásticos. Para traducir estos consumos a emisiones también hay que conocer cómo se generaron la electricidad y el calor y qué gases liberó el proceso.</p>
+<details><summary>Datos, agrupaciones y cálculo</summary><p>Dividimos los exajulios publicados de cada cruce por 130,7 EJ y multiplicamos por 100. Sumamos el carbón primario y sus derivados, y el petróleo primario y sus derivados. Los consumos positivos indicados como trazas en el petróleo primario quedan por debajo de la precisión mostrada. Las cuotas de los márgenes se calculan con los totales publicados. El redondeo puede producir pequeñas diferencias al sumar.</p>
+<p>Naciones Unidas agrupa química con petroquímica, aluminio con otros metales no férreos y cemento con vidrio y otros minerales no metálicos. Papel, alimentación y minería carecen de fila propia en esta tabla resumida. Los centros de datos pertenecen a servicios. La fuente mundial combina biocombustibles y residuos en una columna. El gráfico europeo posterior emplea otra clasificación y otro año.</p>
+</details></section>
+  <section id="kpis"><h2>Comparación regional · Unión Europea, 2024</h2><p>De cada 100 unidades de energía final que utilizó la industria europea en 2024, unas 65 llegaron como electricidad o gas natural. Para pasar de energía a emisiones hay que conocer el combustible o la forma de generación y contabilizar aparte las reacciones industriales.</p>
+<div class="industria-mix">
 
 <div class="grafico"><h3 id="mix-ue-grafico" tabindex="-1">Qué energía utiliza la industria de la UE</h3>
 <p>2024 · Porcentaje del consumo final de energía industrial. Escala de las barras: 0–40%.</p>
-<p>Selecciona una barra para ir a su ficha en esta página. Los enlaces a Eurostat se abren en una pestaña nueva.</p>
-<ul><li><a href="#mix-ue-electricidad"><span>Electricidad</span><span class="track" aria-hidden="true"><span style="width:83.25%"></span></span><strong>33,3%</strong></a></li>
-<li><a href="#mix-ue-gas-natural"><span>Gas natural</span><span class="track" aria-hidden="true"><span style="width:79.75%"></span></span><strong>31,9%</strong></a></li>
-<li><a href="#mix-ue-renovables"><span>Renovables y biocombustibles</span><span class="track" aria-hidden="true"><span style="width:28.25%"></span></span><strong>11,3%</strong></a></li>
-<li><a href="#mix-ue-petroleo"><span>Petróleo y productos petrolíferos</span><span class="track" aria-hidden="true"><span style="width:26.0%"></span></span><strong>10,4%</strong></a></li>
-<li><a href="#mix-ue-fosiles-solidos"><span>Combustibles fósiles sólidos</span><span class="track" aria-hidden="true"><span style="width:13.75%"></span></span><strong>5,5%</strong></a></li>
-<li><a href="#mix-ue-calor-derivado"><span>Calor derivado</span><span class="track" aria-hidden="true"><span style="width:13.75%"></span></span><strong>5,5%</strong></a></li>
-<li><a href="#mix-ue-residuos"><span>Residuos no renovables</span><span class="track" aria-hidden="true"><span style="width:5.25%"></span></span><strong>2,1%</strong></a></li>
-</ul><p>Fuente: Eurostat, nrg_bal_s. Porcentajes de la <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener">figura 1 de Eurostat</a>, extracción de mayo de 2026. La fuente numérica es la figura 1 publicada. Las fichas enlazan una explicación legible del producto; las consultas JSON se conservan solo como referencia técnica, sin recalcular las cuotas. Traducción y representación de NHMA.</p></div>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tabla de energía industrial"><table><caption>UE · 2024 · consumo final industrial por producto</caption><thead><tr><th scope="col">Producto</th><th scope="col">Cuota (%)</th></tr></thead><tbody><tr><th scope="row"><a href="#mix-ue-electricidad">Electricidad</a></th><td>33,3</td></tr><tr><th scope="row"><a href="#mix-ue-gas-natural">Gas natural</a></th><td>31,9</td></tr><tr><th scope="row"><a href="#mix-ue-renovables">Renovables y biocombustibles</a></th><td>11,3</td></tr><tr><th scope="row"><a href="#mix-ue-petroleo">Petróleo y productos petrolíferos</a></th><td>10,4</td></tr><tr><th scope="row"><a href="#mix-ue-fosiles-solidos">Combustibles fósiles sólidos</a></th><td>5,5</td></tr><tr><th scope="row"><a href="#mix-ue-calor-derivado">Calor derivado</a></th><td>5,5</td></tr><tr><th scope="row"><a href="#mix-ue-residuos">Residuos no renovables</a></th><td>2,1</td></tr></tbody></table></div><p class="pendiente">Energía final, no emisiones. No mide solo calor de proceso ni representa al mundo. Sólidos fósiles: agrupación amplia de la nota 3 de Eurostat, incluidos gases manufacturados, turba y esquistos. Renovables y biocombustibles no incluye toda la electricidad renovable.</p><section id="mix-ue-electricidad" tabindex="-1"><h4>Electricidad · 33,3%</h4><p>Electricidad consumida por la industria. La cifra no describe cómo se generó.</p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Electricity" target="_blank" rel="noopener noreferrer">Eurostat · Electricidad (página legible)</a></p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener noreferrer">Fuente de la cuota · figura 1 (UE, 2024)</a></p><details><summary>Referencia técnica JSON · no es la vista de lectura</summary><p><a href="https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_s?lang=en&amp;geo=EU27_2020&amp;time=2024&amp;unit=TJ&amp;nrg_bal=FC_IND_E&amp;siec=E7000" target="_blank" rel="noopener">Datos de este producto en Eurostat (JSON)</a></p><p>Consulta heredada no usada para recalcular. Puede reflejar revisiones posteriores.</p></details><p><a href="#mix-ue-grafico">Volver al gráfico</a></p></section>
-<section id="mix-ue-gas-natural" tabindex="-1"><h4>Gas natural · 31,9%</h4><p>Gas natural contabilizado como energía final industrial.</p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Natural_gas_supply_statistics" target="_blank" rel="noopener noreferrer">Eurostat · Gas natural (página legible)</a></p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener noreferrer">Fuente de la cuota · figura 1 (UE, 2024)</a></p><details><summary>Referencia técnica JSON · no es la vista de lectura</summary><p><a href="https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_s?lang=en&amp;geo=EU27_2020&amp;time=2024&amp;unit=TJ&amp;nrg_bal=FC_IND_E&amp;siec=G3000" target="_blank" rel="noopener">Datos de este producto en Eurostat (JSON)</a></p><p>Consulta heredada no usada para recalcular. Puede reflejar revisiones posteriores.</p></details><p><a href="#mix-ue-grafico">Volver al gráfico</a></p></section>
-<section id="mix-ue-renovables" tabindex="-1"><h4>Renovables y biocombustibles · 11,3%</h4><p>Categoría de productos renovables y biocombustibles del balance. No incluye toda la electricidad generada con renovables.</p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Renewable_energy_sources" target="_blank" rel="noopener noreferrer">Eurostat · Renovables y biocombustibles (página legible)</a></p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener noreferrer">Fuente de la cuota · figura 1 (UE, 2024)</a></p><details><summary>Referencia técnica JSON · no es la vista de lectura</summary><p><a href="https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_s?lang=en&amp;geo=EU27_2020&amp;time=2024&amp;unit=TJ&amp;nrg_bal=FC_IND_E&amp;siec=RA000" target="_blank" rel="noopener">Datos de este producto en Eurostat (JSON)</a></p><p>Consulta heredada no usada para recalcular. Puede reflejar revisiones posteriores.</p></details><p><a href="#mix-ue-grafico">Volver al gráfico</a></p></section>
-<section id="mix-ue-petroleo" tabindex="-1"><h4>Petróleo y productos petrolíferos · 10,4%</h4><p>Productos petrolíferos contabilizados como energía final industrial.</p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Petroleum_products" target="_blank" rel="noopener noreferrer">Eurostat · Petróleo y productos petrolíferos (página legible)</a></p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener noreferrer">Fuente de la cuota · figura 1 (UE, 2024)</a></p><details><summary>Referencia técnica JSON · no es la vista de lectura</summary><p><a href="https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_s?lang=en&amp;geo=EU27_2020&amp;time=2024&amp;unit=TJ&amp;nrg_bal=FC_IND_E&amp;siec=O4000XBIO" target="_blank" rel="noopener">Datos de este producto en Eurostat (JSON)</a></p><p>Consulta heredada no usada para recalcular. Puede reflejar revisiones posteriores.</p></details><p><a href="#mix-ue-grafico">Volver al gráfico</a></p></section>
-<section id="mix-ue-fosiles-solidos" tabindex="-1"><h4>Combustibles fósiles sólidos · 5,5%</h4><p>Agrupación de Eurostat que incluye productos del carbón, gases manufacturados, turba y esquistos y arenas bituminosas.</p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Footnotes" target="_blank" rel="noopener noreferrer">Eurostat · Combustibles fósiles sólidos (página legible)</a></p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener noreferrer">Fuente de la cuota · figura 1 (UE, 2024)</a></p><details><summary>Referencia técnica JSON · no es la vista de lectura</summary><p><a href="https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_s?lang=en&amp;geo=EU27_2020&amp;time=2024&amp;unit=TJ&amp;nrg_bal=FC_IND_E&amp;siec=C0000X0350-0370&amp;siec=C0350-0370&amp;siec=P1000&amp;siec=S2000" target="_blank" rel="noopener">Datos de este producto en Eurostat (JSON)</a></p><p>Consulta heredada no usada para recalcular. Puede reflejar revisiones posteriores.</p></details><p><a href="#mix-ue-grafico">Volver al gráfico</a></p></section>
-<section id="mix-ue-calor-derivado" tabindex="-1"><h4>Calor derivado · 5,5%</h4><p>Calor registrado como producto energético en el balance. La cuota no mide todo el calor de proceso industrial.</p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Derived_heat" target="_blank" rel="noopener noreferrer">Eurostat · Calor derivado (página legible)</a></p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener noreferrer">Fuente de la cuota · figura 1 (UE, 2024)</a></p><details><summary>Referencia técnica JSON · no es la vista de lectura</summary><p><a href="https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_s?lang=en&amp;geo=EU27_2020&amp;time=2024&amp;unit=TJ&amp;nrg_bal=FC_IND_E&amp;siec=H8000" target="_blank" rel="noopener">Datos de este producto en Eurostat (JSON)</a></p><p>Consulta heredada no usada para recalcular. Puede reflejar revisiones posteriores.</p></details><p><a href="#mix-ue-grafico">Volver al gráfico</a></p></section>
-<section id="mix-ue-residuos" tabindex="-1"><h4>Residuos no renovables · 2,1%</h4><p>Fracción no renovable de los residuos registrada como producto energético. La cuota no mide el volumen total de residuos industriales.</p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Waste_(non-renewable)" target="_blank" rel="noopener noreferrer">Eurostat · Residuos no renovables (página legible)</a></p><p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener noreferrer">Fuente de la cuota · figura 1 (UE, 2024)</a></p><details><summary>Referencia técnica JSON · no es la vista de lectura</summary><p><a href="https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_bal_s?lang=en&amp;geo=EU27_2020&amp;time=2024&amp;unit=TJ&amp;nrg_bal=FC_IND_E&amp;siec=W6100_6220" target="_blank" rel="noopener">Datos de este producto en Eurostat (JSON)</a></p><p>Consulta heredada no usada para recalcular. Puede reflejar revisiones posteriores.</p></details><p><a href="#mix-ue-grafico">Volver al gráfico</a></p></section>
+<p>Las barras muestran la referencia europea. Cada barra enlaza con la matriz mundial.</p>
+<ul><li id="mix-ue-electricidad"><a href="#matriz-mundial"><span>Electricidad</span><span class="track" aria-hidden="true"><span style="width:83.25%"></span></span><strong>33,3%</strong></a></li>
+<li id="mix-ue-gas-natural"><a href="#matriz-mundial"><span>Gas natural</span><span class="track" aria-hidden="true"><span style="width:79.75%"></span></span><strong>31,9%</strong></a></li>
+<li id="mix-ue-renovables"><a href="#matriz-mundial"><span>Renovables y biocombustibles</span><span class="track" aria-hidden="true"><span style="width:28.25%"></span></span><strong>11,3%</strong></a></li>
+<li id="mix-ue-petroleo"><a href="#matriz-mundial"><span>Petróleo y productos petrolíferos</span><span class="track" aria-hidden="true"><span style="width:26.0%"></span></span><strong>10,4%</strong></a></li>
+<li id="mix-ue-fosiles-solidos"><a href="#matriz-mundial"><span>Combustibles fósiles sólidos</span><span class="track" aria-hidden="true"><span style="width:13.75%"></span></span><strong>5,5%</strong></a></li>
+<li id="mix-ue-calor-derivado"><a href="#matriz-mundial"><span>Calor derivado</span><span class="track" aria-hidden="true"><span style="width:13.75%"></span></span><strong>5,5%</strong></a></li>
+<li id="mix-ue-residuos"><a href="#matriz-mundial"><span>Residuos no renovables</span><span class="track" aria-hidden="true"><span style="width:5.25%"></span></span><strong>2,1%</strong></a></li>
+</ul><p>Fuente: Eurostat, nrg_bal_s. Porcentajes de la <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics#Energy_products_used_in_the_industry_sector" target="_blank" rel="noopener">figura 1 de Eurostat</a>, extracción de mayo de 2026. La fuente numérica es la figura 1 publicada. Traducción y representación de NHMA.</p></div>
+
 </div>
-      </section>
 
-      <!-- Marco energía -->
-      <section id="marco-energia" aria-labelledby="marco-title">
-        <h2 id="marco-title">Qué energía usa la industria</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>Componentes</h3>
-            <ul class="list">
-              <li>Electricidad (motores, bombas, hornos eléctricos, etc.).</li>
-              <li>Calor de proceso (baja/med/alta T) — definir rangos.</li>
-              <li>Biomasa/residuos: usos y límites.</li>
-              <li>Emisiones “de proceso” (p. ej., clínker, cal, químicos).</li>
-            </ul>
-            <p class="note">Añade aquí una nota metodológica breve: Scope 1/2/3 y criterios de conteo.</p>
-          </div>
-          <div>
-            <figure>
-              <div class="chart">[Placeholder · diagrama tipos de calor]</div>
-              <figcaption>Mapa de usos energéticos por rango de temperatura.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Palancas -->
-      <section id="palancas" aria-labelledby="palancas-title">
-        <h2 id="palancas-title">Palancas de descarbonización</h2>
-        <div class="grid-3">
-          <div>
-            <h3>Eficiencia</h3>
-            <ul class="list">
-              <li>Motores de alta eficiencia, variadores, control digital.</li>
-              <li>Recuperación de calor, aislamiento, procesos continuos.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Electrificación del calor</h3>
-            <ul class="list">
-              <li>Resistivo/inducción, hornos eléctricos, bombas de calor industriales.</li>
-              <li>Integración con redes renovables y almacenamiento térmico.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Hidrógeno</h3>
-            <ul class="list">
-              <li>Reducción directa de hierro (DRI), alta T donde es difícil electrificar.</li>
-              <li>Requisitos de H₂ bajo en carbono y suministro.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Calor renovable</h3>
-            <ul class="list">
-              <li>Solar térmica, geotermia, redes de calor/frío.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Biomasa y residuos</h3>
-            <ul class="list">
-              <li>Criterios de sostenibilidad y competencia de usos.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>CCUS y circularidad</h3>
-            <ul class="list">
-              <li>Captura en procesos inevitables (cemento).</li>
-              <li>Menos material virgen, reciclaje de alta calidad, diseño para reciclar.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== Sectores (patrón repetible) ===== -->
-      <!-- Copia/pega este bloque y ajusta IDs para cada sector -->
-      <section id="acero" class="sector" aria-labelledby="acero-title">
-        <div class="actions">
-          <span class="badge">Sector</span>
-          <a class="btn" href="#palancas">Ver palancas</a>
-          <a class="btn" href="#data-fuentes">Fuentes</a>
-        </div>
-        <h2 id="acero-title">Acero</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3>
-            <p><!-- Texto breve: procesos principales (alto horno, BOF; horno de arco EAF con chatarra) --></p>
-            <h3>(B) Dónde emite</h3>
-            <ul class="list">
-              <li>Combustión (coque/hornos).</li>
-              <li>Proceso (reducción del mineral).</li>
-            </ul>
-            <h3>(C) Palancas</h3>
-            <ul class="list">
-              <li>DRI + H₂, EAF con mayor % chatarra.</li>
-              <li>Eficiencia, electrificación, captura donde aplique.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores / Gráficos</h3>
-            <figure>
-              <div class="chart">[Placeholder · % electricidad/combustibles/biomasa]</div>
-              <figcaption>Mix energético del acero.</figcaption>
-            </figure>
-            <figure>
-              <div class="chart">[Placeholder · % chatarra / producción EAF vs BOF]</div>
-              <figcaption>Indicadores de circularidad y ruta tecnológica.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="aluminio" class="sector" aria-labelledby="aluminio-title">
-        <div class="actions">
-          <span class="badge">Sector</span>
-          <a class="btn" href="#palancas">Ver palancas</a>
-          <a class="btn" href="#data-fuentes">Fuentes</a>
-        </div>
-        <h2 id="aluminio-title">Aluminio</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3>
-            <p><!-- Electrólisis primaria, gran intensidad eléctrica. Reciclaje con menor huella. --></p>
-            <h3>(B) Dónde emite</h3>
-            <ul class="list"><li>Electricidad (intensiva), combustión en procesos térmicos auxiliares.</li></ul>
-            <h3>(C) Palancas</h3>
-            <ul class="list"><li>PPA 24/7 renovable, mejoras de celdas, reciclaje.</li></ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores / Gráficos</h3>
-            <figure><div class="chart">[Placeholder · kWh/t · % reciclaje]</div><figcaption>Intensidad e importancia del reciclaje.</figcaption></figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="quimicos" class="sector" aria-labelledby="quimicos-title">
-        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
-        <h2 id="quimicos-title">Químicos</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3><p><!-- Amoniaco, etileno, metanol, etc. --></p>
-            <h3>(B) Dónde emite</h3><ul class="list"><li>Combustión y materias primas fósiles (feedstock).</li></ul>
-            <h3>(C) Palancas</h3><ul class="list"><li>Electrificación, H₂ bajo en C, captura en reformado, rutas eléctricas (e-crackers).</li></ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores</h3>
-            <figure><div class="chart">[Placeholder · emisiones por producto clave]</div><figcaption>Distribución de emisiones por productos.</figcaption></figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="cemento" class="sector" aria-labelledby="cemento-title">
-        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
-        <h2 id="cemento-title">Cemento</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3><p><!-- Producción de clínker, molienda, hornos rotatorios. --></p>
-            <h3>(B) Dónde emite</h3><ul class="list"><li>Proceso (descarbonatación) y combustión.</li></ul>
-            <h3>(C) Palancas</h3>
-            <ul class="list">
-              <li>Reducir factor clínker (LC3, adiciones), eficiencia, combustibles bajos en C.</li>
-              <li>CCUS donde el proceso es intrínsecamente emisor.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores</h3>
-            <figure><div class="chart">[Placeholder · factor clínker · tCO₂/t cemento]</div><figcaption>Indicadores clave en cemento.</figcaption></figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="papel" class="sector" aria-labelledby="papel-title">
-        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
-        <h2 id="papel-title">Papel</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3><p><!-- Pulp & paper, uso de biomasa (licor negro). --></p>
-            <h3>(B) Dónde emite</h3><ul class="list"><li>Calor de proceso y electricidad.</li></ul>
-            <h3>(C) Palancas</h3><ul class="list"><li>Mejoras de calderas, CHP renovable, eficiencia, reciclaje de fibra.</li></ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores</h3>
-            <figure><div class="chart">[Placeholder · % biomasa · intensidad]</div><figcaption>Rol de biomasa y eficiencia.</figcaption></figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="mineria" class="sector" aria-labelledby="mineria-title">
-        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
-        <h2 id="mineria-title">Minería</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3><p><!-- Extracción, trituración, transporte (diésel). --></p>
-            <h3>(B) Dónde emite</h3><ul class="list"><li>Equipos móviles (diésel) y electricidad para molienda/bombeo.</li></ul>
-            <h3>(C) Palancas</h3><ul class="list"><li>Electrificación flota, trolley-assist, renovables in situ, eficiencia.</li></ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores</h3>
-            <figure><div class="chart">[Placeholder · % flota electrificada]</div><figcaption>Transición energética en equipos móviles.</figcaption></figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="industria-ligera" class="sector" aria-labelledby="industria-ligera-title">
-        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
-        <h2 id="industria-ligera-title">Industria ligera</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3><p><!-- Alimentos y bebidas, textil, etc. --></p>
-            <h3>(B) Dónde emite</h3><ul class="list"><li>Calor baja/med T, hornos, vapor.</li></ul>
-            <h3>(C) Palancas</h3><ul class="list"><li>Bombas de calor, hornos eléctricos, gestión de vapor, recuperación de calor.</li></ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores</h3>
-            <figure><div class="chart">[Placeholder · % calor electrificado]</div><figcaption>Progreso en electrificación del calor.</figcaption></figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="data-centers" class="sector" aria-labelledby="data-centers-title">
-        <div class="actions"><span class="badge">Sector</span><a class="btn" href="#palancas">Ver palancas</a><a class="btn" href="#data-fuentes">Fuentes</a></div>
-        <h2 id="data-centers-title">Data centers</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>(A) Hoy</h3><p><!-- Electricidad casi 100%; gestión térmica. --></p>
-            <h3>(B) Dónde emite</h3><ul class="list"><li>Electricidad (mix de red) y refrigeración.</li></ul>
-            <h3>(C) Palancas</h3><ul class="list"><li>Eficiencia (PUE), PPAs 24/7, recuperación de calor a redes.</li></ul>
-          </div>
-          <div>
-            <h3>(D) Indicadores</h3>
-            <figure><div class="chart">[Placeholder · PUE · % 24/7]</div><figcaption>Indicadores de eficiencia y contratación energética.</figcaption></figure>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Fin de sectores ===== -->
-
-      <!-- Casos prácticos -->
-      <section id="casos" aria-labelledby="casos-title">
-        <h2 id="casos-title">Casos prácticos</h2>
-        <div class="grid-3">
-          <div>
-            <h3>Acero DRI + H₂</h3>
-            <p><!-- Resumen del caso, cifras clave, estado del proyecto. --></p>
-          </div>
-          <div>
-            <h3>Cemento con menor factor clínker + CCUS</h3>
-            <p><!-- Resumen del caso, cifras clave, estado del proyecto. --></p>
-          </div>
-          <div>
-            <h3>Data center 24/7 + recuperación de calor</h3>
-            <p><!-- Resumen del caso, cifras clave, estado del proyecto. --></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Riesgos -->
-      <section id="riesgos" aria-labelledby="riesgos-title">
-        <h2 id="riesgos-title">Riesgos, límites y trampas</h2>
-        <ul class="list">
-          <li>Offshoring y fuga de carbono vs. reducción real.</li>
-          <li>Biomasa limitada / sostenibilidad y competencia de usos.</li>
-          <li>Fugas de metano en gas y feedstocks.</li>
-          <li>“Capturar todo” vs. evitar emisiones en origen.</li>
-          <li>Dependencia de redes/almacenamiento (<a href="pagina33.html">ver 3.3 · Generación de energía</a>).</li>
-        </ul>
-        <p class="warn">Añade aquí advertencias y notas de calidad de datos cuando estén definidas.</p>
-      </section>
-
-      <!-- Acciones -->
-      <section id="acciones" aria-labelledby="acciones-title">
-        <h2 id="acciones-title">¿Qué tiene que hacerse?</h2>
-        <div class="sector-grid">
-          <div>
-            <h3>Políticas</h3>
-            <ul class="list">
-              <li>Estándares de producto, compras públicas verdes.</li>
-              <li>Precio al carbono / ajuste en frontera.</li>
-              <li>Apoyo a I+D y demostradores.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Empresas y personas</h3>
-            <ul class="list">
-              <li>Auditoría energética, plan de electrificación, PPAs renovables.</li>
-              <li>Pilotos H₂/CCUS donde aplique, circularidad, reporting Scope 1–2–3.</li>
-              <li>Consumidores: priorizar productos de baja huella, reparar, reutilizar.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Data / Fuentes -->
-      <section id="data-fuentes" aria-labelledby="fuentes-title">
-        <h2 id="fuentes-title">Data · Fuentes · Descargas</h2>
-        <ul class="list">
-          <li><!-- IEA, REN21, EIA, OWID… Añadir enlaces y notas metodológicas. --></li>
-          <li><!-- Explicar año base, cobertura, definición de sectores y de “proceso”. --></li>
-        </ul>
-        <figure>
-          <div class="chart">[Placeholder · tabla-resumen descargable]</div>
-          <figcaption>Botones de descarga (CSV/PNG/JSON) cuando estén listos.</figcaption>
-        </figure>
-        <div class="actions">
-          <span class="btn btn-disabled" aria-disabled="true">Descargar CSV (pendiente)</span>
-          <span class="btn btn-disabled" aria-disabled="true">Descargar PNG (pendiente)</span>
-        </div>
-      </section>
-
+  </section>
+  <section id="sectores"><h2>¿Qué cambia de una actividad a otra?</h2>
+    <p>La primera columna identifica la energía y su uso. La segunda sigue el carbono u otros gases en una operación representativa. Las rutas de fabricación pueden variar incluso dentro de una misma rama.</p>
+    <div class="table-scroll" role="region" aria-label="Comparación de actividades" tabindex="0"><table><thead><tr><th scope="col">Actividad</th><th scope="col">Energía y uso</th><th scope="col">Dónde se emite</th></tr></thead><tbody>
+      <tr id="acero"><th scope="row">Acero</th><td>Coque en el alto horno o electricidad para fundir chatarra.</td><td>La reducción del mineral con carbono libera CO₂. En la ruta de chatarra cobra peso la generación eléctrica.</td></tr>
+      <tr id="cemento"><th scope="row">Cemento</th><td>Combustible en el horno y electricidad en la molienda.</td><td>La combustión y la descomposición de la caliza son dos fuentes distintas de CO₂.</td></tr>
+      <tr id="quimicos"><th scope="row">Química</th><td>Gas natural para obtener hidrógeno y aportar calor en la fabricación convencional de amoníaco.</td><td>Obtener hidrógeno a partir de gas genera CO₂. En otra rama, la fabricación de ácido nítrico, también se produce óxido nitroso.</td></tr>
+      <tr id="petroquimica"><th scope="row">Petroquímica</th><td>Combustible para calentar el horno de craqueo que produce etileno.</td><td>El horno emite CO₂. Parte del carbono de la materia prima queda en el producto.</td></tr>
+      <tr id="aluminio"><th scope="row">Aluminio</th><td>Electricidad para obtener aluminio primario por electrólisis.</td><td>Importan la generación eléctrica y el CO₂ liberado al consumirse los ánodos de carbono. Refundir chatarra evita esa electrólisis.</td></tr>
+      <tr id="vidrio"><th scope="row">Vidrio</th><td>Gas o electricidad para fundir la mezcla.</td><td>Los hornos de gas emiten por combustión. Los carbonatos de la mezcla también pueden liberar CO₂.</td></tr>
+      <tr id="papel"><th scope="row">Papel y pasta</th><td>Vapor para secar el papel y electricidad para accionar las máquinas.</td><td>Las emisiones del vapor dependen de la caldera. Algunas fábricas de pasta queman licor negro, un subproducto con carbono biogénico.</td></tr>
+      <tr id="alimentacion"><th scope="row">Alimentación</th><td>Calor para cocer o pasteurizar y electricidad para refrigerar.</td><td>Una caldera de gas emite en la planta. La electricidad comprada lleva asociadas las emisiones de su generación.</td></tr>
+      <tr id="mineria"><th scope="row">Minería</th><td>Gasóleo para vehículos y electricidad para triturar, moler y bombear.</td><td>El gasóleo emite en la mina. En minas de carbón también puede escapar metano del yacimiento.</td></tr>
+      <tr id="data-centers"><th scope="row">Centros de datos</th><td>Electricidad para servidores y refrigeración.</td><td>Las emisiones dependen de la generación eléctrica y del uso de grupos de respaldo. Es un caso de servicios digitales, fuera del gráfico industrial.</td></tr>
+    </tbody></table></div>
+    <p class="fuente-actividades"><strong>Fuentes de la tabla de actividades.</strong> Síntesis de NHMA. El IPCC documenta la combustión y las fugas en <a href="https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html">Energía (vol. 2)</a> y las reacciones de los minerales, la química y los metales en <a href="https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol3.html">Procesos industriales (vol. 3, caps. 2–4)</a>. Para servicios digitales, véase la <a href="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive/energy-performance-data-centres_en">Comisión Europea sobre centros de datos</a>.</p>
+  </section>
+  <section id="data-fuentes"><h2>Fuentes y alcance</h2><ul>
+    <li><a href="https://unstats.un.org/unsd/energystats/pubs/documents/2025pb-web.pdf#page=51" target="_blank" rel="noopener noreferrer">Naciones Unidas · Energy Statistics Pocketbook 2025, págs. 46–47</a>. El balance mundial de 2022 proporciona los consumos en exajulios de la matriz. Los porcentajes se calculan sobre los 130,7 EJ de consumo final industrial. La ONU publica 75,4 EJ para «Otras industrias» y en este cuadro no desglosa cuánto corresponde a cada actividad del grupo.</li>
+    <li><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Final_energy_consumption_in_industry_-_detailed_statistics">Eurostat · Consumo final en la industria</a>. Figura 1, consumo final industrial por producto energético en la UE en 2024. La energía se mide en julios y las emisiones en masa de gas.</li>
+    <li><a href="https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol2.html">IPCC · Energía</a> y <a href="https://www.ipcc-nggip.iges.or.jp/public/2006gl/vol3.html">procesos industriales</a>. Métodos para distinguir combustión, fugas y transformación de materiales.</li>
+    <li><a href="https://www.eea.europa.eu/en/analysis/maps-and-charts/emissions-trading-viewer-1-dashboards">Agencia Europea de Medio Ambiente · EU ETS</a>. Emisiones verificadas de las instalaciones cubiertas, por actividad, país y año.</li>
+    <li><a href="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive/energy-performance-data-centres_en">Comisión Europea · Centros de datos</a>. Estadísticas específicas de consumo y rendimiento energético.</li>
+  </ul></section>
       <!-- Navegación cruzada -->
       <section aria-labelledby="nav-title">
         <h2 id="nav-title">Navegación</h2>
@@ -432,7 +113,7 @@
 
   <a class="toplink" href="#contenido">↑ Arriba</a>
 
-  <footer class="site-footer"><div class="container footer-inner"><p>v1 (estructura). Rellena textos, añade iframes/embeds y conecta descargas cuando estén listos.</p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><p>No hay marcha atrás · Procesos industriales</p><p><a href="https://home.jumalenin.com/">Volver a Jumalenin</a></p></div></footer>
 
 </body>
 </html>
