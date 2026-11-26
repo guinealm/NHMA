@@ -40,3 +40,11 @@
 @media (max-width: 1000px) { .edificios-page main .grid.cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 800px) { .edificios-page main .grid.cols-2, .edificios-page main .grid.cols-3 { grid-template-columns: 1fr; } }
 @media (max-width: 460px) { .edificios-page main iframe { height: 480px; } }
+
+.ipcc-figura figure { margin: 1rem 0; }
+.ipcc-figura figcaption { font-weight: 600; }
+.ipcc-figura ul { list-style: none; padding: 0; }
+.ipcc-figura li { margin-block: .8rem; }
+.ipcc-pista { position: relative; display: block; height: .75rem; margin-top: .25rem; background: #e4ecea; }
+.ipcc-pista i { position: absolute; height: 100%; background: #24695c; }
+.ipcc-pista.con-cero::after { content: ""; position: absolute; left: 50%; height: 100%; border-left: 1px solid #243b36; }
