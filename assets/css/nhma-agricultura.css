@@ -1,0 +1,21 @@
+.grafica-granja {
+  margin: 1rem 0;
+}
+
+.grafica-granja img {
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+@media (min-width: 52rem) {
+  section:has(> .grafica-granja) {
+    display: flow-root;
+  }
+
+  .grafica-granja {
+    float: right;
+    width: 44%;
+    margin: 0 0 1rem 2rem;
+  }
+}
